@@ -11,7 +11,7 @@ const config = {
   title: 'Datumtechs  Docs',
   tagline: 'Datumtechs Let the Data Flow',
   url: 'https://datumtechs.github.io',
-  baseUrl: '/Docs/',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.svg',
