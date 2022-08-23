@@ -1,0 +1,11 @@
+{
+    "position": 3,
+    "label": "数据可信分享与托管",
+    "collapsible": true,
+    "collapsed": false,
+    "className": "red",
+    "link": null,
+    "customProps": {
+      "description": "这个描述可以用在 swizzle 的 DocCard 里"
+    }
+  }

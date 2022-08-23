@@ -1,0 +1,11 @@
+{
+    "position": 1,
+    "label": "主要流程",
+    "collapsible": true,
+    "collapsed": false,
+    "className": "red",
+    "link": null,
+    "customProps": {
+      "description": "这个描述可以用在 swizzle 的 DocCard 里"
+    }
+  }
