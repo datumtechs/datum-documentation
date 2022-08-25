@@ -1,0 +1,11 @@
+{
+    "position": 3,
+    "label": "多方数据协作",
+    "collapsible": true,
+    "collapsed": false,
+    "className": "red",
+    "link": null,
+    "customProps": {
+      "description": "这个描述可以用在 swizzle 的 DocCard 里"
+    }
+  }
