@@ -3,8 +3,6 @@ sidebar_position: 2
 ---
 
 
-## 数据进行NFT资产化
-
 
 #### 获取NFT合约模板
 
