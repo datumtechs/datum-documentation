@@ -5,8 +5,6 @@ export const pagesData = {
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
   // path: /%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B/GettingStarted.html
   "v-070d45d2": () => import(/* webpackChunkName: "v-070d45d2" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/主要流程/GettingStarted.html.js").then(({ data }) => data),
-  // path: /%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B/
-  "v-4b83a7ac": () => import(/* webpackChunkName: "v-4b83a7ac" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/主要流程/index.html.js").then(({ data }) => data),
   // path: /%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%8F%AF%E4%BF%A1%E5%88%86%E4%BA%AB%E4%B8%8E%E6%89%98%E7%AE%A1.html
   "v-68bec774": () => import(/* webpackChunkName: "v-68bec774" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/主要流程/数据可信分享与托管.html.js").then(({ data }) => data),
   // path: /%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B/%E6%95%B0%E6%8D%AE%E6%9C%8D%E5%8A%A1%E8%B5%84%E4%BA%A7%E5%8C%96.html
