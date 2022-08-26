@@ -958,6 +958,12 @@ function createRouterMatcher(routes, globalOptions) {
         throw createRouterError(1, {
           location: location2
         });
+      if (true) {
+        const invalidParams = Object.keys(location2.params || {}).filter((paramName) => !matcher.keys.find((k) => k.name === paramName));
+        if (invalidParams.length) {
+          warn(`Discarded invalid param(s) "${invalidParams.join('", "')}" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.`);
+        }
+      }
       name = matcher.record.name;
       params = assign(
         paramsFromLocation(
@@ -1065,11 +1071,11 @@ function isSameParam(a, b) {
 function checkSameParams(a, b) {
   for (const key of a.keys) {
     if (!key.optional && !b.keys.find(isSameParam.bind(null, key)))
-      return warn(`Alias "${b.record.path}" and the original record: "${a.record.path}" should have the exact same param named "${key.name}"`);
+      return warn(`Alias "${b.record.path}" and the original record: "${a.record.path}" must have the exact same param named "${key.name}"`);
   }
   for (const key of b.keys) {
     if (!key.optional && !a.keys.find(isSameParam.bind(null, key)))
-      return warn(`Alias "${b.record.path}" and the original record: "${a.record.path}" should have the exact same param named "${key.name}"`);
+      return warn(`Alias "${b.record.path}" and the original record: "${a.record.path}" must have the exact same param named "${key.name}"`);
   }
 }
 function checkChildMissingNameWithEmptyPath(mainNormalizedRecord, parent) {
@@ -1080,7 +1086,7 @@ function checkChildMissingNameWithEmptyPath(mainNormalizedRecord, parent) {
 function checkMissingParamsInAbsolutePath(record, parent) {
   for (const key of parent.keys) {
     if (!record.keys.find(isSameParam.bind(null, key)))
-      return warn(`Absolute path "${record.record.path}" should have the exact same param named "${key.name}" as its parent "${parent.record.path}".`);
+      return warn(`Absolute path "${record.record.path}" must have the exact same param named "${key.name}" as its parent "${parent.record.path}".`);
   }
 }
 function isRecordChildOf(record, parent) {
@@ -2476,7 +2482,7 @@ export {
   viewDepthKey
 };
 /*!
-  * vue-router v4.1.4
+  * vue-router v4.1.5
   * (c) 2022 Eduardo San Martin Morote
   * @license MIT
   */

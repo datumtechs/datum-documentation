@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: Datum Home
+title: Datum documentation
 description: 页面的描述
 ---
 # 简介

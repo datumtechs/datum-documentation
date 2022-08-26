@@ -5,13 +5,13 @@ export default {
             lang: 'zh-CN',
             title: '',
             head: '',
-            description: '11111111111'
+            description: 'datum-documentation [chinese]'
         },
         '/en/': {
             lang: 'en',
             title: 'english',
             head: '',
-            description: '22222222222'
+            description: 'datum-documentation [english]'
         }
 
     },
@@ -79,19 +79,19 @@ export default {
                             },
                             {
                                 text: 'IPFS传输',
-                                link: '/主要流程/数据采集与传输.md/#IPFS传输',
+                                link: '/主要流程/数据采集与传输.md/#ipfs传输',
                             },
                             {
                                 text: '区块链传输',
-                                link: '/主要流程/数据采集与传输.md/#区块链传输', 
+                                link: '/主要流程/数据采集与传输.md/#区块链传输',
                             },
                             {
                                 text: '发布元数据',
-                                link: '/主要流程/数据采集与传输.md/#发布元数据', 
+                                link: '/主要流程/数据采集与传输.md/#发布元数据',
                             },
                             {
                                 text: '发布数据Hash',
-                                link: '/主要流程/数据采集与传输.md/#发布数据Hash', 
+                                link: '/主要流程/数据采集与传输.md/#发布数据hash',
                             },
                         ]
                     },
@@ -102,31 +102,31 @@ export default {
                         children: [
                             {
                                 text: '获取NFT合约模板信息',
-                                link: '/主要流程/数据资产化.md/#获取NFT合约模板信息',
+                                link: '/主要流程/数据资产化.md/#获取nft合约模板信息',
                             },
                             {
                                 text: '完成NFT合约部署',
-                                link: '/主要流程/数据资产化.md/#完成NFT合约部署',
+                                link: '/主要流程/数据资产化.md/#完成nft合约部署',
                             },
                             {
                                 text: '查看已发布的NFT合约',
-                                link: '/主要流程/数据资产化.md/#查看已发布的NFT合约',
+                                link: '/主要流程/数据资产化.md/#查看已发布的nft合约',
                             },
                             {
                                 text: '铸造Data NFT Token',
-                                link: '/主要流程/数据资产化.md/#铸造Data NFT Token',
+                                link: '/主要流程/数据资产化.md/#铸造data-nft-token',
                             },
                             {
                                 text: '销毁Data NFT Token',
-                                link: '/主要流程/数据资产化.md/#销毁Data NFT Token',
+                                link: '/主要流程/数据资产化.md/#销毁data-nft-token',
                             },
                             {
                                 text: 'Data NFT Token属性设置',
-                                link: '/主要流程/数据资产化.md/#Data NFT Token属性设置',
+                                link: '/主要流程/数据资产化.md/#data-nft-token属性设置',
                             },
                             {
                                 text: '查看已铸造的Data NFT Token',
-                                link: '/主要流程/数据资产化.md/#查看已铸造的Data NFT Token',
+                                link: '/主要流程/数据资产化.md/#查看已铸造的data-nft-token',
                             },
                         ]
                     },
@@ -207,7 +207,7 @@ export default {
                 children: [
                     {
                         text: '隐私AI框架Rosetta',
-                        link: '/参考/隐私AI框架Rosetta.md',
+                        link: '/参考/隐私AI框架rosetta.md',
                         children: []
                     },
                 ],
