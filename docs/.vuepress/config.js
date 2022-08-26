@@ -101,16 +101,32 @@ export default {
                         collapsible: true,
                         children: [
                             {
-                                text: '数据资产NFT',
-                                link: '/主要流程/数据资产化.md/#数据资产NFT',
+                                text: '获取NFT合约模板信息',
+                                link: '/主要流程/数据资产化.md/#获取NFT合约模板信息',
                             },
                             {
-                                text: 'NFT发行',
-                                link: '/主要流程/数据资产化.md/#数据市场',
+                                text: '完成NFT合约部署',
+                                link: '/主要流程/数据资产化.md/#完成NFT合约部署',
                             },
                             {
-                                text: '自定义属性',
-                                link: '/主要流程/数据资产化.md/#自定义属性',
+                                text: '查看已发布的NFT合约',
+                                link: '/主要流程/数据资产化.md/#查看已发布的NFT合约',
+                            },
+                            {
+                                text: '铸造Data NFT Token',
+                                link: '/主要流程/数据资产化.md/#铸造Data NFT Token',
+                            },
+                            {
+                                text: '销毁Data NFT Token',
+                                link: '/主要流程/数据资产化.md/#销毁Data NFT Token',
+                            },
+                            {
+                                text: 'Data NFT Token属性设置',
+                                link: '/主要流程/数据资产化.md/#Data NFT Token属性设置',
+                            },
+                            {
+                                text: '查看已铸造的Data NFT Token',
+                                link: '/主要流程/数据资产化.md/#查看已铸造的Data NFT Token',
                             },
                         ]
                     },
