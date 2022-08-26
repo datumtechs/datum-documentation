@@ -1,0 +1,1169 @@
+<template><div><h1 id="数据联合查询分析" tabindex="-1"><a class="header-anchor" href="#数据联合查询分析" aria-hidden="true">#</a> 数据联合查询分析</h1>
+<p>数据联合查询分析模块提供了一系列API服务，可使用已资产化的数据进行联合计算。</p>
+<p><strong>为什么使用本部分API？</strong></p>
+<p>数据联合查询分析可以帮助用户更方便、安全、快速地执行联合计算，因为：</p>
+<ul>
+<li>本模块api集成了常见的联合计算场景，如联合查询、联合统计分析、联合模型训练和预测</li>
+<li>开发者无需过多了解各种算法的实现细节，可直接调用，降低了使用门槛。</li>
+</ul>
+<p><strong>本部分API支持哪些联合计算？</strong></p>
+<ul>
+<li>
+<p>两方数据合作</p>
+<ul>
+<li>
+<p>隐私匹配</p>
+</li>
+<li>
+<p>隐私标签查询</p>
+</li>
+<li>
+<p>隐私SQL查询</p>
+</li>
+</ul>
+</li>
+<li>
+<p>多方数据协作</p>
+<ul>
+<li>
+<p>联合统计分析</p>
+</li>
+<li>
+<p>联合模型训练</p>
+</li>
+<li>
+<p>联合模型预测</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>本部分API使用了哪些框架及技术？</strong></p>
+<ul>
+<li>隐私匹配使用了隐私求交集技术（Private Set Intersection），支持DH和HE两种算法实现。</li>
+<li>隐私标签查询使用了基于标签的隐私求交集技术（Labeled Private Set Intersection），支持DH和HE两种算法实现。</li>
+<li>联合统计分析、联合模型训练、联合模型预测使用了隐私AI框架Rosetta，它是基于Tensorflow的隐私AI框架，承载和结合AI、隐私AI和区块链三种典型的技术，大大降低了AI开发者的门槛，让AI开发者在对隐私AI技术没有深入了解的情况下，只需要改动两三行代码即可实现将现有AI代码转换为具备数据隐私保护功能的程序。</li>
+</ul>
+<h2 id="两方数据合作" tabindex="-1"><a class="header-anchor" href="#两方数据合作" aria-hidden="true">#</a> 两方数据合作</h2>
+<h3 id="隐私匹配" tabindex="-1"><a class="header-anchor" href="#隐私匹配" aria-hidden="true">#</a> 隐私匹配</h3>
+<p>隐私匹配可用于多种商业场景，如联合风控、通讯录好友发现，联合计算样本对齐等等。</p>
+<p>以银行贷前风控为例，银行A想要通过查询此客户是否在其他银行的失信黑名单内来了解客户的违约风险，但若直接将客户的私密信息交给其他银行来查询风险信息，一方面会造成用户的个人私密信息泄露；另一方面给竞争对手（其他银行）提供了潜在客源。隐私匹配可破解此难题。</p>
+<p><strong>主要功能</strong></p>
+<p>支持两方的数据合作，一个是查询方，一个是被查询方。查询方与被查询方能计算得到双方数据的交集，但互相不暴露交集以外的数据集的任何信息。它使用隐私求交集技术（Private Set Intersection），支持DH和HE两种算法实现。</p>
+<p><strong>如何使用</strong></p>
+<ul>
+<li>
+<p>接口名称：runPSITask</p>
+</li>
+<li>
+<p>请求【POST】</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"algo_type"</span><span class="token operator">:</span> <span class="token string">"DH"</span><span class="token punctuation">,</span>
+	<span class="token property">"requester"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgA"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+        <span class="token property">"key_column"</span><span class="token operator">:</span> <span class="token string">"id_col"</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"provider"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgB"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+        <span class="token property">"key_column"</span><span class="token operator">:</span> <span class="token string">"id_col"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"result_recv_type"</span><span class="token operator">:</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>是否必须</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>algo_type</td>
+<td>string</td>
+<td>使用的算法的类型，支持DH，HE</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>requester</td>
+<td>json</td>
+<td>查询方信息</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>组织名称</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_path</td>
+<td>string</td>
+<td>数据所在路径</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_type</td>
+<td>string</td>
+<td>数据的格式</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>key_column</td>
+<td>string</td>
+<td>所需操作的列</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>provider</td>
+<td>json</td>
+<td>被查询方信息</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>result_recv_type</td>
+<td>int</td>
+<td>结果接收类型，1-单方，2-双方</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>响应</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	<span class="token property">"result"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+		<span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/path/to/result/file"</span><span class="token punctuation">,</span>
+		<span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+		<span class="token property">"extra"</span><span class="token operator">:</span> <span class="token string">""</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"success"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>响应状态，<br />200-成功，400-无效请求，500-服务器内部错误</td>
+</tr>
+<tr>
+<td>result</td>
+<td>json</td>
+<td>结果信息</td>
+</tr>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>结果所在路径</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>结果的类型</td>
+</tr>
+<tr>
+<td>extra</td>
+<td>string</td>
+<td>关于结果的额外信息</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>成功信息或错误的描述</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>接口名称：getDataProviders</p>
+</li>
+<li>
+<p>请求【GET】</p>
+<p>无</p>
+</li>
+<li>
+<p>响应</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	<span class="token property">"result"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+		<span class="token property">"data_providers"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"orgA"</span><span class="token punctuation">,</span> <span class="token string">"orgB"</span><span class="token punctuation">,</span> <span class="token string">"orgC"</span><span class="token punctuation">]</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"success"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>响应状态，200-成功，400-无效请求，500-服务器内部错误</td>
+</tr>
+<tr>
+<td>result</td>
+<td>json</td>
+<td>结果信息</td>
+</tr>
+<tr>
+<td>data_providers</td>
+<td>list</td>
+<td>所有数据提供方组织名称</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>成功信息或错误的描述</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>接口名称：getDataPath</p>
+</li>
+<li>
+<p>请求【GET】</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>是否必须</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data_provider</td>
+<td>string</td>
+<td>数据提供方组织名称</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>响应</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	<span class="token property">"result"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+		<span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"/path/to/data1"</span><span class="token punctuation">,</span> <span class="token string">"/path/to/data2"</span><span class="token punctuation">,</span> <span class="token string">"/path/to/data3"</span><span class="token punctuation">]</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"success"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>响应状态，200-成功，400-无效请求，500-服务器内部错误</td>
+</tr>
+<tr>
+<td>result</td>
+<td>json</td>
+<td>结果信息</td>
+</tr>
+<tr>
+<td>data_path</td>
+<td>string</td>
+<td>数据所在路径</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>成功信息或错误的描述</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>接口名称：getMetaData</p>
+</li>
+<li>
+<p>请求【GET】</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>是否必须</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data_provider</td>
+<td>string</td>
+<td>数据提供方组织名称</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_path</td>
+<td>string</td>
+<td>数据所在路径</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>响应</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	<span class="token property">"result"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+        <span class="token property">"rows_num"</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+        <span class="token property">"columns_num"</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+        <span class="token property">"columns_name"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"col1"</span><span class="token punctuation">,</span> <span class="token string">"col2"</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"success"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>响应状态，200-成功，400-无效请求，500-服务器内部错误</td>
+</tr>
+<tr>
+<td>result</td>
+<td>json</td>
+<td>结果信息</td>
+</tr>
+<tr>
+<td>data_type</td>
+<td>string</td>
+<td>数据的格式</td>
+</tr>
+<tr>
+<td>rows_num</td>
+<td>int</td>
+<td>数据表的行数</td>
+</tr>
+<tr>
+<td>columns_num</td>
+<td>int</td>
+<td>数据表的列数</td>
+</tr>
+<tr>
+<td>columns_name</td>
+<td>list</td>
+<td>数据表的所有列名</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>成功信息或错误的描述</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h3 id="隐私标签查询" tabindex="-1"><a class="header-anchor" href="#隐私标签查询" aria-hidden="true">#</a> 隐私标签查询</h3>
+<p>两个企业需匹配存在交集的标识数据，同时供方提供该类标识对应的标签数据。</p>
+<p><strong>主要功能</strong></p>
+<p>在查询方不泄露查询的内容，且被查询方不泄露交集以外的数据的前提下，查询方能获取双方数据的交集及交集对应的标签数据。它使用基于标签的隐私求交集技术（Labeled Private Set Intersection），支持DH和HE两种算法实现。</p>
+<p><strong>如何使用</strong></p>
+<ul>
+<li>
+<p>接口名称：runLabeledPSITask</p>
+</li>
+<li>
+<p>请求【POST】</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"algo_type"</span><span class="token operator">:</span> <span class="token string">"DH"</span><span class="token punctuation">,</span>
+	<span class="token property">"requester"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgA"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+        <span class="token property">"key_column"</span><span class="token operator">:</span> <span class="token string">"id_col"</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"provider"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgB"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+        <span class="token property">"key_column"</span><span class="token operator">:</span> <span class="token string">"id_col"</span><span class="token punctuation">,</span>
+        <span class="token property">"selected_columns"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"col1"</span><span class="token punctuation">,</span> <span class="token string">"col2"</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>是否必须</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>algo_type</td>
+<td>string</td>
+<td>使用的算法的类型，支持DH，HE</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>requester</td>
+<td>json</td>
+<td>查询方信息</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>组织名称</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_path</td>
+<td>string</td>
+<td>数据所在路径</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_type</td>
+<td>string</td>
+<td>数据的格式</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>key_column</td>
+<td>string</td>
+<td>所需操作的列</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>provider</td>
+<td>json</td>
+<td>被查询方信息</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>selected_columns</td>
+<td>list</td>
+<td>所需查询的label列名</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>响应</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	<span class="token property">"result"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+		<span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/path/to/result/file"</span><span class="token punctuation">,</span>
+		<span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+		<span class="token property">"extra"</span><span class="token operator">:</span> <span class="token string">""</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"success"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>响应状态，<br />200-成功，400-无效请求，500-服务器内部错误</td>
+</tr>
+<tr>
+<td>result</td>
+<td>json</td>
+<td>结果信息</td>
+</tr>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>结果所在路径</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>结果的类型</td>
+</tr>
+<tr>
+<td>extra</td>
+<td>string</td>
+<td>关于结果的额外信息</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>成功信息或错误的描述</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h3 id="隐私sql查询" tabindex="-1"><a class="header-anchor" href="#隐私sql查询" aria-hidden="true">#</a> 隐私SQL查询</h3>
+<p><strong>主要功能</strong></p>
+<p>在查询方不泄露查询的内容，且被查询方不泄露查询结果以外的数据库数据的前提下，查询方能使用SQL查询语句获得正确的查询结果。它支持基于MPC的隐私查询和基于同态加密(HE)的隐私查询。</p>
+<p><strong>如何使用</strong></p>
+<ul>
+<li>
+<p>接口名称：runPrivacySQLTask</p>
+</li>
+<li>
+<p>请求【POST】</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"algo_type"</span><span class="token operator">:</span> <span class="token string">"MPC"</span><span class="token punctuation">,</span>
+	<span class="token property">"requester"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgA"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"provider"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgB"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+        <span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"sql"</span><span class="token operator">:</span> <span class="token string">"select sum(col1) from orgB;"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>是否必须</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>algo_type</td>
+<td>string</td>
+<td>使用的算法类型，支持MPC，HE</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>requester</td>
+<td>json</td>
+<td>查询方信息</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>组织名称</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_path</td>
+<td>string</td>
+<td>数据所在路径</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_type</td>
+<td>string</td>
+<td>数据的格式</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>sql</td>
+<td>string</td>
+<td>sql语句</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>provider</td>
+<td>json</td>
+<td>被查询方信息</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>响应</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	<span class="token property">"result"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+		<span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/path/to/result/file"</span><span class="token punctuation">,</span>
+		<span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+		<span class="token property">"extra"</span><span class="token operator">:</span> <span class="token string">""</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"success"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>响应状态，<br />200-成功，400-无效请求，500-服务器内部错误</td>
+</tr>
+<tr>
+<td>result</td>
+<td>json</td>
+<td>结果信息</td>
+</tr>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>结果所在路径</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>结果的类型</td>
+</tr>
+<tr>
+<td>extra</td>
+<td>string</td>
+<td>关于结果的额外信息</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>成功信息或错误的描述</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="多方数据协作" tabindex="-1"><a class="header-anchor" href="#多方数据协作" aria-hidden="true">#</a> 多方数据协作</h2>
+<h3 id="联合统计分析" tabindex="-1"><a class="header-anchor" href="#联合统计分析" aria-hidden="true">#</a> 联合统计分析</h3>
+<p>多方数据协作的场景，不仅支持两方数据协作，也支持三方及三方以上的数据协作。使用了隐私AI框架Rosetta。</p>
+<p><strong>主要功能</strong></p>
+<p>在保证所有数据提供方不泄露各自敏感数据的前提下，对数据提供方的数据完成联合统计分析。提供两种方式：常用统计公式（如求和、求平均、求方差、合格投资人发现等），自定义统计公式。</p>
+<p><strong>如何使用</strong></p>
+<ul>
+<li>
+<p>接口名称：runJointStatisticalAnalysisTask</p>
+</li>
+<li>
+<p>请求【POST】</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"data_providers"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+		<span class="token punctuation">{</span>
+			<span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgA"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+			<span class="token property">"key_column"</span><span class="token operator">:</span> <span class="token string">"id_col"</span><span class="token punctuation">,</span>
+            <span class="token property">"data_alias"</span><span class="token operator">:</span> <span class="token string">"df1"</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span>
+			<span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgB"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+			<span class="token property">"key_column"</span><span class="token operator">:</span> <span class="token string">"id_col"</span><span class="token punctuation">,</span>
+            <span class="token property">"data_alias"</span><span class="token operator">:</span> <span class="token string">"df2"</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token property">"result_receivers"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"orgA"</span><span class="token punctuation">,</span> <span class="token string">"orgB"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token property">"method"</span><span class="token operator">:</span> <span class="token string">"custom"</span><span class="token punctuation">,</span>
+    <span class="token property">"expression"</span><span class="token operator">:</span> <span class="token string">"df1.unit_price * df2.units"</span><span class="token punctuation">,</span>
+    <span class="token property">"result_alias"</span><span class="token operator">:</span> <span class="token string">"total_value"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>是否必须</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data_providers</td>
+<td>list</td>
+<td>数据提供方的信息</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>组织名称</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_path</td>
+<td>string</td>
+<td>数据所在路径</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_type</td>
+<td>string</td>
+<td>数据格式</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_alias</td>
+<td>string</td>
+<td>为数据取的别名</td>
+<td>N</td>
+</tr>
+<tr>
+<td>key_column</td>
+<td>string</td>
+<td>所需操作的列</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>result_receivers</td>
+<td>list</td>
+<td>接收方列表</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>method</td>
+<td>string</td>
+<td>联合统计方法，目前支持:<br />sum, avg, var, is_investor_accredited, <br />自定义公式custom 等</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>expression</td>
+<td>string</td>
+<td>计算表达式，当method字段取值custom时使用</td>
+<td>N</td>
+</tr>
+<tr>
+<td>result_alias</td>
+<td>string</td>
+<td>为结果取的别名</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>响应</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	<span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/path/to/result/file"</span><span class="token punctuation">,</span>
+		<span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+		<span class="token property">"extra"</span><span class="token operator">:</span> <span class="token string">""</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"success"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>响应状态，<br />200-成功，400-无效请求，500-服务器内部错误</td>
+</tr>
+<tr>
+<td>result</td>
+<td>json</td>
+<td>结果信息</td>
+</tr>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>结果所在路径</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>结果的类型</td>
+</tr>
+<tr>
+<td>extra</td>
+<td>string</td>
+<td>关于结果的额外信息</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>成功信息或错误的描述</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h3 id="联合模型训练" tabindex="-1"><a class="header-anchor" href="#联合模型训练" aria-hidden="true">#</a> 联合模型训练</h3>
+<p><strong>主要功能</strong></p>
+<p>在保证所有数据提供方不泄露各自敏感数据的前提下，完成联合模型训练。使用了隐私AI框架Rosetta。支持算法：逻辑回归、线性回归、DNN、XGBoost等。</p>
+<p><strong>如何使用</strong></p>
+<ul>
+<li>
+<p>接口名称：runModelTrainTask</p>
+</li>
+<li>
+<p>请求【POST】</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"data_providers"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+		<span class="token punctuation">{</span>
+			<span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgA"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+			<span class="token property">"label_column"</span><span class="token operator">:</span> <span class="token string">"is_good"</span><span class="token punctuation">,</span>
+            <span class="token property">"key_column"</span><span class="token operator">:</span> <span class="token string">"id"</span><span class="token punctuation">,</span> 
+            <span class="token property">"select_columns"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"col1"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"discrete_columns"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"type"</span><span class="token punctuation">]</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span>
+			<span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgB"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+			<span class="token property">"label_column"</span><span class="token operator">:</span> <span class="token string">"is_good"</span><span class="token punctuation">,</span>
+            <span class="token property">"key_column"</span><span class="token operator">:</span> <span class="token string">"id"</span><span class="token punctuation">,</span> 
+            <span class="token property">"select_columns"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"col1"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"discrete_cols"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"type"</span><span class="token punctuation">]</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token property">"result_receivers"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"orgA"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"hyper_params"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"learning_rate"</span><span class="token operator">:</span> <span class="token number">0.00001</span><span class="token punctuation">,</span> <span class="token property">"loss"</span><span class="token operator">:</span> <span class="token string">"mse"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"metrics"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"accuracy"</span><span class="token punctuation">,</span> <span class="token string">"precision"</span><span class="token punctuation">,</span> <span class="token string">"recall"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"model_config"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string">""</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>是否必须</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data_providers</td>
+<td>list</td>
+<td>所有数据提供方信息</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>组织名称</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_path</td>
+<td>string</td>
+<td>数据所在路径</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_type</td>
+<td>string</td>
+<td>数据格式</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>label_column</td>
+<td>string</td>
+<td>作为标签的列</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>key_column</td>
+<td>string</td>
+<td>索引列，用于对齐</td>
+<td>N</td>
+</tr>
+<tr>
+<td>select_columns</td>
+<td>list</td>
+<td>选择用于模型训练的列，默认为所有</td>
+<td>N</td>
+</tr>
+<tr>
+<td>discrete_cols</td>
+<td>list</td>
+<td>离散特征列，用于某些处理，如embedding</td>
+<td>N</td>
+</tr>
+<tr>
+<td>result_receivers</td>
+<td>list</td>
+<td>接收方列表</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>hyper_params</td>
+<td>string</td>
+<td>超参数，和训练方法相关</td>
+<td>N</td>
+</tr>
+<tr>
+<td>metrics</td>
+<td>list</td>
+<td>对模型的度量，默认为loss</td>
+<td>N</td>
+</tr>
+<tr>
+<td>model_config</td>
+<td>string</td>
+<td>描述复杂DNN模型的 json 串</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>响应</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	<span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"model_id"</span><span class="token operator">:</span> <span class="token string">"0xd22"</span>
+		<span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/path/to/model"</span><span class="token punctuation">,</span>
+		<span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"bin"</span><span class="token punctuation">,</span>
+		<span class="token property">"extra"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+        <span class="token property">"metrics"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"accuracy"</span><span class="token operator">:</span> <span class="token number">0.95</span><span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"success"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>响应状态，<br />200-成功，400-无效请求，500-服务器内部错误</td>
+</tr>
+<tr>
+<td>result</td>
+<td>json</td>
+<td>结果信息</td>
+</tr>
+<tr>
+<td>model_id</td>
+<td>string</td>
+<td>模型id</td>
+</tr>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>结果所在路径</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>结果的类型</td>
+</tr>
+<tr>
+<td>extra</td>
+<td>string</td>
+<td>关于结果的额外信息</td>
+</tr>
+<tr>
+<td>metrics</td>
+<td>json</td>
+<td>各种要求的度量指标</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>成功信息或错误的描述</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h3 id="联合模型预测" tabindex="-1"><a class="header-anchor" href="#联合模型预测" aria-hidden="true">#</a> 联合模型预测</h3>
+<p><strong>主要功能</strong></p>
+<p>在保证所有数据提供方不泄露各自敏感数据的前提下，完成联合模型预测。使用了隐私AI框架Rosetta。支持算法：逻辑回归、线性回归、DNN、XGBoost等。</p>
+<p><strong>如何使用</strong></p>
+<ul>
+<li>
+<p>接口名称：runModelPredictTask</p>
+</li>
+<li>
+<p>请求【POST】</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">"data_providers"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+		<span class="token punctuation">{</span>
+			<span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgA"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+            <span class="token property">"key_column"</span><span class="token operator">:</span> <span class="token string">"id"</span><span class="token punctuation">,</span> 
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span>
+			<span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"orgB"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_path"</span><span class="token operator">:</span> <span class="token string">"/path/to/data"</span><span class="token punctuation">,</span>
+			<span class="token property">"data_type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+            <span class="token property">"key_column"</span><span class="token operator">:</span> <span class="token string">"id"</span><span class="token punctuation">,</span> 
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token property">"result_receivers"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"orgA"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"params"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"threshold"</span><span class="token operator">:</span> <span class="token number">0.8</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+<th>是否必须</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data_providers</td>
+<td>list</td>
+<td>所有数据提供方信息</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>组织名称</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_path</td>
+<td>string</td>
+<td>数据所在路径</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>data_type</td>
+<td>string</td>
+<td>数据格式</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>key_column</td>
+<td>string</td>
+<td>索引列，用于对齐</td>
+<td>N</td>
+</tr>
+<tr>
+<td>result_receivers</td>
+<td>list</td>
+<td>接收方列表</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>params</td>
+<td>json</td>
+<td>参数</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>响应</p>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	<span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/path/to/result/file"</span><span class="token punctuation">,</span>
+		<span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"csv"</span><span class="token punctuation">,</span>
+		<span class="token property">"extra"</span><span class="token operator">:</span> <span class="token string">""</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"success"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>响应状态，<br />200-成功，400-无效请求，500-服务器内部错误</td>
+</tr>
+<tr>
+<td>result</td>
+<td>json</td>
+<td>结果信息</td>
+</tr>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>结果所在路径</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>结果的类型</td>
+</tr>
+<tr>
+<td>extra</td>
+<td>string</td>
+<td>关于结果的额外信息</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>成功信息或错误的描述</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div></template>
+
+
