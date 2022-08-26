@@ -121,22 +121,22 @@
 <ul>
 <li>响应示例:</li>
 </ul>
-<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
-      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
-      <span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-        <span class="token punctuation">{</span>
-            <span class="token property">"templeteId"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-            <span class="token property">"templeteType"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-            <span class="token property">"templeteContent"</span><span class="token operator">:</span> <span class="token string">"{xxx}"</span> 
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"OK"</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">status</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">200</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">result</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">[</span></span>
+<span class="line"><span style="color: #D8DEE9FF">        </span><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">            </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">templeteId</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">1</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">            </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">templeteType</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">1</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">            </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">templeteContent</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">{xxx}</span><span style="color: #ECEFF4">&quot;</span><span style="color: #D8DEE9FF"> </span></span>
+<span class="line"><span style="color: #D8DEE9FF">        </span><span style="color: #ECEFF4">}</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">],</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">msg</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">OK</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">--location</span> <span class="token parameter variable">--request</span> GET <span class="token string">'https://datum.io/api/v2/dataAsset/queryNFTContractTempleteList'</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="完成nft合约部署" tabindex="-1"><a class="header-anchor" href="#完成nft合约部署" aria-hidden="true">#</a> 完成NFT合约部署</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #D8DEE9FF">curl --location --request GET </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">https://datum.io/api/v2/dataAsset/queryNFTContractTempleteList</span><span style="color: #ECEFF4">&#39;</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="完成nft合约部署" tabindex="-1"><a class="header-anchor" href="#完成nft合约部署" aria-hidden="true">#</a> 完成NFT合约部署</h3>
 <p>调用API获取标准NFT-721合约模板，用户可在已传输的原始数据中选择固定数据资源，设置Data NFT资产。用户可以在一个NFT合约中管理多个原始数据，或者通过不同的NFT合约区分管理不同的原始数据。NFT合约设置完成后，需要选择区块链进行发布方能生效。目前可对接的公有链有以太坊、PlatON，也支持对接联盟链。</p>
 <h4 id="使用场景-1" tabindex="-1"><a class="header-anchor" href="#使用场景-1" aria-hidden="true">#</a> 使用场景</h4>
 <ul>
@@ -221,16 +221,16 @@
 <ul>
 <li>请求参数示例：</li>
 </ul>
-<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
-      <span class="token property">"metadataId"</span><span class="token operator">:</span> <span class="token string">"metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646"</span><span class="token punctuation">,</span>
-      <span class="token property">"templeteId"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-      <span class="token property">"option"</span><span class="token operator">:</span> <span class="token string">"{XXx}"</span><span class="token punctuation">,</span>
-      <span class="token property">"desc"</span><span class="token operator">:</span> <span class="token string">"第一个合约"</span><span class="token punctuation">,</span>
-      <span class="token property">"user"</span><span class="token operator">:</span> <span class="token string">"0x7e336d121679e9d741ab771992d5f32286f60d4a"</span><span class="token punctuation">,</span>
-      <span class="token property">"userType"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-      <span class="token property">"sign"</span><span class="token operator">:</span> <span class="token string">"77+9UCNp77+9QFhC77+977+9Ru+/ve+/vUhGEe+/ve+/ve+/ve+/vQbvv73vv70dfu+/vd+Ff++/vTXvv73vv71w77+977+93KTvv73vv70F77+9Nu+/vWhjbEXvv73vv73vv73vv71Z77+977+977+977+9Yu+/ve+/vQ3vv70c"</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">metadataId</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">templeteId</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">1</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">option</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">{XXx}</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">desc</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">第一个合约</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">user</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">0x7e336d121679e9d741ab771992d5f32286f60d4a</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">userType</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">1</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">sign</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">77+9UCNp77+9QFhC77+977+9Ru+/ve+/vUhGEe+/ve+/ve+/ve+/vQbvv73vv70dfu+/vd+Ff++/vTXvv73vv71w77+977+93KTvv73vv70F77+9Nu+/vWhjbEXvv73vv73vv73vv71Z77+977+977+977+9Yu+/ve+/vQ3vv70c</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>响应状态:</li>
 </ul>
 <table>
@@ -311,29 +311,29 @@
 <ul>
 <li>响应示例:</li>
 </ul>
-<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
-      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
-      <span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-        <span class="token property">"txHash"</span><span class="token operator">:</span> <span class="token string">"0xdadad...454545"</span><span class="token punctuation">,</span>
-        <span class="token property">"contractAddress"</span><span class="token operator">:</span> <span class="token string">"0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646"</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"OK"</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">status</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">200</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">result</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">        </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">txHash</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">0xdadad...454545</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">        </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">contractAddress</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">},</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">msg</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">OK</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">--location</span> <span class="token parameter variable">--request</span> POST <span class="token string">'https://datum.io/api/v2/dataAsset/deployNFT'</span> <span class="token punctuation">\</span>
-<span class="token parameter variable">--header</span> <span class="token string">'Content-Type: application/json'</span> <span class="token punctuation">\</span>
---data-raw <span class="token string">'{
-      "metadataId": "metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646",
-      "templeteId": 1,
-      "option": "{XXx}",
-      "desc": "第一个合约",
-      "user": "0x7e336d121679e9d741ab771992d5f32286f60d4a",
-      "userType": 1,
-      "sign": "77+9UCNp77+9QFhC77+977+9Ru+/ve+/vUhGEe+/ve+/ve+/ve+/vQbvv73vv70dfu+/vd+Ff++/vTXvv73vv71w77+977+93KTvv73vv70F77+9Nu+/vWhjbEXvv73vv73vv73vv71Z77+977+977+977+9Yu+/ve+/vQ3vv70c"
-}'</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="查看已发布的nft合约" tabindex="-1"><a class="header-anchor" href="#查看已发布的nft合约" aria-hidden="true">#</a> 查看已发布的NFT合约</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #D8DEE9FF">curl --location --request POST </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">https://datum.io/api/v2/dataAsset/deployNFT</span><span style="color: #ECEFF4">&#39;</span><span style="color: #D8DEE9FF"> \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">--header </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">Content-Type: application/json</span><span style="color: #ECEFF4">&#39;</span><span style="color: #D8DEE9FF"> \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">--data-raw </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">{</span></span>
+<span class="line"><span style="color: #A3BE8C">      &quot;metadataId&quot;: &quot;metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;,</span></span>
+<span class="line"><span style="color: #A3BE8C">      &quot;templeteId&quot;: 1,</span></span>
+<span class="line"><span style="color: #A3BE8C">      &quot;option&quot;: &quot;{XXx}&quot;,</span></span>
+<span class="line"><span style="color: #A3BE8C">      &quot;desc&quot;: &quot;第一个合约&quot;,</span></span>
+<span class="line"><span style="color: #A3BE8C">      &quot;user&quot;: &quot;0x7e336d121679e9d741ab771992d5f32286f60d4a&quot;,</span></span>
+<span class="line"><span style="color: #A3BE8C">      &quot;userType&quot;: 1,</span></span>
+<span class="line"><span style="color: #A3BE8C">      &quot;sign&quot;: &quot;77+9UCNp77+9QFhC77+977+9Ru+/ve+/vUhGEe+/ve+/ve+/ve+/vQbvv73vv70dfu+/vd+Ff++/vTXvv73vv71w77+977+93KTvv73vv70F77+9Nu+/vWhjbEXvv73vv73vv73vv71Z77+977+977+977+9Yu+/ve+/vQ3vv70c&quot;</span></span>
+<span class="line"><span style="color: #A3BE8C">}</span><span style="color: #ECEFF4">&#39;</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="查看已发布的nft合约" tabindex="-1"><a class="header-anchor" href="#查看已发布的nft合约" aria-hidden="true">#</a> 查看已发布的NFT合约</h3>
 <p>选择对应的NFT合约，查看设置的信息、属性。</p>
 <h4 id="使用场景-2" tabindex="-1"><a class="header-anchor" href="#使用场景-2" aria-hidden="true">#</a> 使用场景</h4>
 <ul>
@@ -472,22 +472,22 @@
 <ul>
 <li>响应示例:</li>
 </ul>
-<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
-      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
-      <span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-        <span class="token punctuation">{</span>
-            <span class="token property">"templeteId"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-            <span class="token property">"metadataId"</span><span class="token operator">:</span> <span class="token string">"metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646"</span><span class="token punctuation">,</span>
-            <span class="token property">"contractContent"</span><span class="token operator">:</span> <span class="token string">"{xxx}"</span> 
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"OK"</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">status</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">200</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">result</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">[</span></span>
+<span class="line"><span style="color: #D8DEE9FF">        </span><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">            </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">templeteId</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">1</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">            </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">metadataId</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">            </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">contractContent</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">{xxx}</span><span style="color: #ECEFF4">&quot;</span><span style="color: #D8DEE9FF"> </span></span>
+<span class="line"><span style="color: #D8DEE9FF">        </span><span style="color: #ECEFF4">}</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">],</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">msg</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">OK</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">--location</span> <span class="token parameter variable">--request</span> GET <span class="token string">'https://datum.io/api/v2/dataAsset/queryNFTContractDeployList?userType=1&amp;user="0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646"'</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="铸造data-nft-token" tabindex="-1"><a class="header-anchor" href="#铸造data-nft-token" aria-hidden="true">#</a> 铸造Data NFT Token</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #D8DEE9FF">curl --location --request GET </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">https://datum.io/api/v2/dataAsset/queryNFTContractDeployList?userType=1&amp;user=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;</span><span style="color: #ECEFF4">&#39;</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="铸造data-nft-token" tabindex="-1"><a class="header-anchor" href="#铸造data-nft-token" aria-hidden="true">#</a> 铸造Data NFT Token</h3>
 <p>用户能够基于已发布的NFT合约，铸造不同属性的Data NFT token并设置数量，来完成对不同原始数据的资产化操作。如果用户的NFT合约包含了多个原始数据，可以铸造不同名称的Data NFT Token进行区分。有关数据资产的分享、交易、使用都将以Data NFT Token作为凭证实现操作。</p>
 <h3 id="使用场景-3" tabindex="-1"><a class="header-anchor" href="#使用场景-3" aria-hidden="true">#</a> 使用场景</h3>
 <ul>
@@ -620,22 +620,22 @@
 <ul>
 <li>响应示例:</li>
 </ul>
-<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
-    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
-    <span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-        <span class="token property">"transactionHash"</span><span class="token operator">:</span> <span class="token string">"0xxxxxxxxxxxxxxxxxxxx"</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"OK"</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">status</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">200</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">result</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">        </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">transactionHash</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">0xxxxxxxxxxxxxxxxxxxx</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">},</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">msg</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">OK</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">--request</span> POST <span class="token punctuation">\</span>
-     <span class="token parameter variable">--url</span> <span class="token string">'https://datum.io/api/v2/dataAsset/mintNFTToken?contractAddress="0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646"&amp;chainId=$chainId&amp;property=$property'</span> <span class="token punctuation">\</span>
-     <span class="token parameter variable">--header</span> <span class="token string">'Accept: application/json'</span> <span class="token punctuation">\</span>
-     <span class="token parameter variable">--header</span> <span class="token string">'Content-Type: application/json'</span> <span class="token punctuation">\</span>
-     <span class="token parameter variable">--header</span> <span class="token string">'X-API-Key: test'</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="销毁data-nft-token" tabindex="-1"><a class="header-anchor" href="#销毁data-nft-token" aria-hidden="true">#</a> 销毁Data NFT Token</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #D8DEE9FF">curl --request POST \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --url </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">https://datum.io/api/v2/dataAsset/mintNFTToken?contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId&amp;property=$property</span><span style="color: #ECEFF4">&#39;</span><span style="color: #D8DEE9FF"> \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --header </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">Accept: application/json</span><span style="color: #ECEFF4">&#39;</span><span style="color: #D8DEE9FF"> \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --header </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">Content-Type: application/json</span><span style="color: #ECEFF4">&#39;</span><span style="color: #D8DEE9FF"> \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --header </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">X-API-Key: test</span><span style="color: #ECEFF4">&#39;</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="销毁data-nft-token" tabindex="-1"><a class="header-anchor" href="#销毁data-nft-token" aria-hidden="true">#</a> 销毁Data NFT Token</h3>
 <p>用户可以自行销毁已经铸造的未被交易使用的Data NFT Token。</p>
 <h3 id="使用场景-4" tabindex="-1"><a class="header-anchor" href="#使用场景-4" aria-hidden="true">#</a> 使用场景</h3>
 <ul>
@@ -768,22 +768,22 @@
 <ul>
 <li>响应示例:</li>
 </ul>
-<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
-    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
-    <span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-        <span class="token property">"transactionHash"</span><span class="token operator">:</span> <span class="token string">"0xxxxxxxxxxxxxxxxxxxx"</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"OK"</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">status</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">200</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">result</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">        </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">transactionHash</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">0xxxxxxxxxxxxxxxxxxxx</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">},</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">msg</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">OK</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">--request</span> POST <span class="token punctuation">\</span>
-     <span class="token parameter variable">--url</span> <span class="token string">'https://datum.io/api/v2/dataAsset/burnNFTToken?contractAddress="0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646"&amp;chainId=$chainId&amp;tokenid=$tokenid'</span> <span class="token punctuation">\</span>
-     <span class="token parameter variable">--header</span> <span class="token string">'Accept: application/json'</span> <span class="token punctuation">\</span>
-     <span class="token parameter variable">--header</span> <span class="token string">'Content-Type: application/json'</span> <span class="token punctuation">\</span>
-     <span class="token parameter variable">--header</span> <span class="token string">'X-API-Key: test'</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="data-nft-token属性设置" tabindex="-1"><a class="header-anchor" href="#data-nft-token属性设置" aria-hidden="true">#</a> Data NFT Token属性设置</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #D8DEE9FF">curl --request POST \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --url </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">https://datum.io/api/v2/dataAsset/burnNFTToken?contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId&amp;tokenid=$tokenid</span><span style="color: #ECEFF4">&#39;</span><span style="color: #D8DEE9FF"> \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --header </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">Accept: application/json</span><span style="color: #ECEFF4">&#39;</span><span style="color: #D8DEE9FF"> \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --header </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">Content-Type: application/json</span><span style="color: #ECEFF4">&#39;</span><span style="color: #D8DEE9FF"> \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --header </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">X-API-Key: test</span><span style="color: #ECEFF4">&#39;</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="data-nft-token属性设置" tabindex="-1"><a class="header-anchor" href="#data-nft-token属性设置" aria-hidden="true">#</a> Data NFT Token属性设置</h3>
 <p>Data NFT Token支持添加、修改、管理各类属性，属性可用户定义该Token的使用权限及使用方式。</p>
 <ul>
 <li>具体分为：</li>
@@ -948,22 +948,22 @@
 <ul>
 <li>响应示例:</li>
 </ul>
-<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
-    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
-    <span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-        <span class="token property">"transactionHash"</span><span class="token operator">:</span> <span class="token string">"0xxxxxxxxxxxxxxxxxxxx"</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"OK"</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">status</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">200</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">result</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">        </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">transactionHash</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">0xxxxxxxxxxxxxxxxxxxx</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">},</span></span>
+<span class="line"><span style="color: #D8DEE9FF">    </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">msg</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">OK</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">--request</span> POST <span class="token punctuation">\</span>
-     <span class="token parameter variable">--url</span> <span class="token string">'https://datum.io/api/v2/dataAsset/setNFTTokenProperty?contractAddress="0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646"&amp;chainId=$chainId&amp;tokenid=$tokenid&amp;property=$property'</span> <span class="token punctuation">\</span>
-     <span class="token parameter variable">--header</span> <span class="token string">'Accept: application/json'</span> <span class="token punctuation">\</span>
-     <span class="token parameter variable">--header</span> <span class="token string">'Content-Type: application/json'</span> <span class="token punctuation">\</span>
-     <span class="token parameter variable">--header</span> <span class="token string">'X-API-Key: test'</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="查看已铸造的data-nft-token" tabindex="-1"><a class="header-anchor" href="#查看已铸造的data-nft-token" aria-hidden="true">#</a> 查看已铸造的Data NFT Token</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #D8DEE9FF">curl --request POST \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --url </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">https://datum.io/api/v2/dataAsset/setNFTTokenProperty?contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId&amp;tokenid=$tokenid&amp;property=$property</span><span style="color: #ECEFF4">&#39;</span><span style="color: #D8DEE9FF"> \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --header </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">Accept: application/json</span><span style="color: #ECEFF4">&#39;</span><span style="color: #D8DEE9FF"> \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --header </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">Content-Type: application/json</span><span style="color: #ECEFF4">&#39;</span><span style="color: #D8DEE9FF"> \</span></span>
+<span class="line"><span style="color: #D8DEE9FF">     --header </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">X-API-Key: test</span><span style="color: #ECEFF4">&#39;</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="查看已铸造的data-nft-token" tabindex="-1"><a class="header-anchor" href="#查看已铸造的data-nft-token" aria-hidden="true">#</a> 查看已铸造的Data NFT Token</h3>
 <p>选择对应的NFT合约，查看用户已经铸造的Data NFT Token 列表。</p>
 <h4 id="使用场景-6" tabindex="-1"><a class="header-anchor" href="#使用场景-6" aria-hidden="true">#</a> 使用场景</h4>
 <ul>
@@ -1114,21 +1114,21 @@
 <ul>
 <li>响应示例:</li>
 </ul>
-<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
-      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
-      <span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-        <span class="token punctuation">{</span>
-            <span class="token property">"templeteId"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-            <span class="token property">"metadataId"</span><span class="token operator">:</span> <span class="token string">"metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646"</span><span class="token punctuation">,</span>
-            <span class="token property">"contractContent"</span><span class="token operator">:</span> <span class="token string">"{xxx}"</span> 
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"OK"</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">status</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">200</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">result</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">[</span></span>
+<span class="line"><span style="color: #D8DEE9FF">        </span><span style="color: #ECEFF4">{</span></span>
+<span class="line"><span style="color: #D8DEE9FF">            </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">templeteId</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #B48EAD">1</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">            </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">metadataId</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">,</span></span>
+<span class="line"><span style="color: #D8DEE9FF">            </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">contractContent</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">{xxx}</span><span style="color: #ECEFF4">&quot;</span><span style="color: #D8DEE9FF"> </span></span>
+<span class="line"><span style="color: #D8DEE9FF">        </span><span style="color: #ECEFF4">}</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">],</span></span>
+<span class="line"><span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">&quot;</span><span style="color: #8FBCBB">msg</span><span style="color: #ECEFF4">&quot;</span><span style="color: #ECEFF4">:</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">&quot;</span><span style="color: #A3BE8C">OK</span><span style="color: #ECEFF4">&quot;</span></span>
+<span class="line"><span style="color: #ECEFF4">}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">--location</span> <span class="token parameter variable">--request</span> GET <span class="token string">'https://datum.io/api/v2/dataAsset/queryNFTTokenList?userType=1&amp;user="0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646"&amp;contractAddress="0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646"&amp;chainId=$chainId'</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div></template>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #2e3440ff"><code><span class="line"><span style="color: #D8DEE9FF">curl --location --request GET </span><span style="color: #ECEFF4">&#39;</span><span style="color: #A3BE8C">https://datum.io/api/v2/dataAsset/queryNFTTokenList?userType=1&amp;user=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId</span><span style="color: #ECEFF4">&#39;</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div></template>
 
 

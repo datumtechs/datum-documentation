@@ -1,33 +1,74 @@
 import { defaultTheme } from '@vuepress/theme-default'
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
+import { nprogressPlugin } from '@vuepress/plugin-nprogress'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { shikiPlugin } from '@vuepress/plugin-shiki'
+
 export default {
     locales: {
         '/': {
             lang: 'zh-CN',
-            title: '',
-            head: '',
+            title: '让数据流动起来',
+            head: [
+                [
+                    'link', { rel: 'icon', href: '/img/favicon.svg' }
+                ]
+            ],
             description: 'datum-documentation [chinese]'
         },
         '/en/': {
             lang: 'en',
-            title: 'english',
-            head: '',
+            title: 'Let the data flow',
+            head: [
+                [
+                    'link', { rel: 'icon', href: '/img/favicon.svg' }
+                ]
+            ],
             description: 'datum-documentation [english]'
-        }
-
+        },
     },
+
+    plugins: [
+
+        backToTopPlugin(),
+        nprogressPlugin(),
+        externalLinkIconPlugin({
+            // 配置项
+        }),
+        shikiPlugin({
+            // 配置项
+        }),
+        docsearchPlugin({
+            apiKey: '<API_KEY>',
+            indexName: '<INDEX_NAME>',
+            locales: {
+                '/en': {
+                    placeholder: 'Search Documentation',
+                    translations: {
+                        button: {
+                            buttonText: 'Search Documentation',
+                        },
+                    },
+                },
+                '/': {
+                    placeholder: '搜索文档',
+                    translations: {
+                        button: {
+                            buttonText: '搜索文档',
+                        },
+                    },
+                },
+            },
+            appId: ''
+        }),
+    ],
     lang: 'zh-CN',
     base: '/',
-    head: [
-        [
-            'link', { rel: 'icon', href: '/img/favicon.svg' }
-        ]
-    ],
-    title: '',
-
-    description: '',
     theme: defaultTheme({
         // 在这里进行配置
         // Public 文件路径
+        editLink: false,
         logo: '/img/datum.png',
         contributors: false,
         lastUpdated: false,
@@ -39,6 +80,7 @@ export default {
                 selectLanguageName: 'English',
             },
         },
+        repo: 'https://github.com/datumtechs',
         sidebarDepth: 3,
         sidebar: [
             // SidebarItem
@@ -217,7 +259,7 @@ export default {
             // NavbarItem
             {
                 text: 'Home',
-                link: '/home',
+                link: 'https://github.com/datumtechs',
             },
             // NavbarGroup
             // {
