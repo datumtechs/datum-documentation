@@ -23,11 +23,14 @@ export default {
         ]
     ],
     title: '',
+
     description: '',
     theme: defaultTheme({
         // 在这里进行配置
         // Public 文件路径
         logo: '/img/datum.png',
+        contributors: false,
+        lastUpdated: false,
         locales: {
             '/': {
                 selectLanguageName: '简体中文',
@@ -189,10 +192,10 @@ export default {
                 link: '/home',
             },
             // NavbarGroup
-            {
-                text: 'produces',
-                children: [ '/group/foo.md', '/group/bar.md' ],
-            },
+            // {
+            //     text: 'produces',
+            //     children: [ '/group/foo.md', '/group/bar.md' ],
+            // },
         ],
         // URL
     }),
