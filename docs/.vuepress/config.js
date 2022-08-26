@@ -38,6 +38,7 @@ export default {
         }),
         shikiPlugin({
             // 配置项
+            theme: 'monokai'
         }),
         docsearchPlugin({
             apiKey: '<API_KEY>',
