@@ -3,7 +3,7 @@ export default {
     locales: {
         '/': {
             lang: 'zh-CN',
-            title: '让数据流动',
+            title: '',
             head: '',
             description: '11111111111'
         },
@@ -16,6 +16,12 @@ export default {
 
     },
     lang: 'zh-CN',
+    base: '/',
+    head: [
+        [
+            'link', { rel: 'icon', href: '/img/favicon.svg' }
+        ]
+    ],
     title: '',
     description: '',
     theme: defaultTheme({
@@ -60,21 +66,21 @@ export default {
                         link: '/主要流程/GettingStarted.md',
                     },
                     {
-                        text: '原始数据传输',
-                        link: '/主要流程/原始数据传输.md',
+                        text: '数据采集与传输',
+                        link: '/主要流程/数据采集与传输.md',
                         collapsible: true,
                         children: [
                             {
                                 text: '本地存储',
-                                link: '/主要流程/原始数据传输.md/#本地存储',
+                                link: '/主要流程/数据采集与传输.md/#本地存储',
                             },
                             {
                                 text: '云存储',
-                                link: '/主要流程/原始数据传输.md/#云存储',
+                                link: '/主要流程/数据采集与传输.md/#云存储',
                             },
                             {
                                 text: '区块链存储',
-                                link: '/主要流程/原始数据传输.md/#区块链存储',
+                                link: '/主要流程/数据采集与传输.md/#区块链存储',
                             },
                         ]
                     },
