@@ -23,11 +23,14 @@ export default {
         ]
     ],
     title: '',
+
     description: '',
     theme: defaultTheme({
         // 在这里进行配置
         // Public 文件路径
         logo: '/img/datum.png',
+        contributors: false,
+        lastUpdated: false,
         locales: {
             '/': {
                 selectLanguageName: '简体中文',
@@ -140,12 +143,16 @@ export default {
                                 link: '/主要流程/数据联合查询分析.md/#两方数据合作',
                                 children: [
                                     {
+                                        text: '隐私匹配',
+                                        link: '/主要流程/数据联合查询分析.md/#隐私匹配',
+                                    },
+                                    {
                                         text: '隐私标签查询',
                                         link: '/主要流程/数据联合查询分析.md/#隐私标签查询',
                                     },
                                     {
                                         text: '隐私SQL查询',
-                                        link: '/主要流程/数据联合查询分析.md/#隐私SQL查询',
+                                        link: '/主要流程/数据联合查询分析.md/#隐私sql查询',
                                     },
                                 ]
                             },
@@ -197,10 +204,10 @@ export default {
                 link: '/home',
             },
             // NavbarGroup
-            {
-                text: 'produces',
-                children: [ '/group/foo.md', '/group/bar.md' ],
-            },
+            // {
+            //     text: 'produces',
+            //     children: [ '/group/foo.md', '/group/bar.md' ],
+            // },
         ],
         // URL
     }),
