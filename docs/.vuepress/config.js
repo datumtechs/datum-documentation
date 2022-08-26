@@ -134,7 +134,7 @@ export default {
                                 text: '两方数据合作',
                                 link: '/主要流程/数据联合查询分析.md/#两方数据合作',
                                 children: [
-									{
+                                    {
                                         text: '隐私匹配',
                                         link: '/主要流程/数据联合查询分析.md/#隐私匹配',
                                     },
@@ -144,7 +144,7 @@ export default {
                                     },
                                     {
                                         text: '隐私SQL查询',
-                                        link: '/主要流程/数据联合查询分析.md/#隐私SQL查询',
+                                        link: '/主要流程/数据联合查询分析.md/#隐私sql查询',
                                     },
                                 ]
                             },
