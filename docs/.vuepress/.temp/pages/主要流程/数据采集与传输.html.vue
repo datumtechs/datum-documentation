@@ -7,15 +7,7 @@
 <li>区块链传输，数据共识管理</li>
 </ul>
 <h3 id="云服务传输" tabindex="-1"><a class="header-anchor" href="#云服务传输" aria-hidden="true">#</a> 云服务传输</h3>
-<p>Datum提供多种云服务资源，用户可注册后上传原始数据。</p>
-<h4 id="使用场景" tabindex="-1"><a class="header-anchor" href="#使用场景" aria-hidden="true">#</a> 使用场景</h4>
-<ul>
-<li>将自己本地的原始数据上传到Datum，并选择Datum提供的云服务器托管原始数据。</li>
-</ul>
-<h4 id="功能描述" tabindex="-1"><a class="header-anchor" href="#功能描述" aria-hidden="true">#</a> 功能描述</h4>
-<ul>
-<li>将用户的原始数据到由Datum提供的云服务器上托管，使得用户的原始数据通过Datum接入Web3方便后续对数据进行资产化、数据检索、数据使用等服务。</li>
-</ul>
+<p>Datum提供多种云服务资源，用户可注册选择员云服务环境，并上传原始数据。数据传输完成后，用户就能通过Datum提供的后续服务，轻松将数据接入Web3生态。</p>
 <h4 id="如何使用" tabindex="-1"><a class="header-anchor" href="#如何使用" aria-hidden="true">#</a> 如何使用</h4>
 <ul>
 <li>
@@ -168,15 +160,7 @@
 <span class="line"><span style="color: #F8F8F2">     --compressed \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --insecure</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="ipfs传输" tabindex="-1"><a class="header-anchor" href="#ipfs传输" aria-hidden="true">#</a> IPFS传输</h3>
-<p>Datum对接分布式存储服务，用户可选择将原始数据传输至IPFS实现分布式管理。</p>
-<h4 id="使用场景-1" tabindex="-1"><a class="header-anchor" href="#使用场景-1" aria-hidden="true">#</a> 使用场景</h4>
-<ul>
-<li>将自己本地的原始数据上传到Datum，由Datum统一托管到IPFS。</li>
-</ul>
-<h4 id="功能描述-1" tabindex="-1"><a class="header-anchor" href="#功能描述-1" aria-hidden="true">#</a> 功能描述</h4>
-<ul>
-<li>将用户的原始数据由Datum托管到IPFS上存储，使得用户的原始数据通过Datum接入Web3方便后续对数据进行资产化、数据检索、数据使用等服务。</li>
-</ul>
+<p>Datum对接分布式存储服务，用户可选择将原始数据传输至IPFS实现分布式管理。数据经由Datum提供的服务传输到IPFS后，用户就能通过Datum提供的后续服务，轻松将数据接入Web3生态。</p>
 <h4 id="如何使用-1" tabindex="-1"><a class="header-anchor" href="#如何使用-1" aria-hidden="true">#</a> 如何使用</h4>
 <ul>
 <li>
@@ -329,15 +313,7 @@
 <span class="line"><span style="color: #F8F8F2">     --compressed \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --insecure</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="区块链传输" tabindex="-1"><a class="header-anchor" href="#区块链传输" aria-hidden="true">#</a> 区块链传输</h3>
-<p>Datum提供联盟链、公有链对接服务，用户可将原始数据直接传输上链。 区块链链支持，以太坊、PlatON等。</p>
-<h4 id="使用场景-2" tabindex="-1"><a class="header-anchor" href="#使用场景-2" aria-hidden="true">#</a> 使用场景</h4>
-<ul>
-<li>将自己本地的原始数据上传到Datum，由Datum统一托管到Datum所对接的区块链中存储。</li>
-</ul>
-<h4 id="功能描述-2" tabindex="-1"><a class="header-anchor" href="#功能描述-2" aria-hidden="true">#</a> 功能描述</h4>
-<ul>
-<li>将用户的原始数据由Datum托管到所支持的区块链中存储，使得用户的原始数据通过Datum接入Web3方便后续对数据进行资产化、数据检索、数据使用等服务。</li>
-</ul>
+<p>Datum提供联盟链、公有链对接服务，用户可将原始数据直接传输上链。 区块链链支持，以太坊、PlatON等。用户可选择是传输原始数据信息，或者传输原始数据hash+原始数据存储索引。</p>
 <h4 id="如何使用-2" tabindex="-1"><a class="header-anchor" href="#如何使用-2" aria-hidden="true">#</a> 如何使用</h4>
 <ul>
 <li>
@@ -489,18 +465,10 @@
 <span class="line"><span style="color: #F8F8F2">     --data-raw </span><span style="color: #E6DB74">$&#39;------WebKitFormBoundaryml6aYqp5NPR1V6C9</span><span style="color: #AE81FF">\r\n</span><span style="color: #E6DB74">Content-Disposition: form-data; name=&quot;file&quot;; filename=&quot;服务清单.xlsx&quot;</span><span style="color: #AE81FF">\r\n</span><span style="color: #E6DB74">Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</span><span style="color: #AE81FF">\r\n\r</span><span style="color: #E6DB74">   </span><span style="color: #AE81FF">\n\r\n</span><span style="color: #E6DB74">------WebKitFormBoundaryml6aYqp5NPR1V6C9</span><span style="color: #AE81FF">\r\n</span><span style="color: #E6DB74">Content-Disposition: form-data; name=&quot;storageType&quot;</span><span style="color: #AE81FF">\r\n\r\n</span><span style="color: #E6DB74">3</span><span style="color: #AE81FF">\r\n</span><span style="color: #E6DB74">------WebKitFormBoundaryml6aYqp5NPR1V6C9</span><span style="color: #AE81FF">\r\n</span><span style="color: #E6DB74">Content-Disposition: form-data;name=&quot;storageOption&quot;</span><span style="color: #AE81FF">\r\n\r\n</span><span style="color: #E6DB74">&quot;{</span><span style="color: #AE81FF">\\</span><span style="color: #E6DB74">&quot;chainType</span><span style="color: #AE81FF">\\</span><span style="color: #E6DB74">&quot;: 1}&quot;</span><span style="color: #AE81FF">\r\n</span><span style="color: #E6DB74">------WebKitFormBoundaryml6aYqp5NPR1V6C9--</span><span style="color: #AE81FF">\r\n</span><span style="color: #E6DB74">&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --compressed \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --insecure</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="数据发布方式" tabindex="-1"><a class="header-anchor" href="#数据发布方式" aria-hidden="true">#</a> 数据发布方式</h2>
-<p>在原始数据传输完成后，为了能实现web3生态下的数据服务能力，使得用户托管在Datum的原始数据能被生态应用方检索到，用户需要发布元数据信息。</p>
-<h3 id="拉回原始数据的未发布元数据信息" tabindex="-1"><a class="header-anchor" href="#拉回原始数据的未发布元数据信息" aria-hidden="true">#</a> 拉回原始数据的未发布元数据信息</h3>
-<p>原始数据对于用户来说是极其宝贵的资产，一般除了用户个人意愿之外是不会向外暴露其中详细内容的，即便是托管到Datum上的原始数据也是一样，为了方便应用方能够在检索到原始数据之前对原始数据的一些特性有所了解，那么需要将原始数据的特征描述进行数据化。元数据就是对原始数据的特征描述信息的数据，一般描述了原始数据的大小、文件类型、使用场景等等特征。</p>
-<h4 id="使用场景-3" tabindex="-1"><a class="header-anchor" href="#使用场景-3" aria-hidden="true">#</a> 使用场景</h4>
-<ul>
-<li>用户上传到Datum的原始数据都会由Datum默认抽取其中特征信息打包成未发布的元数据，用户可以通过直接操作元数据来使得对应的原始数据在Web3中提现流行价值。</li>
-</ul>
-<h4 id="功能描述-3" tabindex="-1"><a class="header-anchor" href="#功能描述-3" aria-hidden="true">#</a> 功能描述</h4>
-<ul>
-<li>获取被托管在Datum中的原始数据对应的未发布元数据信息，进而方便用户进一步完善对原始数据的描述。</li>
-</ul>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="完成数据发布" tabindex="-1"><a class="header-anchor" href="#完成数据发布" aria-hidden="true">#</a> 完成数据发布</h2>
+<p>在原始数据传输完成后，用户希望通过Datum托管在云服务、IPFS服务上的原始数据能被web3生态应用方检索到，但不暴露所有原始数据信息，那就需要进行元数据发布。</p>
+<h3 id="提取元数据" tabindex="-1"><a class="header-anchor" href="#提取元数据" aria-hidden="true">#</a> 提取元数据</h3>
+<p>元数据是指有关原始数据的一些特征描述信息，例如：原始数据的大小、文件类型、数据场景等。Datum将会对用户上传到云服务、IPFS服务的原始数据提供元数据提取服务，自动提取关键数据特征，打包成待发布的元数据，用户也可以对自动提取的元数据进行修改、增加描述信息。</p>
 <h4 id="如何使用-3" tabindex="-1"><a class="header-anchor" href="#如何使用-3" aria-hidden="true">#</a> 如何使用</h4>
 <ul>
 <li>
@@ -648,16 +616,9 @@
 </ul>
 <div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request GET </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/metadata/queryLocalMetadata?originId=0xdadad...454545&#39;</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="发布元数据" tabindex="-1"><a class="header-anchor" href="#发布元数据" aria-hidden="true">#</a> 发布元数据</h3>
-<p>对托管到Datum上的原始数据进行元数据的发布，方便被原始数据的应用方检索到对应的原始数据。 目前发布元数据从更为安全的角度除了支持将用户托管到Datum的原始数据进行元数据发布外，还支持用户引用自己本地的原始数据直接发布元数据。故分为（a）、对托管的原始数据发布元数据；（b）、引用本地原始数据发布元数据。</p>
-<h4 id="a-对托管的原始数据发布元数据" tabindex="-1"><a class="header-anchor" href="#a-对托管的原始数据发布元数据" aria-hidden="true">#</a> <strong>（a）对托管的原始数据发布元数据</strong></h4>
-<h4 id="使用场景-4" tabindex="-1"><a class="header-anchor" href="#使用场景-4" aria-hidden="true">#</a> 使用场景</h4>
-<ul>
-<li>引用托管到Datum的原始数据发起对原始数据信息进行描述的数据，即原始数据的元数据我们称之为元数据，元数据被发布后将会出现在数据市场中，方便应用方检索到与元数据对应的原始数据的描述，元数据包含了原始数据的基础特征及应用场景等描述，进而使得原始数据能在Web3中流动。</li>
-</ul>
-<h4 id="功能描述-4" tabindex="-1"><a class="header-anchor" href="#功能描述-4" aria-hidden="true">#</a> 功能描述</h4>
-<ul>
-<li>引用托管到Datum的原始数据发起元数据，使得自己的原始数据的描述信息能在Web3中流动。</li>
-</ul>
+<p>发布元数据是指将元数据发布到区块链网络，或者指定的数据服务市场，能够被其他应用方检索发现，并达成后续应用。元数据发布按照原始数据存储路径可以分为：（a）通过Datum传输渠道存储的原始数据发布元数据；（b）基于用户本地存储的原始数据发布元数据。</p>
+<h4 id="a-通过datum传输渠道存储的原始数据发布元数据" tabindex="-1"><a class="header-anchor" href="#a-通过datum传输渠道存储的原始数据发布元数据" aria-hidden="true">#</a> <strong>（a）通过Datum传输渠道存储的原始数据发布元数据</strong></h4>
+<p>Datum提供的云服务、IPFS服务会对用户传输的原始数据自动提取打包待发布元数据，用户修改确认元数据包含的特征及描述后，可以提交发布。用户可以选择将元数据发布至区块链网络，或者指定的数据服务市场。</p>
 <h4 id="如何使用-4" tabindex="-1"><a class="header-anchor" href="#如何使用-4" aria-hidden="true">#</a> 如何使用</h4>
 <ul>
 <li>
@@ -893,15 +854,8 @@
 <span class="line"><span style="color: #E6DB74">      &quot;userType&quot;: 1,</span></span>
 <span class="line"><span style="color: #E6DB74">      &quot;sign&quot;: &quot;77+9UCNp77+9QFhC77+977+9Ru+/ve+/vUhGEe+/ve+/ve+/ve+/vQbvv73vv70dfu+/vd+Ff++/vTXvv73vv71w77+977+93KTvv73vv70F77+9Nu+/vWhjbEXvv73vv73vv73vv71Z77+977+977+977+9Yu+/ve+/vQ3vv70c&quot;</span></span>
 <span class="line"><span style="color: #E6DB74">}&#39;</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="b-引用本地原始数据发布元数据" tabindex="-1"><a class="header-anchor" href="#b-引用本地原始数据发布元数据" aria-hidden="true">#</a> <strong>（b）引用本地原始数据发布元数据</strong></h4>
-<h4 id="使用场景-5" tabindex="-1"><a class="header-anchor" href="#使用场景-5" aria-hidden="true">#</a> 使用场景</h4>
-<ul>
-<li>引用用户自行存储在本地的原始数据信息进行描述的数据，即原始数据的元数据我们称之为元数据，元数据被发布后将会出现在数据市场中，方便应用方检索到与元数据对应的原始数据的描述，元数据包含了原始数据的基础特征及应用场景等描述，进而使得原始数据能在Web3中流动。</li>
-</ul>
-<h4 id="功能描述-5" tabindex="-1"><a class="header-anchor" href="#功能描述-5" aria-hidden="true">#</a> 功能描述</h4>
-<ul>
-<li>引用用户自行存储在本地的原始数据发起元数据，使得自己的原始数据的描述信息能在Web3中流动。</li>
-</ul>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="b-基于用户本地存储的原始数据发布元数据" tabindex="-1"><a class="header-anchor" href="#b-基于用户本地存储的原始数据发布元数据" aria-hidden="true">#</a> <strong>（b）基于用户本地存储的原始数据发布元数据</strong></h4>
+<p>除Datum提供的数据传输渠道外，用户能基于Datum提供的服务，引用存储在本地的原始数据，完成元数据发布。用户可以选择将元数据发布至区块链网络，或者指定的数据服务市场。</p>
 <h4 id="如何使用-5" tabindex="-1"><a class="header-anchor" href="#如何使用-5" aria-hidden="true">#</a> 如何使用</h4>
 <ul>
 <li>
@@ -1138,15 +1092,7 @@
 <span class="line"><span style="color: #E6DB74">      &quot;sign&quot;: &quot;77+9UCNp77+9QFhC77+977+9Ru+/ve+/vUhGEe+/ve+/ve+/ve+/vQbvv73vv70dfu+/vd+Ff++/vTXvv73vv71w77+977+93KTvv73vv70F77+9Nu+/vWhjbEXvv73vv73vv73vv71Z77+977+977+977+9Yu+/ve+/vQ3vv70c&quot;</span></span>
 <span class="line"><span style="color: #E6DB74">}&#39;</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="发布数据hash" tabindex="-1"><a class="header-anchor" href="#发布数据hash" aria-hidden="true">#</a> 发布数据Hash</h3>
-<p>在某些场景下，用户出于业务需求需要发布原始数据Hash。</p>
-<h4 id="使用场景-6" tabindex="-1"><a class="header-anchor" href="#使用场景-6" aria-hidden="true">#</a> 使用场景</h4>
-<ul>
-<li>用户在某些时候并不想将自己的原始数据暴露对外，也不想将原始数据提供给外部适用，仅仅是想对自己的原始数据不可篡改做一次证明，此时用户可以将原始数据的Hash通过Datum发布到Web3中。</li>
-</ul>
-<h4 id="功能描述-6" tabindex="-1"><a class="header-anchor" href="#功能描述-6" aria-hidden="true">#</a> 功能描述</h4>
-<ul>
-<li>引用用户自己的原始数据内容Hash，发布到Web3中。</li>
-</ul>
+<p>在某些场景下，用户出于业务需求需要发布原始数据Hash到区块链网络或者数据服务平台。</p>
 <h4 id="如何使用-6" tabindex="-1"><a class="header-anchor" href="#如何使用-6" aria-hidden="true">#</a> 如何使用</h4>
 <ul>
 <li>
@@ -1303,7 +1249,7 @@
 <span class="line"><span style="color: #E6DB74">      &quot;userType&quot;: 1,</span></span>
 <span class="line"><span style="color: #E6DB74">      &quot;sign&quot;: &quot;77+9UCNp77+9QFhC77+977+9Ru+/ve+/vUhGEe+/ve+/ve+/ve+/vQbvv73vv70dfu+/vd+Ff++/vTXvv73vv71w77+977+93KTvv73vv70F77+9Nu+/vWhjbEXvv73vv73vv73vv71Z77+977+977+977+9Yu+/ve+/vQ3vv70c&quot;</span></span>
 <span class="line"><span style="color: #E6DB74">}&#39;</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>补充</strong></p>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h3>
 <h4 id="storageoption值说明" tabindex="-1"><a class="header-anchor" href="#storageoption值说明" aria-hidden="true">#</a> <span id="storageOption值说明"> storageOption值说明： </span></h4>
 <ul>
 <li>

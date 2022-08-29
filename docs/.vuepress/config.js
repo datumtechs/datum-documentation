@@ -108,8 +108,8 @@ export default {
                 children: [
                     // SidebarItem
                     {
-                        text: 'Getting Started',
-                        link: '/主要流程/GettingStarted.md',
+                        text: '开始准备',
+                        link: '/主要流程/开始准备.md',
                     },
                     {
                         text: '数据采集与传输',
