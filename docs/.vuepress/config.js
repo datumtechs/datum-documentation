@@ -4,6 +4,7 @@ import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
 import { nprogressPlugin } from '@vuepress/plugin-nprogress'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
+import config from '../env'
 
 export default {
     locales: {
@@ -30,7 +31,6 @@ export default {
     },
 
     plugins: [
-
         backToTopPlugin(),
         nprogressPlugin(),
         externalLinkIconPlugin({
@@ -41,6 +41,7 @@ export default {
             theme: 'monokai'
         }),
         docsearchPlugin({
+            // TODO search appId
             apiKey: '<API_KEY>',
             indexName: '<INDEX_NAME>',
             locales: {
@@ -81,7 +82,7 @@ export default {
                 selectLanguageName: 'English',
             },
         },
-        repo: 'https://github.com/datumtechs',
+        repo: 'https://github.com/datumtechs',// REPO 地址
         sidebarDepth: 3,
         sidebar: [
             // SidebarItem
@@ -144,8 +145,8 @@ export default {
                         collapsible: true,
                         children: [
                             {
-                                text: '获取NFT合约模板信息',
-                                link: '/主要流程/数据资产化.md/#获取nft合约模板信息',
+                                text: '获取NFT合约模板',
+                                link: '/主要流程/数据资产化.md/#获取nft合约模板',
                             },
                             {
                                 text: '完成NFT合约部署',
@@ -260,7 +261,7 @@ export default {
             // NavbarItem
             {
                 text: 'Home',
-                link: 'https://github.com/datumtechs',
+                link: process.env.VITE_ENV === 'sit' ? config.test.home : '',// HOME 地址
             },
             // NavbarGroup
             // {
@@ -268,6 +269,5 @@ export default {
             //     children: [ '/group/foo.md', '/group/bar.md' ],
             // },
         ],
-        // URL
     }),
 }
