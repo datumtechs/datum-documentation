@@ -127,10 +127,10 @@
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request GET </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/dataAsset/queryNFTContractTempleteList&#39;</span></span>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request GET </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/dataAsset/queryNFTContractTempleteList&#39;</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="完成nft合约部署" tabindex="-1"><a class="header-anchor" href="#完成nft合约部署" aria-hidden="true">#</a> 完成NFT合约部署</h3>
 <p>用户在获取NFT合约模板后，可选择关联已传输的原始数据，或者发布的元数据，完成NFT合约部署。用户可以在一个NFT合约中管理多个原始数据，或者通过不同的NFT合约区分管理不同的原始数据。</p>
-<p>NFT合约设置完成后，用户需要选择区块链进行发布方能生效。目前可对接的公有链有以太坊、PlatON，也支持对接联盟链。</p>
+<p>NFT合约设置完成后，用户需要选择区块链进行发布方能生效。目前可对接的公有链有以太坊、PlatON (默认)，也支持对接联盟链。</p>
 <h4 id="如何使用-1" tabindex="-1"><a class="header-anchor" href="#如何使用-1" aria-hidden="true">#</a> 如何使用</h4>
 <ul>
 <li>
@@ -160,12 +160,6 @@
 </thead>
 <tbody>
 <tr>
-<td>metadataId</td>
-<td>string</td>
-<td>元数据Id</td>
-<td>Y</td>
-</tr>
-<tr>
 <td>templeteId</td>
 <td>string</td>
 <td>NFT合约内容</td>
@@ -174,14 +168,14 @@
 <tr>
 <td>option</td>
 <td>string</td>
-<td>用户自定义的属性选项</td>
+<td>用户自定义的属性选项(json字段，包含已发布的元数据的metadataId或者直接包含原始数据的originId及原始数据的检索路径等信息)</td>
 <td>Y</td>
 </tr>
 <tr>
 <td>desc</td>
 <td>string</td>
-<td>部署描述</td>
-<td>Y</td>
+<td>描述信息</td>
+<td>N</td>
 </tr>
 <tr>
 <td>user</td>
@@ -207,7 +201,6 @@
 <li>请求参数示例：</li>
 </ul>
 <div class="language-json ext-json line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">{</span></span>
-<span class="line"><span style="color: #F8F8F2">      </span><span style="color: #66D9EF; font-style: italic">&quot;metadataId&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;</span><span style="color: #F8F8F2">,</span></span>
 <span class="line"><span style="color: #F8F8F2">      </span><span style="color: #66D9EF; font-style: italic">&quot;templeteId&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #AE81FF">1</span><span style="color: #F8F8F2">,</span></span>
 <span class="line"><span style="color: #F8F8F2">      </span><span style="color: #66D9EF; font-style: italic">&quot;option&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;{XXx}&quot;</span><span style="color: #F8F8F2">,</span></span>
 <span class="line"><span style="color: #F8F8F2">      </span><span style="color: #66D9EF; font-style: italic">&quot;desc&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;第一个合约&quot;</span><span style="color: #F8F8F2">,</span></span>
@@ -215,7 +208,7 @@
 <span class="line"><span style="color: #F8F8F2">      </span><span style="color: #66D9EF; font-style: italic">&quot;userType&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #AE81FF">1</span><span style="color: #F8F8F2">,</span></span>
 <span class="line"><span style="color: #F8F8F2">      </span><span style="color: #66D9EF; font-style: italic">&quot;sign&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;77+9UCNp77+9QFhC77+977+9Ru+/ve+/vUhGEe+/ve+/ve+/ve+/vQbvv73vv70dfu+/vd+Ff++/vTXvv73vv71w77+977+93KTvv73vv70F77+9Nu+/vWhjbEXvv73vv73vv73vv71Z77+977+977+977+9Yu+/ve+/vQ3vv70c&quot;</span></span>
 <span class="line"><span style="color: #F8F8F2">}</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>响应状态:</li>
 </ul>
 <table>
@@ -307,10 +300,9 @@
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request POST </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/dataAsset/deployNFT&#39;</span><span style="color: #F8F8F2"> \</span></span>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request POST </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/dataAsset/deployNFT&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">--header </span><span style="color: #E6DB74">&#39;Content-Type: application/json&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">--data-raw </span><span style="color: #E6DB74">&#39;{</span></span>
-<span class="line"><span style="color: #E6DB74">      &quot;metadataId&quot;: &quot;metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;,</span></span>
 <span class="line"><span style="color: #E6DB74">      &quot;templeteId&quot;: 1,</span></span>
 <span class="line"><span style="color: #E6DB74">      &quot;option&quot;: &quot;{XXx}&quot;,</span></span>
 <span class="line"><span style="color: #E6DB74">      &quot;desc&quot;: &quot;第一个合约&quot;,</span></span>
@@ -318,7 +310,7 @@
 <span class="line"><span style="color: #E6DB74">      &quot;userType&quot;: 1,</span></span>
 <span class="line"><span style="color: #E6DB74">      &quot;sign&quot;: &quot;77+9UCNp77+9QFhC77+977+9Ru+/ve+/vUhGEe+/ve+/ve+/ve+/vQbvv73vv70dfu+/vd+Ff++/vTXvv73vv71w77+977+93KTvv73vv70F77+9Nu+/vWhjbEXvv73vv73vv73vv71Z77+977+977+977+9Yu+/ve+/vQ3vv70c&quot;</span></span>
 <span class="line"><span style="color: #E6DB74">}&#39;</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="查看已发布的nft合约" tabindex="-1"><a class="header-anchor" href="#查看已发布的nft合约" aria-hidden="true">#</a> 查看已发布的NFT合约</h3>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="查看已发布的nft合约" tabindex="-1"><a class="header-anchor" href="#查看已发布的nft合约" aria-hidden="true">#</a> 查看已发布的NFT合约</h3>
 <p>用户可选择已部署的NFT合约，查看合约详情。</p>
 <h4 id="如何使用-2" tabindex="-1"><a class="header-anchor" href="#如何使用-2" aria-hidden="true">#</a> 如何使用</h4>
 <ul>
@@ -427,12 +419,6 @@
 <td>Y</td>
 </tr>
 <tr>
-<td>metadataId</td>
-<td>string</td>
-<td>NFT合约关联的元数据Id</td>
-<td>Y</td>
-</tr>
-<tr>
 <td>contractContent</td>
 <td></td>
 <td>NFT合约内容</td>
@@ -454,16 +440,15 @@
 <span class="line"><span style="color: #F8F8F2">      </span><span style="color: #66D9EF; font-style: italic">&quot;result&quot;</span><span style="color: #F8F8F2">: [</span></span>
 <span class="line"><span style="color: #F8F8F2">        {</span></span>
 <span class="line"><span style="color: #F8F8F2">            </span><span style="color: #66D9EF; font-style: italic">&quot;templeteId&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #AE81FF">1</span><span style="color: #F8F8F2">,</span></span>
-<span class="line"><span style="color: #F8F8F2">            </span><span style="color: #66D9EF; font-style: italic">&quot;metadataId&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;</span><span style="color: #F8F8F2">,</span></span>
 <span class="line"><span style="color: #F8F8F2">            </span><span style="color: #66D9EF; font-style: italic">&quot;contractContent&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;{xxx}&quot;</span><span style="color: #F8F8F2"> </span></span>
 <span class="line"><span style="color: #F8F8F2">        }</span></span>
 <span class="line"><span style="color: #F8F8F2">      ],</span></span>
 <span class="line"><span style="color: #F8F8F2">      </span><span style="color: #66D9EF; font-style: italic">&quot;msg&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;OK&quot;</span></span>
 <span class="line"><span style="color: #F8F8F2">}</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request GET </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/dataAsset/queryNFTContractDeployList?userType=1&amp;user=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&#39;</span></span>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request GET </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/dataAsset/queryNFTContractDeployList?userType=1&amp;user=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&#39;</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="铸造data-nft-token" tabindex="-1"><a class="header-anchor" href="#铸造data-nft-token" aria-hidden="true">#</a> 铸造Data NFT Token</h3>
 <p>用户能够基于已发布的NFT合约，铸造不同属性的Data NFT token并设置数量，来完成对不同原始数据的资产化操作。如果用户的NFT合约包含了多个原始数据，可以铸造不同名称的Data NFT Token进行区分。有关数据资产的分享、交易、使用都将以Data NFT Token作为凭证实现操作。</p>
 <h3 id="如何使用-3" tabindex="-1"><a class="header-anchor" href="#如何使用-3" aria-hidden="true">#</a> 如何使用</h3>
@@ -509,7 +494,7 @@
 <tr>
 <td>property</td>
 <td>string</td>
-<td>NFT属性描述，json格式</td>
+<td>NFT Data Token属性描述，json格式</td>
 <td>Y</td>
 </tr>
 </tbody>
@@ -600,7 +585,7 @@
 <li>使用示例</li>
 </ul>
 <div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --request POST \</span></span>
-<span class="line"><span style="color: #F8F8F2">     --url </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/dataAsset/mintNFTToken?contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId&amp;property=$property&#39;</span><span style="color: #F8F8F2"> \</span></span>
+<span class="line"><span style="color: #F8F8F2">     --url </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/dataAsset/mintNFTToken?contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId&amp;property=$property&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --header </span><span style="color: #E6DB74">&#39;Accept: application/json&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --header </span><span style="color: #E6DB74">&#39;Content-Type: application/json&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --header </span><span style="color: #E6DB74">&#39;X-API-Key: test&#39;</span></span>
@@ -649,7 +634,7 @@
 <tr>
 <td>tokenid</td>
 <td>string</td>
-<td>NFT的id</td>
+<td>NFT Data Token的id</td>
 <td>Y</td>
 </tr>
 </tbody>
@@ -740,7 +725,7 @@
 <li>使用示例</li>
 </ul>
 <div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --request POST \</span></span>
-<span class="line"><span style="color: #F8F8F2">     --url </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/dataAsset/burnNFTToken?contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId&amp;tokenid=$tokenid&#39;</span><span style="color: #F8F8F2"> \</span></span>
+<span class="line"><span style="color: #F8F8F2">     --url </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/dataAsset/burnNFTToken?contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId&amp;tokenid=$tokenid&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --header </span><span style="color: #E6DB74">&#39;Accept: application/json&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --header </span><span style="color: #E6DB74">&#39;Content-Type: application/json&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --header </span><span style="color: #E6DB74">&#39;X-API-Key: test&#39;</span></span>
@@ -796,13 +781,13 @@
 <tr>
 <td>tokenid</td>
 <td>string</td>
-<td>NFT的id</td>
+<td>NFT Data Token的id</td>
 <td>Y</td>
 </tr>
 <tr>
 <td>property</td>
 <td>string</td>
-<td>NFT属性描述，json格式</td>
+<td>NFT Data Token属性描述，json格式</td>
 <td>Y</td>
 </tr>
 </tbody>
@@ -893,7 +878,7 @@
 <li>使用示例</li>
 </ul>
 <div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --request POST \</span></span>
-<span class="line"><span style="color: #F8F8F2">     --url </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/dataAsset/setNFTTokenProperty?contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId&amp;tokenid=$tokenid&amp;property=$property&#39;</span><span style="color: #F8F8F2"> \</span></span>
+<span class="line"><span style="color: #F8F8F2">     --url </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/dataAsset/setNFTTokenProperty?contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId&amp;tokenid=$tokenid&amp;property=$property&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --header </span><span style="color: #E6DB74">&#39;Accept: application/json&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --header </span><span style="color: #E6DB74">&#39;Content-Type: application/json&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --header </span><span style="color: #E6DB74">&#39;X-API-Key: test&#39;</span></span>
@@ -1018,15 +1003,15 @@
 <td>Y</td>
 </tr>
 <tr>
-<td>metadataId</td>
+<td>tokenid</td>
 <td>string</td>
-<td>NFT合约关联的元数据Id</td>
+<td>NFT Data Token的id</td>
 <td>Y</td>
 </tr>
 <tr>
-<td>contractContent</td>
-<td></td>
-<td>NFT合约内容</td>
+<td>property</td>
+<td>string</td>
+<td>NFT Data Token属性描述，json格式</td>
 <td>Y</td>
 </tr>
 <tr>
@@ -1045,16 +1030,17 @@
 <span class="line"><span style="color: #F8F8F2">      </span><span style="color: #66D9EF; font-style: italic">&quot;result&quot;</span><span style="color: #F8F8F2">: [</span></span>
 <span class="line"><span style="color: #F8F8F2">        {</span></span>
 <span class="line"><span style="color: #F8F8F2">            </span><span style="color: #66D9EF; font-style: italic">&quot;templeteId&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #AE81FF">1</span><span style="color: #F8F8F2">,</span></span>
-<span class="line"><span style="color: #F8F8F2">            </span><span style="color: #66D9EF; font-style: italic">&quot;metadataId&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;</span><span style="color: #F8F8F2">,</span></span>
-<span class="line"><span style="color: #F8F8F2">            </span><span style="color: #66D9EF; font-style: italic">&quot;contractContent&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;{xxx}&quot;</span><span style="color: #F8F8F2"> </span></span>
+<span class="line"><span style="color: #F8F8F2">            </span><span style="color: #66D9EF; font-style: italic">&quot;tokenid&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;#1&quot;</span><span style="color: #F8F8F2">,</span></span>
+<span class="line"><span style="color: #F8F8F2">            </span><span style="color: #66D9EF; font-style: italic">&quot;property&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;{xxxxx}&quot;</span></span>
+<span class="line"></span>
 <span class="line"><span style="color: #F8F8F2">        }</span></span>
 <span class="line"><span style="color: #F8F8F2">      ],</span></span>
 <span class="line"><span style="color: #F8F8F2">      </span><span style="color: #66D9EF; font-style: italic">&quot;msg&quot;</span><span style="color: #F8F8F2">: </span><span style="color: #CFCFC2">&quot;OK&quot;</span></span>
 <span class="line"><span style="color: #F8F8F2">}</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request GET </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/dataAsset/queryNFTTokenList?userType=1&amp;user=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId&#39;</span></span>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request GET </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/dataAsset/queryNFTTokenList?userType=1&amp;user=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;contractAddress=&quot;0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;&amp;chainId=$chainId&#39;</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div></template>
 
 

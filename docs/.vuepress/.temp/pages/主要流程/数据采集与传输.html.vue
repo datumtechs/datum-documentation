@@ -45,7 +45,7 @@
 <tr>
 <td>storageType</td>
 <td>int</td>
-<td>存储方式(0： 本地存储； 1： 云存储； 2： IPFS存储； 3： 区块链存储)</td>
+<td>存储方式(0： 本地存储； <span style="color: red; font-weight: bold;">1： 云存储【本接口填1】；</span> 2： IPFS存储； 3： 区块链存储)</td>
 <td>Y</td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@
 <p>使用示例</p>
 </li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/data/uploadData&#39;</span><span style="color: #F8F8F2"> \</span></span>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/data/uploadData&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     -H </span><span style="color: #E6DB74">&#39;Accept: application/json, text/plain, */*&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     -H </span><span style="color: #E6DB74">&#39;Accept-Language: zh-CN,zh;q=0.9&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     -H </span><span style="color: #E6DB74">&#39;Connection: keep-alive&#39;</span><span style="color: #F8F8F2"> \</span></span>
@@ -198,7 +198,7 @@
 <tr>
 <td>storageType</td>
 <td>int</td>
-<td>存储方式(0： 本地存储； 1： 云存储； 2： IPFS存储； 3： 区块链存储)</td>
+<td>存储方式(0： 本地存储； 1： 云存储； <span style="color: red; font-weight: bold;">2： IPFS存储【本接口填2】；</span> 3： 区块链存储)</td>
 <td>Y</td>
 </tr>
 <tr>
@@ -303,7 +303,7 @@
 <p>使用示例</p>
 </li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/data/uploadData&#39;</span><span style="color: #F8F8F2"> \</span></span>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/data/uploadData&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     -H </span><span style="color: #E6DB74">&#39;Accept: application/json, text/plain, */*&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     -H </span><span style="color: #E6DB74">&#39;Accept-Language: zh-CN,zh;q=0.9&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     -H </span><span style="color: #E6DB74">&#39;Connection: keep-alive&#39;</span><span style="color: #F8F8F2"> \</span></span>
@@ -313,7 +313,7 @@
 <span class="line"><span style="color: #F8F8F2">     --compressed \</span></span>
 <span class="line"><span style="color: #F8F8F2">     --insecure</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="区块链传输" tabindex="-1"><a class="header-anchor" href="#区块链传输" aria-hidden="true">#</a> 区块链传输</h3>
-<p>Datum提供联盟链、公有链对接服务，用户可将原始数据直接传输上链。 区块链链支持，以太坊、PlatON等。用户可选择是传输原始数据信息，或者传输原始数据hash+原始数据存储索引。</p>
+<p>Datum提供联盟链、公有链对接服务，用户可将原始数据直接传输上链。 区块链支持，以太坊、PlatON等。用户可选择是传输原始数据信息，或者传输原始数据hash+原始数据存储索引。</p>
 <h4 id="如何使用-2" tabindex="-1"><a class="header-anchor" href="#如何使用-2" aria-hidden="true">#</a> 如何使用</h4>
 <ul>
 <li>
@@ -351,7 +351,7 @@
 <tr>
 <td>storageType</td>
 <td>int</td>
-<td>存储方式(0： 本地存储； 1： 云存储； 2： IPFS存储； 3： 区块链存储)</td>
+<td>存储方式(0： 本地存储； 1： 云存储； 2： IPFS存储； <span style="color: red; font-weight: bold;">3： 区块链存储【本接口填3】</span>)</td>
 <td>Y</td>
 </tr>
 <tr>
@@ -456,7 +456,7 @@
 <p>使用示例</p>
 </li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/data/uploadData&#39;</span><span style="color: #F8F8F2"> \</span></span>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/data/uploadData&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     -H </span><span style="color: #E6DB74">&#39;Accept: application/json, text/plain, */*&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     -H </span><span style="color: #E6DB74">&#39;Accept-Language: zh-CN,zh;q=0.9&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">     -H </span><span style="color: #E6DB74">&#39;Connection: keep-alive&#39;</span><span style="color: #F8F8F2"> \</span></span>
@@ -614,7 +614,7 @@
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request GET </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/metadata/queryLocalMetadata?originId=0xdadad...454545&#39;</span></span>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request GET </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/metadata/queryLocalMetadata?originId=0xdadad...454545&#39;</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="发布元数据" tabindex="-1"><a class="header-anchor" href="#发布元数据" aria-hidden="true">#</a> 发布元数据</h3>
 <p>发布元数据是指将元数据发布到区块链网络，或者指定的数据服务市场，能够被其他应用方检索发现，并达成后续应用。元数据发布按照原始数据存储路径可以分为：（a）通过Datum传输渠道存储的原始数据发布元数据；（b）基于用户本地存储的原始数据发布元数据。</p>
 <h4 id="a-通过datum传输渠道存储的原始数据发布元数据" tabindex="-1"><a class="header-anchor" href="#a-通过datum传输渠道存储的原始数据发布元数据" aria-hidden="true">#</a> <strong>（a）通过Datum传输渠道存储的原始数据发布元数据</strong></h4>
@@ -675,7 +675,7 @@
 <td>desc</td>
 <td>string</td>
 <td>数据描述</td>
-<td>Y</td>
+<td>N</td>
 </tr>
 <tr>
 <td>locationType</td>
@@ -837,7 +837,7 @@
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request POST </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/metadat/publishMetadata&#39;</span><span style="color: #F8F8F2"> \</span></span>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request POST </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/metadat/publishMetadata&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">--header </span><span style="color: #E6DB74">&#39;Content-Type: application/json&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">--data-raw </span><span style="color: #E6DB74">&#39;{</span></span>
 <span class="line"><span style="color: #E6DB74">      &quot;metadataId&quot;: &quot;metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;,</span></span>
@@ -912,7 +912,7 @@
 <td>desc</td>
 <td>string</td>
 <td>数据描述</td>
-<td>Y</td>
+<td>N</td>
 </tr>
 <tr>
 <td>locationType</td>
@@ -1074,7 +1074,7 @@
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request POST </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/metadat/publishMetadataWithLocalDdata&#39;</span><span style="color: #F8F8F2"> \</span></span>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request POST </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/metadat/publishMetadataWithLocalDdata&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">--header </span><span style="color: #E6DB74">&#39;Content-Type: application/json&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">--data-raw </span><span style="color: #E6DB74">&#39;{</span></span>
 <span class="line"><span style="color: #E6DB74">      &quot;metadataId&quot;: &quot;metadata:0x2cbb932fe93b84140d388501f399bbbe5825f473a9f13c437ac292c2b3693646&quot;,</span></span>
@@ -1131,7 +1131,7 @@
 <td>desc</td>
 <td>string</td>
 <td>数据描述</td>
-<td>Y</td>
+<td>N</td>
 </tr>
 <tr>
 <td>user</td>
@@ -1240,7 +1240,7 @@
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>使用示例</li>
 </ul>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request POST </span><span style="color: #E6DB74">&#39;https://datum.io/api/v2/metadat/publishDataHash&#39;</span><span style="color: #F8F8F2"> \</span></span>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">curl --location --request POST </span><span style="color: #E6DB74">&#39;http://datumtechs.com/api/v2/metadat/publishDataHash&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">--header </span><span style="color: #E6DB74">&#39;Content-Type: application/json&#39;</span><span style="color: #F8F8F2"> \</span></span>
 <span class="line"><span style="color: #F8F8F2">--data-raw </span><span style="color: #E6DB74">&#39;{</span></span>
 <span class="line"><span style="color: #E6DB74">      &quot;dataHash&quot;: &quot;295e5ae656d084dfda86c4ef7c38719ee1fb650899ec66d15d543b30c8f45b87&quot;,</span></span>
@@ -1289,7 +1289,7 @@
 </li>
 </ul>
 <div class="language-text ext-text line-numbers-mode"><pre v-pre class="shiki" style="background-color: #272822"><code><span class="line"><span style="color: #F8F8F2">&quot;{</span></span>
-<span class="line"><span style="color: #F8F8F2">    &quot;chainType&quot;: 0 // 0: 使用Alaya存储； 1: 使用PlatON存储； 2: 使用Etheruem存储；...</span></span>
+<span class="line"><span style="color: #F8F8F2">    &quot;chainType&quot;: 0 // 0: 使用Alaya存储； 1: 使用PlatON存储； 2: 使用Etheruem存储； （待补充）...</span></span>
 <span class="line"><span style="color: #F8F8F2">  }&quot;</span></span>
 <span class="line"><span style="color: #F8F8F2"></span></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 

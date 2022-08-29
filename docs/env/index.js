@@ -1,7 +1,7 @@
 
 const config = {
     test: {
-        home: 'https://test.datumtechs.com',
+        home: 'http://192.168.18.34:8034',//'https://test.datumtechs.com',
         appId: '',
         indexName: ''
     },
