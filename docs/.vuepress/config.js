@@ -240,7 +240,6 @@ export default {
                         text: '数据服务资产化',
                         link: '/主要流程/数据服务资产化.md',
                         children: [
-
                         ]
                     },
                 ],
@@ -252,7 +251,26 @@ export default {
                     {
                         text: '隐私AI框架Rosetta',
                         link: '/参考/隐私AI框架rosetta.md',
-                        children: []
+                    }
+
+                ],
+
+            }, {
+                // @ts-ignore
+                text: '体验环境',
+                link: '',
+                children: [
+                    {
+                        text: 'Datum-network操作帮助文档(管理员)',
+                        link: '/参考/datum-network操作文档(管理员).md',
+                    },
+                    {
+                        text: 'Datum-network操作帮助文档(用户)',
+                        link: '/参考/datum-network操作文档(用户).md',
+                    },
+                    {
+                        text: 'Datum-platform操作帮助文档',
+                        link: '/参考/datum-platform操作帮助文档.md',
                     },
                 ],
             }

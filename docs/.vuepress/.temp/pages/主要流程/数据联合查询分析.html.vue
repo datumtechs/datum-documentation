@@ -21,17 +21,17 @@
 </ul>
 <p><strong>本部分API使用的隐私增强技术</strong></p>
 <ul>
-<li>隐私集合求交（Private Set Intersection），（补充技术简要描述），支持DH和HE两种算法实现。</li>
-<li>隐私标签查询（Labeled Private Set Intersection），（补充技术简要描述），支持DH和HE两种算法实现。</li>
-<li>安全多方计算</li>
-<li>同态加密</li>
-<li>隐私AI框架Rosetta，是基于Tensorflow的隐私AI框架，承载和结合AI、隐私AI和区块链三种典型的技术，大大降低了AI开发者的门槛，让AI开发者在对隐私AI技术没有深入了解的情况下，只需要改动两三行代码即可实现将现有AI代码转换为具备数据隐私保护功能的程序。</li>
+<li>隐私集合求交（<a href="https://en.wikipedia.org/wiki/Private_set_intersection" target="_blank" rel="noopener noreferrer">Private Set Intersection<ExternalLinkIcon/></a>, PSI），是指持有原始数据的两方能够计算得到双方数据的交集，但互相不暴露交集以外的原始数据集中任何信息。它支持DH（Diffie-Hellman）和HE（同态加密）两种算法实现。</li>
+<li>隐私标签查询，它使用基于标签的隐私求交集技术（Labeled Private Set Intersection），在查询方不泄露查询的内容，且被查询方不泄露交集以外的数据的前提下，查询方能获取双方数据的交集及交集对应的标签数据。它支持DH（Diffie-Hellman）和HE（同态加密）两种算法实现。</li>
+<li>安全多方计算（<a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation" target="_blank" rel="noopener noreferrer">Secure Multi-Party Computation<ExternalLinkIcon/></a>,  MPC），一组互不信任的参与方在保护各自数据隐私的前提下，共同完成对某约定函数的计算，并得到正确的计算结果。它要求每个参与方除自身数据（和计算结果）外，不能得到其他参与方的预期泄露之外的私有信息。</li>
+<li>同态加密（<a href="https://en.wikipedia.org/wiki/Homomorphic_encryption" target="_blank" rel="noopener noreferrer">Homomorphic Encryption<ExternalLinkIcon/></a>,  HE），是一种特殊的加密方法，它允许用户在加密之后的密文上直接进行特定形式的代数运算，其计算结果解密后正好与明文的计算结果是一致的。</li>
+<li><RouterLink to="/%E5%8F%82%E8%80%83/%E9%9A%90%E7%A7%81AI%E6%A1%86%E6%9E%B6Rosetta.html">隐私AI框架Rosetta</RouterLink>，是基于Tensorflow的隐私AI框架，承载和结合AI、隐私AI和区块链三种典型的技术，大大降低了AI开发者的门槛，让AI开发者在对隐私AI技术没有深入了解的情况下，只需要改动两三行代码即可实现将现有AI代码转换为具备数据隐私保护功能的程序。</li>
 </ul>
 <h2 id="两方数据合作" tabindex="-1"><a class="header-anchor" href="#两方数据合作" aria-hidden="true">#</a> 两方数据合作</h2>
 <h3 id="隐私匹配" tabindex="-1"><a class="header-anchor" href="#隐私匹配" aria-hidden="true">#</a> 隐私匹配</h3>
 <p>隐私匹配可用于多种数据应用场景，如相同好友发现、白名单或黑名单用户匹配，联合计算样本对齐等等。</p>
 <p><strong>主要功能</strong></p>
-<p>支持两方的数据合作，一个是查询方，一个是被查询方。查询方与被查询方能计算得到双方数据的交集，但互相不暴露交集以外的原始数据集中任何信息。它使用隐私求交集技术（Private Set Intersection），支持DH和HE两种算法实现。</p>
+<p>支持两方的数据合作，一个是查询方，一个是被查询方。查询方与被查询方能计算得到双方数据的交集，但互相不暴露交集以外的原始数据集中任何信息。它使用隐私求交集技术（Private Set Intersection），支持DH（Diffie-Hellman）和HE（同态加密）两种算法实现。</p>
 <p><strong>如何使用</strong></p>
 <ul>
 <li>
@@ -380,7 +380,7 @@
 <h3 id="隐私标签查询" tabindex="-1"><a class="header-anchor" href="#隐私标签查询" aria-hidden="true">#</a> 隐私标签查询</h3>
 <p>可以匹配两方存在交集的数据，并同时查询匹配数据对应的标签数据。</p>
 <p><strong>主要功能</strong></p>
-<p>在查询方不泄露查询的内容，且被查询方不泄露交集以外的数据的前提下，查询方能获取双方数据的交集及交集对应的标签数据。它使用基于标签的隐私求交集技术（Labeled Private Set Intersection），支持DH和HE两种算法实现。</p>
+<p>在查询方不泄露查询的内容，且被查询方不泄露交集以外的数据的前提下，查询方能获取双方数据的交集及交集对应的标签数据。它使用基于标签的隐私求交集技术（Labeled Private Set Intersection），支持DH（Diffie-Hellman）和HE（同态加密）两种算法实现。</p>
 <p><strong>如何使用</strong></p>
 <ul>
 <li>
