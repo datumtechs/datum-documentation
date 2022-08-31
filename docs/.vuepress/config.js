@@ -113,124 +113,124 @@ export default {
                         link: '/主要流程/开始准备.md',
                     },
                     {
-                        text: '数据采集与传输',
-                        link: '/主要流程/数据采集与传输.md',
+                        text: '数据安全存管',
+                        link: '/主要流程/数据安全存管.md',
                         collapsible: true,
                         children: [
                             {
                                 text: '云服务传输',
-                                link: '/主要流程/数据采集与传输.md/#云服务传输',
+                                link: '/主要流程/数据安全存管.md/#云服务传输',
                             },
                             {
                                 text: 'IPFS传输',
-                                link: '/主要流程/数据采集与传输.md/#ipfs传输',
+                                link: '/主要流程/数据安全存管.md/#ipfs传输',
                             },
                             {
                                 text: '区块链传输',
-                                link: '/主要流程/数据采集与传输.md/#区块链传输',
+                                link: '/主要流程/数据安全存管.md/#区块链传输',
                             },
                             {
                                 text: '发布元数据',
-                                link: '/主要流程/数据采集与传输.md/#发布元数据',
+                                link: '/主要流程/数据安全存管.md/#发布元数据',
                             },
                             {
                                 text: '发布数据Hash',
-                                link: '/主要流程/数据采集与传输.md/#发布数据hash',
+                                link: '/主要流程/数据安全存管.md/#发布数据hash',
                             },
                         ]
                     },
                     {
-                        text: '数据资产化',
-                        link: '/主要流程/数据资产化.md',
+                        text: '数据资产发行',
+                        link: '/主要流程/数据资产发行.md',
                         collapsible: true,
                         children: [
                             {
                                 text: '获取NFT合约模板',
-                                link: '/主要流程/数据资产化.md/#获取nft合约模板',
+                                link: '/主要流程/数据资产发行.md/#获取nft合约模板',
                             },
                             {
                                 text: '完成NFT合约部署',
-                                link: '/主要流程/数据资产化.md/#完成nft合约部署',
+                                link: '/主要流程/数据资产发行.md/#完成nft合约部署',
                             },
                             {
                                 text: '查看已发布的NFT合约',
-                                link: '/主要流程/数据资产化.md/#查看已发布的nft合约',
+                                link: '/主要流程/数据资产发行.md/#查看已发布的nft合约',
                             },
                             {
                                 text: '铸造Data NFT Token',
-                                link: '/主要流程/数据资产化.md/#铸造data-nft-token',
+                                link: '/主要流程/数据资产发行.md/#铸造data-nft-token',
                             },
                             {
                                 text: '销毁Data NFT Token',
-                                link: '/主要流程/数据资产化.md/#销毁data-nft-token',
+                                link: '/主要流程/数据资产发行.md/#销毁data-nft-token',
                             },
                             {
                                 text: 'Data NFT Token属性设置',
-                                link: '/主要流程/数据资产化.md/#data-nft-token属性设置',
+                                link: '/主要流程/数据资产发行.md/#data-nft-token属性设置',
                             },
                             {
                                 text: '查看已铸造的Data NFT Token',
-                                link: '/主要流程/数据资产化.md/#查看已铸造的data-nft-token',
+                                link: '/主要流程/数据资产发行.md/#查看已铸造的data-nft-token',
                             },
                         ]
                     },
                     {
-                        text: '数据可信分享与托管',
-                        link: '/主要流程/数据可信分享与托管.md',
+                        text: '数据可信交易与托管',
+                        link: '/主要流程/数据可信交易与托管.md',
                         collapsible: true,
                         children: [
                             {
                                 text: '可信数据分享',
-                                link: '/主要流程/数据可信分享与托管.md/#数据可信分享',
+                                link: '/主要流程/数据可信交易与托管.md/#数据可信分享',
                             },
                             {
                                 text: '可信数据托管',
-                                link: '/主要流程/数据可信分享与托管.md/#数据可信托管',
+                                link: '/主要流程/数据可信交易与托管.md/#数据可信托管',
                             },
                             {
                                 text: '数据一致性验证',
-                                link: '/主要流程/数据可信分享与托管.md/#数据一致性验证',
+                                link: '/主要流程/数据可信交易与托管.md/#数据一致性验证',
                             },
                         ]
                     },
                     {
-                        text: '数据联合查询分析',
-                        link: '/主要流程/数据联合查询分析.md',
+                        text: '数据联合查询计算',
+                        link: '/主要流程/数据联合查询计算.md',
                         collapsible: true,
                         children: [
                             {
                                 text: '两方数据合作',
-                                link: '/主要流程/数据联合查询分析.md/#两方数据合作',
+                                link: '/主要流程/数据联合查询计算.md/#两方数据合作',
                                 children: [
                                     {
                                         text: '隐私匹配',
-                                        link: '/主要流程/数据联合查询分析.md/#隐私匹配',
+                                        link: '/主要流程/数据联合查询计算.md/#隐私匹配',
                                     },
                                     {
                                         text: '隐私标签查询',
-                                        link: '/主要流程/数据联合查询分析.md/#隐私标签查询',
+                                        link: '/主要流程/数据联合查询计算.md/#隐私标签查询',
                                     },
                                     {
                                         text: '隐私SQL查询',
-                                        link: '/主要流程/数据联合查询分析.md/#隐私sql查询',
+                                        link: '/主要流程/数据联合查询计算.md/#隐私sql查询',
                                     },
                                 ]
                             },
                             {
                                 text: '多方数据协作',
-                                link: '/主要流程/数据联合查询分析.md/#多方数据协作',
+                                link: '/主要流程/数据联合查询计算.md/#多方数据协作',
                                 children: [
                                     {
                                         text: '联合统计分析',
-                                        link: '/主要流程/数据联合查询分析.md/#联合统计分析',
+                                        link: '/主要流程/数据联合查询计算.md/#联合统计分析',
                                     },
                                     {
                                         text: '联合模型训练',
-                                        link: '/主要流程/数据联合查询分析.md/#联合模型训练',
+                                        link: '/主要流程/数据联合查询计算.md/#联合模型训练',
                                     },
                                     {
                                         text: '联合模型预测',
-                                        link: '/主要流程/数据联合查询分析.md/#联合模型预测',
+                                        link: '/主要流程/数据联合查询计算.md/#联合模型预测',
                                     },
                                 ]
                             },
@@ -279,7 +279,7 @@ export default {
             // NavbarItem
             {
                 text: 'Home',
-                link: process.env.VITE_ENV === 'sit' ? config.test.home : '',// HOME 地址
+                link: process.env.VITE_ENV === 'sit' ? config.test.home : config.production.home,// HOME 地址
             },
             // NavbarGroup
             // {
