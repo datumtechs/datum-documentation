@@ -12,7 +12,7 @@ Rosetta是基于TensorFlow的隐私AI框架，承载和结合AI、隐私AI和区
 
 ### 更详细信息
 
-Rosetta介绍：https://www.matrixelements.com/product/rosetta
+Rosetta介绍：[https://www.matrixelements.com/product/rosetta](https://www.matrixelements.com/product/rosetta)
 
-Rosetta GitHub：https://github.com/LatticeX-Foundation/Rosetta
+Rosetta GitHub：[https://github.com/LatticeX-Foundation/Rosetta](https://github.com/LatticeX-Foundation/Rosetta)
 
