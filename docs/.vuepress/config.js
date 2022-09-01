@@ -91,17 +91,6 @@ export default {
                 text: '简介',
                 link: '/',
                 children: []
-                // children: [
-                //     // SidebarItem
-                //     {
-                //         text: 'Datum简介',
-                //         link: '#Datum简介',
-                //     },
-                //     {
-                //         text: '功能划分',
-                //         link: '#功能划分',
-                //     },
-                // ],
             }, {
                 // @ts-ignore
                 text: '主要流程',
@@ -118,25 +107,42 @@ export default {
                         collapsible: true,
                         children: [
                             {
-                                text: '云服务传输',
-                                link: '/主要流程/数据安全存管.md/#云服务传输',
+                                text: '支持的传输和存管模式',
+                                link: '/主要流程/数据安全存管.md/#支持的传输和存管模式',
+                                children: [
+                                    {
+                                        text: '云服务传输和存管',
+                                        link: '/主要流程/数据安全存管.md/#云服务传输和存管',
+                                    },
+                                    {
+                                        text: 'IPFS传输和存管',
+                                        link: '/主要流程/数据安全存管.md/#ipfs传输和存管',
+                                    },
+                                    {
+                                        text: '区块链传输和存管',
+                                        link: '/主要流程/数据安全存管.md/#区块链传输和存管',
+                                    },
+                                ]
                             },
+
                             {
-                                text: 'IPFS传输',
-                                link: '/主要流程/数据安全存管.md/#ipfs传输',
-                            },
-                            {
-                                text: '区块链传输',
-                                link: '/主要流程/数据安全存管.md/#区块链传输',
-                            },
-                            {
-                                text: '发布元数据',
-                                link: '/主要流程/数据安全存管.md/#发布元数据',
-                            },
-                            {
-                                text: '发布数据Hash',
-                                link: '/主要流程/数据安全存管.md/#发布数据hash',
-                            },
+                                text: '元数据发布',
+                                link: '/主要流程/数据安全存管.md/#元数据发布',
+                                children: [
+                                    {
+                                        text: '提取元数据',
+                                        link: '/主要流程/数据安全存管.md/#提取元数据',
+                                    },
+                                    {
+                                        text: '发布元数据',
+                                        link: '/主要流程/数据安全存管.md/#发布元数据',
+                                    },
+                                    {
+                                        text: '发布数据Hash',
+                                        link: '/主要流程/数据安全存管.md/#发布数据Hash',
+                                    },
+                                ]
+                            }
                         ]
                     },
                     {
