@@ -1,0 +1,570 @@
+---
+sidebar_position: 5
+---
+
+
+
+## 两方数据合作
+
+### 隐私匹配
+
+隐私匹配可用于多种数据应用场景，如相同好友发现、白名单或黑名单用户匹配，联合计算样本对齐等等。
+
+**主要功能**
+
+支持两方的数据合作，一个是查询方，一个是被查询方。查询方与被查询方能计算得到双方数据的交集，但互相不暴露交集以外的原始数据集中任何信息。它使用隐私求交集技术（Private Set Intersection），支持DH（Diffie-Hellman）和HE（同态加密）两种算法实现。
+
+**如何使用**
+
++ 接口名称：runPSITask
+
++ 请求【POST】
+
+  ```json
+  {
+  	"algo_type": "DH",
+  	"requester": {
+		"name": "orgA",
+		"data_path": "/path/to/data",
+		"data_type": "csv",
+		"key_column": "id_col"
+  	},
+  	"provider": {
+		"name": "orgB",
+		"data_path": "/path/to/data",
+		"data_type": "csv",
+		"key_column": "id_col"
+    },
+  	"result_recv_type": 1
+  }
+  ```
+
+  参数说明
+
+  | 参数             | 类型   | 说明                         | 是否必须 |
+  | ---------------- | ------ | ---------------------------- | -------- |
+  | algo_type        | string | 使用的算法的类型，支持DH，HE | Y        |
+  | requester        | json   | 查询方信息                   | Y        |
+  | name             | string | 组织名称                     | Y        |
+  | data_path        | string | 数据所在路径                 | Y        |
+  | data_type        | string | 数据的格式                   | Y        |
+  | key_column       | string | 所需操作的列                 | Y        |
+  | provider         | json   | 被查询方信息                 | Y        |
+  | result_recv_type | int    | 结果接收类型，1-单方，2-双方 | Y        |
+
++ 响应
+
+  ```json
+  {
+  	"status": 200,
+  	"result":{
+  		"path": "/path/to/result/file",
+  		"type": "csv",
+  		"extra": ""
+  	},
+  	"msg": "success"
+  }
+  ```
+
+  参数说明
+
+  | 参数   | 类型   | 说明                                                       |
+  | ------ | ------ | ---------------------------------------------------------- |
+  | status | int    | 响应状态，<br />200-成功，400-无效请求，500-服务器内部错误 |
+  | result | json   | 结果信息                                                   |
+  | path   | string | 结果所在路径                                               |
+  | type   | string | 结果的类型                                                 |
+  | extra  | string | 关于结果的额外信息                                         |
+  | msg    | string | 成功信息或错误的描述                                       |
+
+  
+
++ 接口名称：getDataProviders
+
++ 请求【GET】
+
+  无
+
++ 响应
+
+  ```json
+  {
+  	"status": 200,
+  	"result":{
+  		"data_providers": ["orgA", "orgB", "orgC"]
+  	},
+  	"msg": "success"
+  }
+  ```
+
+  参数说明
+
+  | 参数           | 类型   | 说明                                                 |
+  | -------------- | ------ | ---------------------------------------------------- |
+  | status         | int    | 响应状态，200-成功，400-无效请求，500-服务器内部错误 |
+  | result         | json   | 结果信息                                             |
+  | data_providers | list   | 所有数据提供方组织名称                               |
+  | msg            | string | 成功信息或错误的描述                                 |
+
+
+
++ 接口名称：getDataPath
+
++ 请求【GET】
+
+  | 参数          | 类型   | 说明               | 是否必须 |
+  | ------------- | ------ | ------------------ | -------- |
+  | data_provider | string | 数据提供方组织名称 | Y        |
+
++ 响应
+
+  ```json
+  {
+  	"status": 200,
+  	"result":{
+  		"data_path": ["/path/to/data1", "/path/to/data2", "/path/to/data3"]
+  	},
+  	"msg": "success"
+  }
+  ```
+
+  参数说明
+
+  | 参数      | 类型   | 说明                                                 |
+  | --------- | ------ | ---------------------------------------------------- |
+  | status    | int    | 响应状态，200-成功，400-无效请求，500-服务器内部错误 |
+  | result    | json   | 结果信息                                             |
+  | data_path | string | 数据所在路径                                         |
+  | msg       | string | 成功信息或错误的描述                                 |
+
+
+
++ 接口名称：getMetaData
+
++ 请求【GET】
+
+  | 参数          | 类型   | 说明               | 是否必须 |
+  | ------------- | ------ | ------------------ | -------- |
+  | data_provider | string | 数据提供方组织名称 | Y        |
+  | data_path     | string | 数据所在路径       | Y        |
+
++ 响应
+
+  ```json
+  {
+  	"status": 200,
+  	"result":{
+		"data_type": "csv",
+		"rows_num": 10,
+		"columns_num": 5,
+		"columns_name": ["col1", "col2"]
+	},
+	"msg": "success"
+  }
+  ```
+
+  参数说明
+
+  | 参数         | 类型   | 说明                                                 |
+  | ------------ | ------ | ---------------------------------------------------- |
+  | status       | int    | 响应状态，200-成功，400-无效请求，500-服务器内部错误 |
+  | result       | json   | 结果信息                                             |
+  | data_type    | string | 数据的格式                                           |
+  | rows_num     | int    | 数据表的行数                                         |
+  | columns_num  | int    | 数据表的列数                                         |
+  | columns_name | list   | 数据表的所有列名                                     |
+  | msg          | string | 成功信息或错误的描述                                 |
+
+
+
+### 隐私标签查询
+
+可以匹配两方存在交集的数据，并同时查询匹配数据对应的标签数据。
+
+**主要功能**
+
+在查询方不泄露查询的内容，且被查询方不泄露交集以外的数据的前提下，查询方能获取双方数据的交集及交集对应的标签数据。它使用基于标签的隐私求交集技术（Labeled Private Set Intersection），支持DH（Diffie-Hellman）和HE（同态加密）两种算法实现。
+
+**如何使用**
+
++ 接口名称：runLabeledPSITask
+
++ 请求【POST】
+
+  ```json
+  {
+  	"algo_type": "DH",
+  	"requester": {
+		"name": "orgA",
+		"data_path": "/path/to/data",
+		"data_type": "csv",
+		"key_column": "id_col"
+  	},
+  	"provider": {
+		"name": "orgB",
+		"data_path": "/path/to/data",
+		"data_type": "csv",
+		"key_column": "id_col",
+		"selected_columns": ["col1", "col2"]
+    }
+  }
+  ```
+
+  参数说明
+
+  | 参数             | 类型   | 说明                         | 是否必须 |
+  | ---------------- | ------ | ---------------------------- | -------- |
+  | algo_type        | string | 使用的算法的类型，支持DH，HE | Y        |
+  | requester        | json   | 查询方信息                   | Y        |
+  | name             | string | 组织名称                     | Y        |
+  | data_path        | string | 数据所在路径                 | Y        |
+  | data_type        | string | 数据的格式                   | Y        |
+  | key_column       | string | 所需操作的列                 | Y        |
+  | provider         | json   | 被查询方信息                 | Y        |
+  | selected_columns | list   | 所需查询的label列名          | Y        |
+
+  
+
++ 响应
+
+  ```json
+  {
+  	"status": 200,
+  	"result":{
+  		"path": "/path/to/result/file",
+  		"type": "csv",
+  		"extra": ""
+  	},
+  	"msg": "success"
+  }
+  ```
+
+  参数说明
+
+  | 参数   | 类型   | 说明                                                       |
+  | ------ | ------ | ---------------------------------------------------------- |
+  | status | int    | 响应状态，<br />200-成功，400-无效请求，500-服务器内部错误 |
+  | result | json   | 结果信息                                                   |
+  | path   | string | 结果所在路径                                               |
+  | type   | string | 结果的类型                                                 |
+  | extra  | string | 关于结果的额外信息                                         |
+  | msg    | string | 成功信息或错误的描述                                       |
+
+
+
+
+### 隐私SQL查询
+
+**主要功能**
+
+在查询方不泄露查询的内容，且被查询方不泄露查询结果以外的数据库数据的前提下，查询方能使用SQL查询语句获得正确的查询结果。它支持基于MPC的隐私查询和基于同态加密(HE)的隐私查询。
+
+**如何使用**
+
++ 接口名称：runPrivacySQLTask
+
++ 请求【POST】
+
+  ```json
+  {
+  	"algo_type": "MPC",
+  	"requester": {
+		"name": "orgA",
+		"data_path": "/path/to/data",
+		"data_type": "csv"
+  	},
+  	"provider": {
+		"name": "orgB",
+		"data_path": "/path/to/data",
+		"data_type": "csv"
+    },
+  	"sql": "select sum(col1) from orgB;"
+  }
+  ```
+
+  参数说明
+
+  | 参数      | 类型   | 说明                        | 是否必须 |
+  | --------- | ------ | --------------------------- | -------- |
+  | algo_type | string | 使用的算法类型，支持MPC，HE | Y        |
+  | requester | json   | 查询方信息                  | Y        |
+  | name      | string | 组织名称                    | Y        |
+  | data_path | string | 数据所在路径                | Y        |
+  | data_type | string | 数据的格式                  | Y        |
+  | sql       | string | sql语句                     | Y        |
+  | provider  | json   | 被查询方信息                | Y        |
+
+  
+
++ 响应
+
+  ```json
+  {
+  	"status": 200,
+  	"result":{
+  		"path": "/path/to/result/file",
+  		"type": "csv",
+  		"extra": ""
+  	},
+  	"msg": "success"
+  }
+  ```
+
+  参数说明
+
+  | 参数   | 类型   | 说明                                                       |
+  | ------ | ------ | ---------------------------------------------------------- |
+  | status | int    | 响应状态，<br />200-成功，400-无效请求，500-服务器内部错误 |
+  | result | json   | 结果信息                                                   |
+  | path   | string | 结果所在路径                                               |
+  | type   | string | 结果的类型                                                 |
+  | extra  | string | 关于结果的额外信息                                         |
+  | msg    | string | 成功信息或错误的描述                                       |
+
+
+
+
+## 多方数据协作
+
+### 联合统计分析
+
+多方数据协作的场景，支持三方及三方以上数据间进行算术运算，使用了隐私AI框架Rosetta。
+
+**主要功能**
+
+在保证所有数据提供方不泄露各自敏感数据的前提下，对数据提供方的数据完成联合统计分析。提供两种方式：常用统计公式（如求和、求平均、求方差、合格投资人发现等），自定义统计公式。
+
+**如何使用**
+
++ 接口名称：runJointStatisticalAnalysisTask
+
++ 请求【POST】
+
+  ```json
+  {
+  	"data_providers": [
+  		{
+  			"name": "orgA",
+  			"data_path": "/path/to/data",
+  			"data_type": "csv",
+  			"key_column": "id_col",
+            "data_alias": "df1"
+  		},
+  		{
+  			"name": "orgB",
+  			"data_path": "/path/to/data",
+  			"data_type": "csv",
+  			"key_column": "id_col",
+            "data_alias": "df2"
+  		}
+  	],
+  	"result_receivers": ["orgA", "orgB"],
+  	"method": "custom",
+	"expression": "df1.unit_price * df2.units",
+	"result_alias": "total_value"
+  }
+  ```
+
+  参数说明
+
+  | 参数             | 类型   | 说明                                                         | 是否必须 |
+  | ---------------- | ------ | ------------------------------------------------------------ | -------- |
+  | data_providers   | list   | 数据提供方的信息                                             | Y        |
+  | name             | string | 组织名称                                                     | Y        |
+  | data_path        | string | 数据所在路径                                                 | Y        |
+  | data_type        | string | 数据格式                                                     | Y        |
+  | data_alias       | string | 为数据取的别名                                               | N        |
+  | key_column       | string | 所需操作的列                                                 | Y        |
+  | result_receivers | list   | 接收方列表                                                   | Y        |
+  | method           | string | 联合统计方法，目前支持:<br />sum, avg, var, is_investor_accredited, <br />自定义公式custom 等 | Y        |
+  | expression       | string | 计算表达式，当method字段取值custom时使用                     | N        |
+  | result_alias     | string | 为结果取的别名                                               | N        |
+
++ 响应
+
+  ```json
+  {
+    "status": 200,
+  	"result": {
+		"path": "/path/to/result/file",
+		"type": "csv",
+		"extra": ""
+  	},
+  	"msg": "success"
+  }
+  ```
+
+  参数说明
+
+  | 参数   | 类型   | 说明                                                       |
+  | ------ | ------ | ---------------------------------------------------------- |
+  | status | int    | 响应状态，<br />200-成功，400-无效请求，500-服务器内部错误 |
+  | result | json   | 结果信息                                                   |
+  | path   | string | 结果所在路径                                               |
+  | type   | string | 结果的类型                                                 |
+  | extra  | string | 关于结果的额外信息                                         |
+  | msg    | string | 成功信息或错误的描述                                       |
+
+
+
+### 联合模型训练
+
+**主要功能**
+
+在保证所有数据提供方不泄露各自敏感数据的前提下，完成联合模型训练。使用了隐私AI框架Rosetta。支持算法：逻辑回归、线性回归、DNN、XGBoost等。
+
+**如何使用**
+
++ 接口名称：runModelTrainTask
+
++ 请求【POST】
+
+  ```json
+  {
+  	"data_providers": [
+  		{
+  			"name": "orgA",
+  			"data_path": "/path/to/data",
+  			"data_type": "csv",
+  			"label_column": "is_good",
+			"key_column": "id", 
+			"select_columns": ["col1"],
+			"discrete_columns": ["type"]
+  		},
+  		{
+  			"name": "orgB",
+  			"data_path": "/path/to/data",
+  			"data_type": "csv",
+  			"label_column": "is_good",
+			"key_column": "id", 
+			"select_columns": ["col1"],
+			"discrete_cols": ["type"]
+  		}
+  	],
+  	"result_receivers": ["orgA"],
+	"hyper_params": {"learning_rate": 0.00001, "loss": "mse"},
+	"metrics": ["accuracy", "precision", "recall"],
+	"model_config": {""}
+  }
+  ```
+
+  参数说明
+
+  | 参数             | 类型   | 说明                                  | 是否必须 |
+  | ---------------- | ------ | ------------------------------------- | -------- |
+  | data_providers   | list   | 所有数据提供方信息                    | Y        |
+  | name             | string | 组织名称                              | Y        |
+  | data_path        | string | 数据所在路径                          | Y        |
+  | data_type        | string | 数据格式                              | Y        |
+  | label_column     | string | 作为标签的列                          | Y        |
+  | key_column       | string | 索引列，用于对齐                      | N        |
+  | select_columns   | list   | 选择用于模型训练的列，默认为所有      | N        |
+  | discrete_cols    | list   | 离散特征列，用于某些处理，如embedding | N        |
+  | result_receivers | list   | 接收方列表                            | Y        |
+  | hyper_params     | string | 超参数，和训练方法相关                | N        |
+  | metrics          | list   | 对模型的度量，默认为loss              | N        |
+  | model_config     | string | 描述复杂DNN模型的 json 串             | N        |
+
++ 响应
+
+  ```json
+  {
+    "status": 200,
+  	"result": {
+        "model_id": "0xd22"
+  		"path": "/path/to/model",
+  		"type": "bin",
+  		"extra": "",
+        "metrics": {"accuracy": 0.95}
+  	},
+  	"msg": "success"
+  }
+  ```
+
+  参数说明
+
+  | 参数     | 类型   | 说明                                                       |
+  | -------- | ------ | ---------------------------------------------------------- |
+  | status   | int    | 响应状态，<br />200-成功，400-无效请求，500-服务器内部错误 |
+  | result   | json   | 结果信息                                                   |
+  | model_id | string | 模型id                                                     |
+  | path     | string | 结果所在路径                                               |
+  | type     | string | 结果的类型                                                 |
+  | extra    | string | 关于结果的额外信息                                         |
+  | metrics  | json   | 各种要求的度量指标                                         |
+  | msg      | string | 成功信息或错误的描述                                       |
+
+
+
+### 联合模型预测
+
+**主要功能**
+
+在保证所有数据提供方不泄露各自敏感数据的前提下，完成联合模型预测。使用了隐私AI框架Rosetta。支持算法：逻辑回归、线性回归、DNN、XGBoost等。
+
+**如何使用**
+
++ 接口名称：runModelPredictTask
+
++ 请求【POST】
+
+  ```json
+  {
+  	"data_providers": [
+  		{
+  			"name": "orgA",
+  			"data_path": "/path/to/data",
+  			"data_type": "csv",
+            "key_column": "id", 
+  		},
+  		{
+  			"name": "orgB",
+  			"data_path": "/path/to/data",
+  			"data_type": "csv",
+            "key_column": "id", 
+  		}
+  	],
+  	"result_receivers": ["orgA"],
+    "params": {"threshold": 0.8}
+  }
+  ```
+
+  参数说明
+
+  | 参数             | 类型   | 说明               | 是否必须 |
+  | ---------------- | ------ | ------------------ | -------- |
+  | data_providers   | list   | 所有数据提供方信息 | Y        |
+  | name             | string | 组织名称           | Y        |
+  | data_path        | string | 数据所在路径       | Y        |
+  | data_type        | string | 数据格式           | Y        |
+  | key_column       | string | 索引列，用于对齐   | N        |
+  | result_receivers | list   | 接收方列表         | Y        |
+  | params           | json   | 参数               | N        |
+
++ 响应
+
+  ```json
+  {
+    "status": 200,
+  	"result": {
+  		"path": "/path/to/result/file",
+  		"type": "csv",
+  		"extra": ""
+  	},
+  	"msg": "success"
+  }
+  ```
+
+  参数说明
+
+  | 参数   | 类型   | 说明                                                       |
+  | ------ | ------ | ---------------------------------------------------------- |
+  | status | int    | 响应状态，<br />200-成功，400-无效请求，500-服务器内部错误 |
+  | result | json   | 结果信息                                                   |
+  | path   | string | 结果所在路径                                               |
+  | type   | string | 结果的类型                                                 |
+  | extra  | string | 关于结果的额外信息                                         |
+  | msg    | string | 成功信息或错误的描述                                       |
+
+
+
