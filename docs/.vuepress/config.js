@@ -29,7 +29,7 @@ export default {
             description: 'datum-documentation [english]'
         },
     },
-
+    dest: "public",
     plugins: [
         backToTopPlugin(),
         nprogressPlugin(),

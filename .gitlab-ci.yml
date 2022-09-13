@@ -1,0 +1,15 @@
+# .gitlab-ci.yml 文件应放在你仓库的根目录下 node:latest
+image:  node:latest
+pages:
+ cache:
+   paths:
+   - node_modules/
+
+ script:
+ - yarn # npm run install
+ - yarn build:prod # npm run docs:build
+ artifacts:
+   paths:
+   - public
+ only:
+ - develop
