@@ -185,20 +185,16 @@ export default {
                         collapsible: true,
                         children: [
                             {
-                                text: '原理描述',
-                                link: '/功能介绍/数据安全交易.md/#原理描述',
+                                text: '基于Token属性的鉴权访问',
+                                link: '/功能介绍/数据安全交易.md/#基于Token属性的鉴权访问',
                             },
                             {
-                                text: '使用流程',
-                                link: '/功能介绍/数据安全交易.md/#使用流程',
+                                text: '基于Token属性的安全分享',
+                                link: '/功能介绍/数据安全交易.md/#基于Token属性的安全分享',
                             },
                             {
-                                text: '元数据查看',
-                                link: '/功能介绍/数据安全交易.md/#元数据查看',
-                            },
-                            {
-                                text: '所有权转移',
-                                link: '/功能介绍/数据安全交易.md/#所有权转移',
+                                text: 'Token使用后的结算处理',
+                                link: '/功能介绍/数据安全交易.md/#Token使用后的结算处理',
                             }
                         ]
                     },
@@ -343,22 +339,49 @@ export default {
                         collapsible: true,
                         children: [
                             {
-                                text: '原理描述',
-                                link: '/API说明/数据安全交易.md/#原理描述',
+                                text: '基于Token属性的鉴权访问',
+                                link: '/API说明/数据安全交易.md/#基于token属性的鉴权访问',
+                                children: [
+                                    {
+                                        text: '元数据查看',
+                                        link: '/API说明/数据安全交易.md/#元数据查看',
+                                    },
+                                    {
+                                        text: '原始数据查看',
+                                        link: '/API说明/数据安全交易.md/#原始数据查看',
+                                    },
+                                ]
                             },
                             {
-                                text: '使用流程',
-                                link: '/API说明/数据安全交易.md/#使用流程',
+                                text: '基于Token属性的安全分享',
+                                link: '/API说明/数据安全交易.md/#基于token属性的安全分享',
+                                children: [
+                                    {
+                                        text: '所有权转移',
+                                        link: '/API说明/数据安全交易.md/#所有权转移',
+                                    },
+                                    {
+                                        text: '原始数据下载',
+                                        link: '/API说明/数据安全交易.md/#原始数据下载',
+                                    },  
+                                ]
                             },
                             {
-                                text: '元数据查看',
-                                link: '/API说明/数据安全交易.md/#元数据查看',
-                            },
-                            {
-                                text: '所有权转移',
-                                link: '/API说明/数据安全交易.md/#所有权转移',
+                                text: 'Token使用后的结算处理',
+                                link: '/API说明/数据安全交易.md/#token使用后的结算处理',
+                                children: [
+                                    {
+                                        text: '确认使用',
+                                        link: '/API说明/数据安全交易.md/#确认使用',
+                                    },
+                                    {
+                                        text: '使用后冻结/销毁',
+                                        link: '/API说明/数据安全交易.md/#使用后冻结-销毁',
+                                    },  
+                                ]
                             }
                         ]
+
                     },
                     {
                         text: '数据预言机',
