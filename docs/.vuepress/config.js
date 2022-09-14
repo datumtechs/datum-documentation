@@ -145,57 +145,61 @@ export default {
                         ]
                     },
                     {
-                        text: '数据资产发行',
-                        link: '/主要流程/数据资产发行.md',
+                        text: '数据资产化',
+                        link: '/功能介绍/数据资产化功能原理和使用指南.md',
                         collapsible: true,
                         children: [
                             {
                                 text: '获取NFT合约模板',
-                                link: '/主要流程/数据资产发行.md/#获取nft合约模板',
+                                link: '/API说明/数据资产化.md/#获取nft合约模板',
                             },
                             {
                                 text: '完成NFT合约部署',
-                                link: '/主要流程/数据资产发行.md/#完成nft合约部署',
+                                link: '/API说明/数据资产化.md/#完成nft合约部署',
                             },
                             {
                                 text: '查看已发布的NFT合约',
-                                link: '/主要流程/数据资产发行.md/#查看已发布的nft合约',
+                                link: '/API说明/数据资产化.md/#查看已发布的nft合约',
                             },
                             {
-                                text: '铸造Data NFT Token',
-                                link: '/主要流程/数据资产发行.md/#铸造data-nft-token',
+                                text: '铸造Data Token',
+                                link: '/API说明/数据资产化.md/#铸造data-token',
                             },
                             {
-                                text: '销毁Data NFT Token',
-                                link: '/主要流程/数据资产发行.md/#销毁data-nft-token',
+                                text: '销毁Data Token',
+                                link: '/API说明/数据资产化.md/#销毁data-token',
                             },
                             {
-                                text: 'Data NFT Token属性设置',
-                                link: '/主要流程/数据资产发行.md/#data-nft-token属性设置',
+                                text: 'Data Token属性设置',
+                                link: '/API说明/数据资产化.md/#data-token属性设置',
                             },
                             {
-                                text: '查看已铸造的Data NFT Token',
-                                link: '/主要流程/数据资产发行.md/#查看已铸造的data-nft-token',
+                                text: '查看Data Token信息',
+                                link: '/API说明/数据资产化.md/#查看data-token信息',
                             },
                         ]
                     },
                     {
-                        text: '数据可信交易与托管',
-                        link: '/主要流程/数据可信交易与托管.md',
+                        text: '数据安全交易',
+                        link: '/功能介绍/数据安全交易功能原理和使用指南.md',
                         collapsible: true,
                         children: [
                             {
-                                text: '可信数据分享',
-                                link: '/主要流程/数据可信交易与托管.md/#数据可信分享',
+                                text: '原理描述',
+                                link: '/功能介绍/数据安全交易功能原理和使用指南.md/#原理描述',
                             },
                             {
-                                text: '可信数据托管',
-                                link: '/主要流程/数据可信交易与托管.md/#数据可信托管',
+                                text: '使用流程',
+                                link: '/功能介绍/数据安全交易功能原理和使用指南.md/#使用流程',
                             },
                             {
-                                text: '数据一致性验证',
-                                link: '/主要流程/数据可信交易与托管.md/#数据一致性验证',
+                                text: '元数据查看',
+                                link: '/API说明/数据安全交易.md/#元数据查看',
                             },
+                            {
+                                text: '所有权转移',
+                                link: '/API说明/数据安全交易.md/#所有权转移',
+                            }
                         ]
                     },
                     {
