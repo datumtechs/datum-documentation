@@ -5,18 +5,30 @@ export const pagesComponents = {
   "v-bec12f60": defineAsyncComponent(() => import(/* webpackChunkName: "v-bec12f60" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/Getting Started.html.vue")),
   // path: /
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/index.html.vue")),
-  // path: /%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B/%E5%BC%80%E5%A7%8B%E5%87%86%E5%A4%87.html
-  "v-1de1d0e5": defineAsyncComponent(() => import(/* webpackChunkName: "v-1de1d0e5" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/主要流程/开始准备.html.vue")),
-  // path: /%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%8F%AF%E4%BF%A1%E4%BA%A4%E6%98%93%E4%B8%8E%E6%89%98%E7%AE%A1.html
-  "v-7a299b68": defineAsyncComponent(() => import(/* webpackChunkName: "v-7a299b68" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/主要流程/数据可信交易与托管.html.vue")),
-  // path: /%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E5%AD%98%E7%AE%A1.html
-  "v-9a57b40c": defineAsyncComponent(() => import(/* webpackChunkName: "v-9a57b40c" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/主要流程/数据安全存管.html.vue")),
-  // path: /%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B/%E6%95%B0%E6%8D%AE%E6%9C%8D%E5%8A%A1%E8%B5%84%E4%BA%A7%E5%8C%96.html
-  "v-6105ae60": defineAsyncComponent(() => import(/* webpackChunkName: "v-6105ae60" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/主要流程/数据服务资产化.html.vue")),
-  // path: /%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B/%E6%95%B0%E6%8D%AE%E8%81%94%E5%90%88%E6%9F%A5%E8%AF%A2%E8%AE%A1%E7%AE%97.html
-  "v-f267361e": defineAsyncComponent(() => import(/* webpackChunkName: "v-f267361e" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/主要流程/数据联合查询计算.html.vue")),
-  // path: /%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B/%E6%95%B0%E6%8D%AE%E8%B5%84%E4%BA%A7%E5%8F%91%E8%A1%8C.html
-  "v-11bc116b": defineAsyncComponent(() => import(/* webpackChunkName: "v-11bc116b" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/主要流程/数据资产发行.html.vue")),
+  // path: /API%E8%AF%B4%E6%98%8E/%E6%95%B0%E6%8D%AE%E5%8F%AF%E4%BF%A1%E4%BA%A4%E6%98%93%E5%8F%8A%E6%8E%88%E6%9D%83.html
+  "v-6a9d4e44": defineAsyncComponent(() => import(/* webpackChunkName: "v-6a9d4e44" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/API说明/数据可信交易及授权.html.vue")),
+  // path: /API%E8%AF%B4%E6%98%8E/%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E5%AD%98%E7%AE%A1.html
+  "v-6da46496": defineAsyncComponent(() => import(/* webpackChunkName: "v-6da46496" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/API说明/数据安全存管.html.vue")),
+  // path: /API%E8%AF%B4%E6%98%8E/%E6%95%B0%E6%8D%AE%E6%9C%8D%E5%8A%A1%E8%B5%84%E4%BA%A7%E5%8C%96.html
+  "v-27b50375": defineAsyncComponent(() => import(/* webpackChunkName: "v-27b50375" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/API说明/数据服务资产化.html.vue")),
+  // path: /API%E8%AF%B4%E6%98%8E/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%81%94%E5%90%88%E6%9F%A5%E8%AF%A2.html
+  "v-7c7cb850": defineAsyncComponent(() => import(/* webpackChunkName: "v-7c7cb850" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/API说明/数据的联合查询.html.vue")),
+  // path: /API%E8%AF%B4%E6%98%8E/%E6%95%B0%E6%8D%AE%E8%B5%84%E4%BA%A7%E5%8F%91%E8%A1%8C.html
+  "v-2815b926": defineAsyncComponent(() => import(/* webpackChunkName: "v-2815b926" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/API说明/数据资产发行.html.vue")),
+  // path: /img/%E8%BF%99%E9%87%8C%E6%94%BE%E5%9B%BE%E7%89%87%E6%96%87.html
+  "v-576fd4cf": defineAsyncComponent(() => import(/* webpackChunkName: "v-576fd4cf" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/img/这里放图片文.html.vue")),
+  // path: /%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D/%E5%BC%80%E5%A7%8B%E5%87%86%E5%A4%87.html
+  "v-31b88bc4": defineAsyncComponent(() => import(/* webpackChunkName: "v-31b88bc4" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/功能介绍/开始准备.html.vue")),
+  // path: /%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D/%E6%95%B0%E6%8D%AE%E5%8F%AF%E4%BF%A1%E4%BA%A4%E6%98%93%E5%8F%8A%E6%8E%88%E6%9D%83%E5%8A%9F%E8%83%BD%E5%8E%9F%E7%90%86%E5%92%8C%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html
+  "v-8d75efb4": defineAsyncComponent(() => import(/* webpackChunkName: "v-8d75efb4" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/功能介绍/数据可信交易及授权功能原理和使用指南.html.vue")),
+  // path: /%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D/%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E5%AD%98%E7%AE%A1%E5%8A%9F%E8%83%BD%E5%8E%9F%E7%90%86%E5%92%8C%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html
+  "v-6b94fbe7": defineAsyncComponent(() => import(/* webpackChunkName: "v-6b94fbe7" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/功能介绍/数据安全存管功能原理和使用指南.html.vue")),
+  // path: /%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D/%E6%95%B0%E6%8D%AE%E6%9C%8D%E5%8A%A1%E8%B5%84%E4%BA%A7%E5%8C%96%E5%8A%9F%E8%83%BD%E5%8E%9F%E7%90%86%E5%92%8C%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html
+  "v-6539f122": defineAsyncComponent(() => import(/* webpackChunkName: "v-6539f122" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/功能介绍/数据服务资产化功能原理和使用指南.html.vue")),
+  // path: /%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%81%94%E5%90%88%E6%9F%A5%E8%AF%A2%E5%8A%9F%E8%83%BD%E5%8E%9F%E7%90%86%E5%92%8C%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html
+  "v-5dc6716c": defineAsyncComponent(() => import(/* webpackChunkName: "v-5dc6716c" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/功能介绍/数据的联合查询功能原理和使用指南.html.vue")),
+  // path: /%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D/%E6%95%B0%E6%8D%AE%E8%B5%84%E4%BA%A7%E5%8F%91%E8%A1%8C%E5%8A%9F%E8%83%BD%E5%8E%9F%E7%90%86%E5%92%8C%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html
+  "v-08484896": defineAsyncComponent(() => import(/* webpackChunkName: "v-08484896" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/功能介绍/数据资产发行功能原理和使用指南.html.vue")),
   // path: /%E5%8F%82%E8%80%83/Datum-network%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3(%E7%94%A8%E6%88%B7).html
   "v-70c5eee8": defineAsyncComponent(() => import(/* webpackChunkName: "v-70c5eee8" */"D:/newWork/datum-documentation/docs/.vuepress/.temp/pages/参考/Datum-network操作文档(用户).html.vue")),
   // path: /%E5%8F%82%E8%80%83/Datum-network%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3(%E7%AE%A1%E7%90%86%E5%91%98).html

@@ -17,6 +17,10 @@ coverage
 /cypress/videos/
 /cypress/screenshots/
 
+./docs/.vuepress/.cache/*
+./docs/.vuepress/.temp/*
+package-lock.json
+yarn.lock
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
