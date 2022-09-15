@@ -100,6 +100,7 @@ export default {
                     {
                         text: '开始准备',
                         link: '/功能介绍/开始准备.md',
+                        collapsible: true,
                     },
                     {
                         text: '数据安全上链',
@@ -169,6 +170,7 @@ export default {
                     {
                         text: '数据预言机',
                         link: '/功能介绍/数据预言机.md',
+                        collapsible: true,
                         children: [
                             {
                                 text: '什么是数据预言机',
