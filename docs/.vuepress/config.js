@@ -172,7 +172,7 @@ export default {
                         children: [
                             {
                                 text: '什么是Datum数据预言机',
-                                link: '/功能介绍/数据预言机.md/#什么是Datum数据预言机 (Datum Data Oracle)',
+                                link: '/功能介绍/数据预言机.md/#什么是Datum数据预言机',
                             },
                             {
                                 text: '数据预言机的使用场景',
