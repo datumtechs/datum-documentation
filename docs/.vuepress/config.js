@@ -186,15 +186,15 @@ export default {
                         children: [
                             {
                                 text: '基于Token属性的鉴权访问',
-                                link: '/功能介绍/数据安全交易.md/#基于Token属性的鉴权访问',
+                                link: '/功能介绍/数据安全交易.md/#基于token属性的鉴权访问',
                             },
                             {
                                 text: '基于Token属性的安全分享',
-                                link: '/功能介绍/数据安全交易.md/#基于Token属性的安全分享',
+                                link: '/功能介绍/数据安全交易.md/#基于token属性的安全分享',
                             },
                             {
                                 text: 'Token使用后的结算处理',
-                                link: '/功能介绍/数据安全交易.md/#Token使用后的结算处理',
+                                link: '/功能介绍/数据安全交易.md/#token使用后的结算处理',
                             }
                         ]
                     },
