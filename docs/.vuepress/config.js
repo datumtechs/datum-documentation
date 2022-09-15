@@ -150,32 +150,16 @@ export default {
                         collapsible: true,
                         children: [
                             {
-                                text: '获取NFT合约模板',
-                                link: '/功能介绍/数据资产化.md/#获取nft合约模板',
+                                text: 'Token',
+                                link: '/功能介绍/数据资产化.md/#token',
                             },
                             {
-                                text: '完成NFT合约部署',
-                                link: '/功能介绍/数据资产化.md/#完成nft合约部署',
+                                text: 'NFT',
+                                link: '/功能介绍/数据资产化.md/#nft',
                             },
                             {
-                                text: '查看已发布的NFT合约',
-                                link: '/功能介绍/数据资产化.md/#查看已发布的nft合约',
-                            },
-                            {
-                                text: '铸造Data Token',
-                                link: '/功能介绍/数据资产化.md/#铸造data-token',
-                            },
-                            {
-                                text: '销毁Data Token',
-                                link: '/功能介绍/数据资产化.md/#销毁data-token',
-                            },
-                            {
-                                text: 'Data Token属性设置',
-                                link: '/功能介绍/数据资产化.md/#data-token属性设置',
-                            },
-                            {
-                                text: '查看Data Token信息',
-                                link: '/功能介绍/数据资产化.md/#查看data-token信息',
+                                text: '交易所上架',
+                                link: '/功能介绍/数据资产化.md/#交易所上架',
                             },
                         ]
                     },
@@ -186,15 +170,15 @@ export default {
                         children: [
                             {
                                 text: '基于Token属性的鉴权访问',
-                                link: '/功能介绍/数据安全交易.md/#基于Token属性的鉴权访问',
+                                link: '/功能介绍/数据安全交易.md/#基于token属性的鉴权访问',
                             },
                             {
                                 text: '基于Token属性的安全分享',
-                                link: '/功能介绍/数据安全交易.md/#基于Token属性的安全分享',
+                                link: '/功能介绍/数据安全交易.md/#基于token属性的安全分享',
                             },
                             {
                                 text: 'Token使用后的结算处理',
-                                link: '/功能介绍/数据安全交易.md/#Token使用后的结算处理',
+                                link: '/功能介绍/数据安全交易.md/#token使用后的结算处理',
                             }
                         ]
                     },
@@ -304,33 +288,61 @@ export default {
                         collapsible: true,
                         children: [
                             {
-                                text: '获取NFT合约模板',
-                                link: '/API说明/数据资产化.md/#获取nft合约模板',
+                                text: 'Token',
+                                link: '/API说明/数据资产化.md/#token',
+                                // children: [
+                                //     {
+                                //         text: '获取合约模板',
+                                //         link: '/API说明/数据资产化.md/#获取合约模板',
+                                //     },
+                                //     {
+                                //         text: '部署合约',
+                                //         link: '/API说明/数据资产化.md/#部署合约',
+                                //     },
+                                //     {
+                                //         text: '关联原始数据和元数据',
+                                //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
+                                //     },
+                                //     {
+                                //         text: '铸造Token',
+                                //         link: '/API说明/数据资产化.md/#铸造token',
+                                //     },
+                                //     {
+                                //         text: '销毁Token',
+                                //         link: '/API说明/数据资产化.md/#销毁token',
+                                //     },
+                                // ]
                             },
                             {
-                                text: '完成NFT合约部署',
-                                link: '/API说明/数据资产化.md/#完成nft合约部署',
+                                text: 'NFT',
+                                link: '/API说明/数据资产化.md/#nft',
+                                // children: [
+                                //     {
+                                //         text: '获取合约模板',
+                                //         link: '/API说明/数据资产化.md/#获取合约模板',
+                                //     },
+                                //     {
+                                //         text: '部署合约',
+                                //         link: '/API说明/数据资产化.md/#部署合约',
+                                //     },
+                                //     {
+                                //         text: '关联原始数据和元数据',
+                                //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
+                                //     },
+                                //     {
+                                //         text: '铸造Token',
+                                //         link: '/API说明/数据资产化.md/#铸造token',
+                                //     },
+                                //     {
+                                //         text: '销毁Token',
+                                //         link: '/API说明/数据资产化.md/#销毁token',
+                                //     },
+                                // ]
                             },
                             {
-                                text: '查看已发布的NFT合约',
-                                link: '/API说明/数据资产化.md/#查看已发布的nft合约',
-                            },
-                            {
-                                text: '铸造Data Token',
-                                link: '/API说明/数据资产化.md/#铸造data-token',
-                            },
-                            {
-                                text: '销毁Data Token',
-                                link: '/API说明/数据资产化.md/#销毁data-token',
-                            },
-                            {
-                                text: 'Data Token属性设置',
-                                link: '/API说明/数据资产化.md/#data-token属性设置',
-                            },
-                            {
-                                text: '查看Data Token信息',
-                                link: '/API说明/数据资产化.md/#查看data-token信息',
-                            },
+                                text: '交易所上架',
+                                link: '/API说明/数据资产化.md/#交易所上架'
+                            }
                         ]
                     },
                     {
