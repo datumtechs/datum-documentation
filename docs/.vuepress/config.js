@@ -171,8 +171,8 @@ export default {
                         link: '/功能介绍/数据预言机.md',
                         children: [
                             {
-                                text: '什么是Datum数据预言机',
-                                link: '/功能介绍/数据预言机.md/#什么是Datum数据预言机',
+                                text: '什么是数据预言机',
+                                link: '/功能介绍/数据预言机.md/#什么是数据预言机',
                             },
                             {
                                 text: '数据预言机的使用场景',
