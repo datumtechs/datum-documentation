@@ -192,50 +192,6 @@ export default {
                         text: '数据安全计算',
                         link: '/功能介绍/数据安全计算.md',
                         collapsible: true,
-                        children: [
-                            {
-                                text: '密文外包计算',
-                                link: '/功能介绍/数据安全计算.md/#密文外包计算',
-                                children: [
-                                    {
-                                        text: '密文外包计算',
-                                        link: '/API说明/数据安全计算.md/#密文外包计算',
-                                    }
-                                ]
-                            },
-                            {
-                                text: '联合查询统计',
-                                link: '/功能介绍/数据安全计算.md/#联合查询统计',
-                                children: [
-                                    {
-                                        text: '联合匹配',
-                                        link: '/API说明/数据安全计算.md/#联合匹配',
-                                    },
-                                    {
-                                        text: '联合查询',
-                                        link: '/API说明/数据安全计算.md/#联合查询',
-                                    },
-                                    {
-                                        text: '联合统计分析',
-                                        link: '/API说明/数据安全计算.md/#联合统计分析',
-                                    },
-                                ]
-                            },
-                            {
-                                text: '联合机器学习',
-                                link: '/功能介绍/数据安全计算.md/#联合机器学习',
-                                children: [
-                                    {
-                                        text: '联合模型训练',
-                                        link: '/API说明/数据安全计算.md/#联合模型训练',
-                                    },
-                                    {
-                                        text: '联合模型预测',
-                                        link: '/API说明/数据安全计算.md/#联合模型预测',
-                                    },
-                                ]
-                            },
-                        ]
                     },
                 ],
             }, 
@@ -413,31 +369,31 @@ export default {
                         collapsible: true,
                         children: [
                             {
-                                text: '两方数据合作',
-                                link: '/API说明/数据安全计算.md/#两方数据合作',
-                                children: [
-                                    {
-                                        text: '隐私匹配',
-                                        link: '/API说明/数据安全计算.md/#隐私匹配',
-                                    },
-                                    {
-                                        text: '隐私标签查询',
-                                        link: '/API说明/数据安全计算.md/#隐私标签查询',
-                                    },
-                                    {
-                                        text: '隐私SQL查询',
-                                        link: '/API说明/数据安全计算.md/#隐私sql查询',
-                                    },
-                                ]
+                                text: '密文外包计算',
+                                link: '/API说明/数据安全计算.md/#密文外包计算',
                             },
                             {
-                                text: '多方数据协作',
-                                link: '/API说明/数据安全计算.md/#多方数据协作',
+                                text: '联合查询统计',
+                                link: '/API说明/数据安全计算.md/#联合查询统计',
                                 children: [
+                                    {
+                                        text: '联合匹配',
+                                        link: '/API说明/数据安全计算.md/#联合匹配',
+                                    },
+                                    {
+                                        text: '联合查询',
+                                        link: '/API说明/数据安全计算.md/#联合查询',
+                                    },
                                     {
                                         text: '联合统计分析',
                                         link: '/API说明/数据安全计算.md/#联合统计分析',
                                     },
+                                ]
+                            },
+                            {
+                                text: '联合机器学习',
+                                link: '/API说明/数据安全计算.md/#联合机器学习',
+                                children: [
                                     {
                                         text: '联合模型训练',
                                         link: '/API说明/数据安全计算.md/#联合模型训练',
