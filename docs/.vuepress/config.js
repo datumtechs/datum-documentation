@@ -93,52 +93,52 @@ export default {
                 children: []
             }, {
                 // @ts-ignore
-                text: '主要流程',
+                text: '功能介绍',
                 link: '',
                 children: [
                     // SidebarItem
                     {
                         text: '开始准备',
-                        link: '/主要流程/开始准备.md',
+                        link: '/功能介绍/开始准备.md',
                     },
                     {
-                        text: '数据安全存管',
-                        link: '/主要流程/数据安全存管.md',
+                        text: '数据安全上链',
+                        link: '/功能介绍/数据安全上链.md',
                         collapsible: true,
                         children: [
                             {
                                 text: '支持的传输和存管模式',
-                                link: '/主要流程/数据安全存管.md/#支持的传输和存管模式',
+                                link: '/功能介绍/数据安全上链.md/#支持的传输和存管模式',
                                 children: [
                                     {
                                         text: '云服务传输和存管',
-                                        link: '/主要流程/数据安全存管.md/#云服务传输和存管',
+                                        link: '/功能介绍/数据安全上链.md/#云服务传输和存管',
                                     },
                                     {
                                         text: 'IPFS传输和存管',
-                                        link: '/主要流程/数据安全存管.md/#ipfs传输和存管',
+                                        link: '/功能介绍/数据安全上链.md/#ipfs传输和存管',
                                     },
                                     {
                                         text: '区块链传输和存管',
-                                        link: '/主要流程/数据安全存管.md/#区块链传输和存管',
+                                        link: '/功能介绍/数据安全上链.md/#区块链传输和存管',
                                     },
                                 ]
                             },
                             {
                                 text: '元数据发布',
-                                link: '/主要流程/数据安全存管.md/#元数据发布',
+                                link: '/功能介绍/数据安全上链.md/#元数据发布',
                                 children: [
                                     {
                                         text: '提取元数据',
-                                        link: '/主要流程/数据安全存管.md/#提取元数据',
+                                        link: '/功能介绍/数据安全上链.md/#提取元数据',
                                     },
                                     {
                                         text: '发布元数据',
-                                        link: '/主要流程/数据安全存管.md/#发布元数据',
+                                        link: '/功能介绍/数据安全上链.md/#发布元数据',
                                     },
                                     {
                                         text: '发布数据Hash',
-                                        link: '/主要流程/数据安全存管.md/#发布数据Hash',
+                                        link: '/功能介绍/数据安全上链.md/#发布数据Hash',
                                     },
                                 ]
                             }
@@ -146,113 +146,307 @@ export default {
                     },
                     {
                         text: '数据资产化',
-                        link: '/功能介绍/数据资产化功能原理和使用指南.md',
+                        link: '/功能介绍/数据资产化.md',
                         collapsible: true,
                         children: [
                             {
-                                text: '获取NFT合约模板',
-                                link: '/API说明/数据资产化.md/#获取nft合约模板',
+                                text: 'Token',
+                                link: '/功能介绍/数据资产化.md/#token',
                             },
                             {
-                                text: '完成NFT合约部署',
-                                link: '/API说明/数据资产化.md/#完成nft合约部署',
+                                text: 'NFT',
+                                link: '/功能介绍/数据资产化.md/#nft',
                             },
                             {
-                                text: '查看已发布的NFT合约',
-                                link: '/API说明/数据资产化.md/#查看已发布的nft合约',
-                            },
-                            {
-                                text: '铸造Data Token',
-                                link: '/API说明/数据资产化.md/#铸造data-token',
-                            },
-                            {
-                                text: '销毁Data Token',
-                                link: '/API说明/数据资产化.md/#销毁data-token',
-                            },
-                            {
-                                text: 'Data Token属性设置',
-                                link: '/API说明/数据资产化.md/#data-token属性设置',
-                            },
-                            {
-                                text: '查看Data Token信息',
-                                link: '/API说明/数据资产化.md/#查看data-token信息',
+                                text: '交易所上架',
+                                link: '/功能介绍/数据资产化.md/#交易所上架',
                             },
                         ]
                     },
                     {
                         text: '数据安全交易',
-                        link: '/功能介绍/数据安全交易功能原理和使用指南.md',
+                        link: '/功能介绍/数据安全交易.md',
                         collapsible: true,
                         children: [
                             {
-                                text: '原理描述',
-                                link: '/功能介绍/数据安全交易功能原理和使用指南.md/#原理描述',
+                                text: '基于Token属性的鉴权访问',
+                                link: '/功能介绍/数据安全交易.md/#基于token属性的鉴权访问',
                             },
                             {
-                                text: '使用流程',
-                                link: '/功能介绍/数据安全交易功能原理和使用指南.md/#使用流程',
+                                text: '基于Token属性的安全分享',
+                                link: '/功能介绍/数据安全交易.md/#基于token属性的安全分享',
                             },
                             {
-                                text: '元数据查看',
-                                link: '/API说明/数据安全交易.md/#元数据查看',
-                            },
-                            {
-                                text: '所有权转移',
-                                link: '/API说明/数据安全交易.md/#所有权转移',
+                                text: 'Token使用后的结算处理',
+                                link: '/功能介绍/数据安全交易.md/#token使用后的结算处理',
                             }
                         ]
                     },
                     {
-                        text: '数据联合查询计算',
-                        link: '/主要流程/数据联合查询计算.md',
+                        text: '数据预言机',
+                        link: '/功能介绍/数据预言机.md',
+                        children: [
+                        ]
+                    },
+                    {
+                        text: '数据安全计算',
+                        link: '/功能介绍/数据安全计算.md',
                         collapsible: true,
                         children: [
                             {
                                 text: '两方数据合作',
-                                link: '/主要流程/数据联合查询计算.md/#两方数据合作',
+                                link: '/功能介绍/数据安全计算.md/#两方数据合作',
                                 children: [
                                     {
                                         text: '隐私匹配',
-                                        link: '/主要流程/数据联合查询计算.md/#隐私匹配',
+                                        link: '/功能介绍/数据安全计算.md/#隐私匹配',
                                     },
                                     {
                                         text: '隐私标签查询',
-                                        link: '/主要流程/数据联合查询计算.md/#隐私标签查询',
+                                        link: '/功能介绍/数据安全计算.md/#隐私标签查询',
                                     },
                                     {
                                         text: '隐私SQL查询',
-                                        link: '/主要流程/数据联合查询计算.md/#隐私sql查询',
+                                        link: '/功能介绍/数据安全计算.md/#隐私sql查询',
                                     },
                                 ]
                             },
                             {
                                 text: '多方数据协作',
-                                link: '/主要流程/数据联合查询计算.md/#多方数据协作',
+                                link: '/功能介绍/数据安全计算.md/#多方数据协作',
                                 children: [
                                     {
                                         text: '联合统计分析',
-                                        link: '/主要流程/数据联合查询计算.md/#联合统计分析',
+                                        link: '/功能介绍/数据安全计算.md/#联合统计分析',
                                     },
                                     {
                                         text: '联合模型训练',
-                                        link: '/主要流程/数据联合查询计算.md/#联合模型训练',
+                                        link: '/功能介绍/数据安全计算.md/#联合模型训练',
                                     },
                                     {
                                         text: '联合模型预测',
-                                        link: '/主要流程/数据联合查询计算.md/#联合模型预测',
+                                        link: '/功能介绍/数据安全计算.md/#联合模型预测',
                                     },
                                 ]
                             },
                         ]
                     },
+                ],
+            }, 
+            {
+                // @ts-ignore
+                text: 'API说明',
+                link: '',
+                children: [
+                    // SidebarItem
                     {
-                        text: '数据服务资产化',
-                        link: '/主要流程/数据服务资产化.md',
+                        text: '数据安全上链',
+                        link: '/API说明/数据安全上链.md',
+                        collapsible: true,
+                        children: [
+                            {
+                                text: '支持的传输和存管模式',
+                                link: '/API说明/数据安全上链.md/#支持的传输和存管模式',
+                                children: [
+                                    {
+                                        text: '云服务传输和存管',
+                                        link: '/API说明/数据安全上链.md/#云服务传输和存管',
+                                    },
+                                    {
+                                        text: 'IPFS传输和存管',
+                                        link: '/API说明/数据安全上链.md/#ipfs传输和存管',
+                                    },
+                                    {
+                                        text: '区块链传输和存管',
+                                        link: '/API说明/数据安全上链.md/#区块链传输和存管',
+                                    },
+                                ]
+                            },
+                            {
+                                text: '元数据发布',
+                                link: '/API说明/数据安全上链.md/#元数据发布',
+                                children: [
+                                    {
+                                        text: '提取元数据',
+                                        link: '/API说明/数据安全上链.md/#提取元数据',
+                                    },
+                                    {
+                                        text: '发布元数据',
+                                        link: '/API说明/数据安全上链.md/#发布元数据',
+                                    },
+                                    {
+                                        text: '发布数据Hash',
+                                        link: '/API说明/数据安全上链.md/#发布数据Hash',
+                                    },
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        text: '数据资产化',
+                        link: '/API说明/数据资产化.md',
+                        collapsible: true,
+                        children: [
+                            {
+                                text: 'Token',
+                                link: '/API说明/数据资产化.md/#token',
+                                // children: [
+                                //     {
+                                //         text: '获取合约模板',
+                                //         link: '/API说明/数据资产化.md/#获取合约模板',
+                                //     },
+                                //     {
+                                //         text: '部署合约',
+                                //         link: '/API说明/数据资产化.md/#部署合约',
+                                //     },
+                                //     {
+                                //         text: '关联原始数据和元数据',
+                                //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
+                                //     },
+                                //     {
+                                //         text: '铸造Token',
+                                //         link: '/API说明/数据资产化.md/#铸造token',
+                                //     },
+                                //     {
+                                //         text: '销毁Token',
+                                //         link: '/API说明/数据资产化.md/#销毁token',
+                                //     },
+                                // ]
+                            },
+                            {
+                                text: 'NFT',
+                                link: '/API说明/数据资产化.md/#nft',
+                                // children: [
+                                //     {
+                                //         text: '获取合约模板',
+                                //         link: '/API说明/数据资产化.md/#获取合约模板',
+                                //     },
+                                //     {
+                                //         text: '部署合约',
+                                //         link: '/API说明/数据资产化.md/#部署合约',
+                                //     },
+                                //     {
+                                //         text: '关联原始数据和元数据',
+                                //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
+                                //     },
+                                //     {
+                                //         text: '铸造Token',
+                                //         link: '/API说明/数据资产化.md/#铸造token',
+                                //     },
+                                //     {
+                                //         text: '销毁Token',
+                                //         link: '/API说明/数据资产化.md/#销毁token',
+                                //     },
+                                // ]
+                            },
+                            {
+                                text: '交易所上架',
+                                link: '/API说明/数据资产化.md/#交易所上架'
+                            }
+                        ]
+                    },
+                    {
+                        text: '数据安全交易',
+                        link: '/API说明/数据安全交易.md',
+                        collapsible: true,
+                        children: [
+                            {
+                                text: '基于Token属性的鉴权访问',
+                                link: '/API说明/数据安全交易.md/#基于token属性的鉴权访问',
+                                children: [
+                                    {
+                                        text: '元数据查看',
+                                        link: '/API说明/数据安全交易.md/#元数据查看',
+                                    },
+                                    {
+                                        text: '原始数据查看',
+                                        link: '/API说明/数据安全交易.md/#原始数据查看',
+                                    },
+                                ]
+                            },
+                            {
+                                text: '基于Token属性的安全分享',
+                                link: '/API说明/数据安全交易.md/#基于token属性的安全分享',
+                                children: [
+                                    {
+                                        text: '所有权转移',
+                                        link: '/API说明/数据安全交易.md/#所有权转移',
+                                    },
+                                    {
+                                        text: '原始数据下载',
+                                        link: '/API说明/数据安全交易.md/#原始数据下载',
+                                    },  
+                                ]
+                            },
+                            {
+                                text: 'Token使用后的结算处理',
+                                link: '/API说明/数据安全交易.md/#token使用后的结算处理',
+                                children: [
+                                    {
+                                        text: '确认使用',
+                                        link: '/API说明/数据安全交易.md/#确认使用',
+                                    },
+                                    {
+                                        text: '使用后冻结/销毁',
+                                        link: '/API说明/数据安全交易.md/#使用后冻结-销毁',
+                                    },  
+                                ]
+                            }
+                        ]
+
+                    },
+                    {
+                        text: '数据预言机',
+                        link: '/API说明/数据预言机.md',
                         children: [
                         ]
                     },
+                    {
+                        text: '数据安全计算',
+                        link: '/API说明/数据安全计算.md',
+                        collapsible: true,
+                        children: [
+                            {
+                                text: '两方数据合作',
+                                link: '/API说明/数据安全计算.md/#两方数据合作',
+                                children: [
+                                    {
+                                        text: '隐私匹配',
+                                        link: '/API说明/数据安全计算.md/#隐私匹配',
+                                    },
+                                    {
+                                        text: '隐私标签查询',
+                                        link: '/API说明/数据安全计算.md/#隐私标签查询',
+                                    },
+                                    {
+                                        text: '隐私SQL查询',
+                                        link: '/API说明/数据安全计算.md/#隐私sql查询',
+                                    },
+                                ]
+                            },
+                            {
+                                text: '多方数据协作',
+                                link: '/API说明/数据安全计算.md/#多方数据协作',
+                                children: [
+                                    {
+                                        text: '联合统计分析',
+                                        link: '/API说明/数据安全计算.md/#联合统计分析',
+                                    },
+                                    {
+                                        text: '联合模型训练',
+                                        link: '/API说明/数据安全计算.md/#联合模型训练',
+                                    },
+                                    {
+                                        text: '联合模型预测',
+                                        link: '/API说明/数据安全计算.md/#联合模型预测',
+                                    },
+                                ]
+                            },
+                        ]
+                    },
                 ],
-            }, {
+            },
+            {
                 // @ts-ignore
                 text: '参考',
                 link: '',
