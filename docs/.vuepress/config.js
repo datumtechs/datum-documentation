@@ -253,8 +253,8 @@ export default {
                                         link: '/API说明/数据安全上链.md/#发布元数据',
                                     },
                                     {
-                                        text: '发布数据Hash',
-                                        link: '/API说明/数据安全上链.md/#发布数据Hash',
+                                        text: '发布数据hash',
+                                        link: '/API说明/数据安全上链.md/#发布数据hash',
                                     },
                                 ]
                             },
@@ -263,8 +263,8 @@ export default {
                                 link: '/API说明/数据安全上链.md/#数据一致性校验',
                                 children: [
                                     {
-                                        text: '根据数据Hash校验数据一致性',
-                                        link: '/API说明/数据安全上链.md/#根据数据Hash校验数据一致性',
+                                        text: '根据数据hash校验数据一致性',
+                                        link: '/API说明/数据安全上链.md/#根据数据hash校验数据一致性',
                                     },
                                 ]
                             },
