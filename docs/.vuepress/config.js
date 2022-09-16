@@ -224,7 +224,7 @@ export default {
                         children: [
                             {
                                 text: '支持的传输和存管模式',
-                                link: '/API说明/数据安全上链.md/#支持的传输和存管模式',
+                                link: '/API说明/数据安全上链.md/#数据安全存管',
                                 children: [
                                     {
                                         text: '云服务传输和存管',
@@ -241,8 +241,8 @@ export default {
                                 ]
                             },
                             {
-                                text: '元数据发布',
-                                link: '/API说明/数据安全上链.md/#元数据发布',
+                                text: '数据安全上链',
+                                link: '/API说明/数据安全上链.md/#数据安全上链',
                                 children: [
                                     {
                                         text: '提取元数据',
@@ -257,7 +257,25 @@ export default {
                                         link: '/API说明/数据安全上链.md/#发布数据Hash',
                                     },
                                 ]
-                            }
+                            },
+                            {
+                                text: '数据一致性校验',
+                                link: '/API说明/数据安全上链.md/#数据一致性校验',
+                                children: [
+                                    {
+                                        text: '提取元数据',
+                                        link: '/API说明/数据安全上链.md/#提取元数据',
+                                    },
+                                    {
+                                        text: '发布元数据',
+                                        link: '/API说明/数据安全上链.md/#发布元数据',
+                                    },
+                                    {
+                                        text: '发布数据Hash',
+                                        link: '/API说明/数据安全上链.md/#发布数据Hash',
+                                    },
+                                ]
+                            },
                         ]
                     },
                     {
