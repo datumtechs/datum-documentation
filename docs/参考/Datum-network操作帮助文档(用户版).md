@@ -1,7 +1,5 @@
 # Datum-network操作帮助文档（用户版）
 
-[TOC]
-
 ## 概述
 
 Datum-network是基于隐私AI底层能力构建的分布式隐私计算网络。

@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-d389c950","path":"/API%E8%AF%B4%E6%98%8E/%E6%95%B0%E6%8D%AE%E9%A2%84%E8%A8%80%E6%9C%BA.html","title":"\u6570\u636E\u9884\u8A00\u673AAPI\u8BF4\u660E","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{},"filePathRelative":"API\u8BF4\u660E/\u6570\u636E\u9884\u8A00\u673A.md"}');export{t as data};

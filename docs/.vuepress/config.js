@@ -472,11 +472,6 @@ export default {
                 text: 'Home',
                 link: process.env.VITE_ENV === 'sit' ? config.test.home : config.production.home,// HOME 地址
             },
-            // NavbarGroup
-            // {
-            //     text: 'produces',
-            //     children: [ '/group/foo.md', '/group/bar.md' ],
-            // },
         ],
     }),
 }
