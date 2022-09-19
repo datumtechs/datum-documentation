@@ -32,3 +32,5 @@ yarn.lock
 *.sw?
 ./public/
 public
+./docs/.vuepress/.temp/*
+.temp

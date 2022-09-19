@@ -1,1 +1,0 @@
-export const data = JSON.parse("{\"key\":\"v-d389c950\",\"path\":\"/API%E8%AF%B4%E6%98%8E/%E6%95%B0%E6%8D%AE%E9%A2%84%E8%A8%80%E6%9C%BA.html\",\"title\":\"数据预言机API说明\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[],\"git\":{},\"filePathRelative\":\"API说明/数据预言机.md\"}")
