@@ -66,7 +66,7 @@ export default {
         }),
     ],
     lang: 'zh-CN',
-    base: '/',
+    base: '/datum-documentation/',
     theme: defaultTheme({
         // 在这里进行配置
         // Public 文件路径
