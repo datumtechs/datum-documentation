@@ -1,12 +1,12 @@
 
 const config = {
     test: {
-        home: 'http://192.168.112.160:8080',//'https://test.datumtechs.com',
+        home: 'http://test.datumtechs.com',//'https://test.datumtechs.com',
         appId: '',
         indexName: ''
     },
     production: {
-        home: 'https://test.datumtechs.com',
+        home: 'http://47.241.242.167',
         appId: '',
         indexName: ''
     }

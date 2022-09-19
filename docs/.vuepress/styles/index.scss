@@ -1,6 +1,11 @@
 .navbar .site-name {
     display: none;
 }
+
+.sidebar::-webkit-scrollbar {
+    width: 1px;
+}
+
 :root {
     // brand colors
     --c-brand: #03c9f6;

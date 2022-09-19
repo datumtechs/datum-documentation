@@ -453,11 +453,11 @@ export default {
                 children: [
                     {
                         text: 'Datum-network操作帮助文档(管理员)',
-                        link: '/参考/datum-network操作文档(管理员).md',
+                        link: '/参考/Datum-network操作帮助文档(管理员).md',
                     },
                     {
                         text: 'Datum-network操作帮助文档(用户)',
-                        link: '/参考/datum-network操作文档(用户).md',
+                        link: '/参考/Datum-network操作帮助文档(用户版).md',
                     },
                     {
                         text: 'Datum-platform操作帮助文档',
