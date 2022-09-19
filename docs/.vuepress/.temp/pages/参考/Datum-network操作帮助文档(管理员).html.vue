@@ -1,5 +1,4 @@
 <template><div><h1 id="datum-network操作帮助文档-管理员版" tabindex="-1"><a class="header-anchor" href="#datum-network操作帮助文档-管理员版" aria-hidden="true">#</a> Datum-network操作帮助文档（管理员版）</h1>
-<p>[TOC]</p>
 <h2 id="概述" tabindex="-1"><a class="header-anchor" href="#概述" aria-hidden="true">#</a> 概述</h2>
 <p>Datum-network是基于隐私AI底层能力构建的分布式隐私计算网络。</p>
 <p>Datum-network管理台面向数据提供方、算力提供方提供了一个可对原始数据、算力资源进行统一管理的门户界面。</p>

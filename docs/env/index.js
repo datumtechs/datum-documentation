@@ -6,7 +6,7 @@ const config = {
         indexName: ''
     },
     production: {
-        home: 'http://47.241.242.167',
+        home: 'https://www.datumtechs.com',
         appId: '',
         indexName: ''
     }
