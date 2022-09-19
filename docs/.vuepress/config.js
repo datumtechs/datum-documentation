@@ -224,7 +224,7 @@ export default {
                         children: [
                             {
                                 text: '支持的传输和存管模式',
-                                link: '/API说明/数据安全上链.md/#数据安全存管',
+                                link: '/API说明/数据安全上链.md/#支持的传输和存管模式',
                                 children: [
                                     {
                                         text: '云服务传输和存管',
