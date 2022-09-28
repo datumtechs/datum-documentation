@@ -111,10 +111,10 @@ Note:
 
   
 
-[priv_op_paradigm]: /img/priv_op_paradigm.png
-[delegate_computing]: /img/delegate_computing.png
-[psi_eg]: /img/psi_eg.png
-[joint_ai]: /img/joint_ai.png
+[priv_op_paradigm]: ../../img/priv_op_paradigm.png
+[delegate_computing]: ../../img/delegate_computing.png
+[psi_eg]: ../../img/psi_eg.png
+[joint_ai]: ../../img/joint_ai.png
 
 [data_oracle]: ./DataOracle.md
 [api desc]: ../APIDescription/SecureDataComputation.md

@@ -34,5 +34,5 @@ It is well-known that smart contracts running on a blockchain cannot directly ob
 
 
 
-[data_oracle]: /img/data_oracle.png
+[data_oracle]: ../../img/data_oracle.png
 [api desc]: ../APIDescription/DataOracle.md
