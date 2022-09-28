@@ -274,7 +274,7 @@ After setting the relevant information, click on [Creat Credential], complete si
 
 Click [Launch] button in Attribute Credential page, and choose a NFT market to launch the NFT.
 
-![NFT上架](/network-img/NFT上架.png)
+![NFT上架](/network-img/上架.png)
 
 （4）Details
 

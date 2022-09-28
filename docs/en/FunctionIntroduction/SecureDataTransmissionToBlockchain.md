@@ -38,7 +38,7 @@ After the data enters the Web 3 world through Datum, users can publish the metad
 ## Please refer to [APIs for Secure Data Transmission to Blockchain][api desc] for more specific usage instructions
 
 
-[data_safe_onchain]: ../../img/data_safe_onchain.png
-[publish_metadata]: ../../img/publish_metadata.png
+[data_safe_onchain]: /img/data_safe_onchain.png
+[publish_metadata]: /img/publish_metadata.png
 [api desc]: ../APIDescription/SecureDataTransmissionToBlockchain.md
 
