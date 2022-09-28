@@ -30,15 +30,15 @@ Datum-network管理台面向数据提供方、算力提供方提供了一个可�
 
 1. 在Chrome中打开部署的管理台地址，进入datum-network管理台首页；点击【Metamask】按钮，在跳出的弹窗中，点击【切换网络】按钮，将网络切换至PlatON开发网络。
 
-<img src="/network-img/切换网络.png" alt="切换网络" style="zoom: 80%;" />
+<img src="network-img/切换网络.png" alt="切换网络" style="zoom: 80%;" />
 
 2. 切换至PlatON开发网络后，选择一个连接账号。
 
-<img src="/network-img/选择钱包.png" alt="选择钱包" style="zoom:50%;" />
+<img src="network-img/选择钱包.png" alt="选择钱包" style="zoom:50%;" />
 
 3. 确认连接后，点击【签名】按钮，完成签名后既能进入管理台页面。
 
-<img src="/network-img/钱包登录签名.png" alt="钱包登录签名" style="zoom:50%;" />
+<img src="network-img/钱包登录签名.png" alt="钱包登录签名" style="zoom:50%;" />
 
 
 
@@ -50,21 +50,21 @@ Datum-network管理台面向数据提供方、算力提供方提供了一个可�
 
 （1）设置机构识别名称（用于在网络展示）、设置机构头像、填写机构描述。
 
-<img src="/network-img/设置机构名称.png" alt="设置机构名称" style="zoom:50%;" />
+<img src="network-img/设置机构名称.png" alt="设置机构名称" style="zoom:50%;" />
 
 （2）初始化身份标识(DID)，身份标识(did)是去中心化的身份用户, 用于项目中的数据资产化,工作流运行,清算等多个环节. 而初始化身份标识需要内置管理员钱包支付一定的手续费, 请确保初始化身份标识前钱包有一定的余额。
 
-<img src="/network-img/初始化身份标识.png" alt="初始化身份标识" style="zoom:50%;" />
+<img src="network-img/初始化身份标识.png" alt="初始化身份标识" style="zoom:50%;" />
 
 （3）设置机构头像、填写机构描述。
 
-<img src="/network-img/设置机构头像与描述.png" alt="设置机构头像与描述" style="zoom:50%;" />
+<img src="network-img/设置机构头像与描述.png" alt="设置机构头像与描述" style="zoom:50%;" />
 
 （4）注册入网，完成初始化设置。
 
 初始化设置成功后，系统会自动生成一个内置钱包地址，该钱包地址用于支付计算任务执行时消耗的手续费。
 
-<img src="/network-img/注册入网.png" alt="注册入网" style="zoom:50%;" />
+<img src="network-img/注册入网.png" alt="注册入网" style="zoom:50%;" />
 
 
 
@@ -74,15 +74,15 @@ Datum-network管理台面向数据提供方、算力提供方提供了一个可�
 
 （1）机构信息。
 
-<img src="/network-img/用户中心-主页.png" alt="用户中心-主页" style="zoom:50%;" />
+<img src="network-img/用户中心-主页.png" alt="用户中心-主页" style="zoom:50%;" />
 
 （2）网络连接状态。
 
-<img src="/network-img/用户中心-网络身份.png" alt="用户中心-网络身份" style="zoom:50%;" />
+<img src="network-img/用户中心-网络身份.png" alt="用户中心-网络身份" style="zoom:50%;" />
 
 （3）修改管理员、查看内置钱包信息。
 
-<img src="/network-img/用户中心-修改管理员.png" alt="用户中心-修改管理员" style="zoom: 50%;" />
+<img src="network-img/用户中心-修改管理员.png" alt="用户中心-修改管理员" style="zoom: 50%;" />
 
 
 
@@ -90,7 +90,7 @@ Datum-network管理台面向数据提供方、算力提供方提供了一个可�
 
 展示连接节点的系统资源情况，包括CPU、内存、带宽及消耗情况；以及该节点执行的任务情况，包括数据发布量、计算任务概况。
 
-<img src="/network-img/系统概况.png" alt="系统概况" style="zoom:50%;" />
+<img src="network-img/系统概况.png" alt="系统概况" style="zoom:50%;" />
 
 
 
@@ -106,7 +106,7 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 点击【节点管理】-【引导节点管理】进入管理页面。
 
-<img src="/network-img/引导节点管理.png" alt="引导节点管理" style="zoom:50%;" />
+<img src="network-img/引导节点管理.png" alt="引导节点管理" style="zoom:50%;" />
 
 （1）添加或删除引导节点。
 
@@ -114,7 +114,7 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 用户可以按需对已添加的引导节点进行【删除】操作。
 
-<img src="/network-img/添加引导节点.png" alt="添加引导节点" style="zoom:50%;" />
+<img src="network-img/添加引导节点.png" alt="添加引导节点" style="zoom:50%;" />
 
 
 
@@ -124,7 +124,7 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 点击【节点管理】-【存储资源管理】进入管理页面。
 
-<img src="/network-img/存储资源管理.png" alt="存储资源管理" style="zoom:50%;" />
+<img src="network-img/存储资源管理.png" alt="存储资源管理" style="zoom:50%;" />
 
 
 
@@ -138,9 +138,9 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 计算资源启用后，网络参与方在发起隐私计算任务时，系统会按照算力匹配情况进行调度。
 
-<img src="/network-img/计算资源管理.png" alt="计算资源管理" style="zoom:50%;" />
+<img src="network-img/计算资源管理.png" alt="计算资源管理" style="zoom:50%;" />
 
-<img src="/network-img/启动算力.png" alt="启动算力" style="zoom: 50%;" />
+<img src="network-img/启动算力.png" alt="启动算力" style="zoom: 50%;" />
 
 
 
@@ -152,11 +152,11 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 （1）点击【我的数据】-【数据添加】进入添加数据、提取元数据页面。
 
-<img src="/network-img/添加数据.png" alt="添加数据" style="zoom: 50%;" />
+<img src="network-img/添加数据.png" alt="添加数据" style="zoom: 50%;" />
 
 （2）从本地选择需要使用的数据文件，系统暂时只支持CSV格式。选择文件后点击【导入文件】按钮，系统将自动读取原始数据中包含的“字段信息”和“格式类型”，统称为元数据。用户可以修改使用场景：隐私计算、非隐私计算(数据仅可在所选的算法(隐私计算/非隐私计算)中使用, 支持多选),以及读取的元数据信息，并选择“是否对外可见”。
 
-![添加数据-2](/network-img/添加数据-2.png)
+![添加数据-2](network-img/添加数据-2.png)
 
 （3）用户完成基本信息填写、确定字段信息后，点击页面下方的【提交】按钮，即可将该元数据上传至此网络节点，并进入【数据管理】模块。
 
@@ -164,7 +164,7 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 用户可以通过【我的数据】-【数据管理】进入元数据发布、发布数据管理页面。
 
-![数据管理](/network-img/数据管理.png)
+![数据管理](network-img/数据管理.png)
 
 通过【数据添加】新增的元数据状态默认为“未发布”，点击【发布数据】后该元数据会发布至Datum-network配置的数据服务节点，同时状态变更为“已发布”。
 
@@ -176,7 +176,7 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 点击【发布凭证】可以该数据为基础，发行数据资产（Data Token）。
 
-![数据管理-2](/network-img/数据管理-2.png)
+![数据管理-2](network-img/数据管理-2.png)
 
 **【发布数据凭证】**
 
@@ -184,11 +184,11 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 ​		也可在【数据管理】页面中点击“发布凭证”按钮进入该页面。
 
-![发布凭证](/network-img/发布凭证.png)
+![发布凭证](network-img/发布凭证.png)
 
 （2）选择发布凭证种类，“无属性数据凭证”为ERC-20资产，“有属性数据凭证”为NFT资产。
 
-![选择元数据](/network-img/选择元数据.png)
+![选择元数据](network-img/选择元数据.png)
 
 （3.1）无属性数据凭证发布：选择需要发行数据资产的数据后，选择无属性数据凭证，进入信息设置页面，需要设置凭证名称与符号、总发行量、隐私计算消耗量、非隐私计算消耗量信息。
 
@@ -204,7 +204,7 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 ​		信息录入后点击【发布凭证】按钮，需要Metamask钱包对该交易签名确认，完成资产凭证的铸造。
 
-![Metamask签名确认-1](/network-img/Metamask签名确认-1.png)
+![Metamask签名确认-1](network-img/Metamask签名确认-1.png)
 
 （3.2）有属性数据凭证发布:选择需要发行数据资产的数据后，选择有属性数据凭证，进入信息设置页面，需要设置凭证名称与符号信息。
 
@@ -214,7 +214,7 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 ​		信息录入后点击【发布凭证】按钮，需要Metamask钱包对该交易签名确认，完成资产凭证的铸造。
 
-![Metamask签名确认-1](/network-img/Metamask签名确认-1.1.png)
+![Metamask签名确认-1](network-img/Metamask签名确认-1.1.png)
 
 ## 我的凭证
 
@@ -226,11 +226,11 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
    绑定数据：
 
-   ![绑定数据](/network-img/绑定数据.png)
+   ![绑定数据](network-img/绑定数据.png)
 
    修改消耗量：
 
-   ![修改消耗量](/network-img/修改消耗量.png)
+   ![修改消耗量](network-img/修改消耗量.png)
 
    凭证定价：
 
@@ -238,23 +238,23 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
    数据资产价格以LAT作为参照交易对。
 
-   ![设置兑换价格](/network-img/设置兑换价格.png)
+   ![设置兑换价格](network-img/设置兑换价格.png)
 
    设置完数据资产凭证初始价格后，点击【上架数据市场】按钮，需要Metamask钱包先授权访问该资产，再对该交易签名确认，完成向Dex添加该资产的流动性。
 
-   ![Metamask签名确认-2](/network-img/Metamask签名确认-2.png)
+   ![Metamask签名确认-2](network-img/Metamask签名确认-2.png)
 
-   ![Metamask签名确认-3](/network-img/Metamask签名确认-3.png)
+   ![Metamask签名确认-3](network-img/Metamask签名确认-3.png)
 
 2. 已定价并添加流动性的资产凭证，可在Dex（https://test.dipoleswap.exchange/）中查看。
 
 ​	（1）先确认导入该资产。
 
-<img src="/network-img/导入流动性.png" alt="导入流动性" style="zoom:39%;" />
+<img src="network-img/导入流动性.png" alt="导入流动性" style="zoom:39%;" />
 
 ​	（2）在Dex中的Swap页面即可查看到添加的资产情况，也可以通过Swap进行该资产凭证的购买。
 
-<img src="/network-img/查看流动性.png" alt="查看流动性" style="zoom:40%;" />
+<img src="network-img/查看流动性.png" alt="查看流动性" style="zoom:40%;" />
 
 **【有属性数据凭证】**
 
@@ -264,7 +264,7 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 ​    绑定数据：
 
-![绑定数据-1](/network-img/绑定数据-1.png)
+![绑定数据-1](network-img/绑定数据-1.png)
 
 创建凭证：
 
@@ -274,23 +274,23 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
  “使用场景”，凭证可以支持的计算类型。
 
-![创建凭证](/network-img/创建凭证.png)
+![创建凭证](network-img/创建凭证.png)
 
 设置完上述信息后，点击【创建凭证】按钮，需要Metamask钱包对该交易签名确认，完成凭证创建。
 
-![Metamask签名确认-4](/network-img/Metamask签名确认-4.png)
+![Metamask签名确认-4](network-img/Metamask签名确认-4.png)
 
  上架：
 
  点击【凭证库存】页面操作栏中的【上架】按钮，可以选择需要上架NFT的交易所。
 
-![上架](/network-img/上架.png)
+![上架](network-img/上架.png)
 
  查看详情：
 
 点击【凭证库存】页面操作栏中的【查看详情】按钮，可以查看凭证详细信息。
 
-![凭证详情](/network-img/凭证详情.png)
+![凭证详情](network-img/凭证详情.png)
 
 
 
@@ -300,15 +300,15 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 点击【计算任务】进入计算任务列表页，展示所有执行的任务情况。
 
-![计算任务列表](/network-img/计算任务列表.png)
+![计算任务列表](network-img/计算任务列表.png)
 
 选择任意一个计算任务，点击【查看任务详情】按钮，进入任务详情页面。
 
-![计算任务详情](/network-img/计算任务详情.png)
+![计算任务详情](network-img/计算任务详情.png)
 
 选择任意一个计算任务，点击【查看任务日志】按钮，进入任务日志页面。
 
-![任务日志](/network-img/任务日志.png)
+![任务日志](network-img/任务日志.png)
 
 ## 组织管理（仅管理员可见）
 
@@ -318,7 +318,7 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
  点击【组织管理】进入组织管理页面。
 
-<img src="/network-img/组织管理-1.png" alt="组织管理-1" style="zoom:50%;" />
+<img src="network-img/组织管理-1.png" alt="组织管理-1" style="zoom:50%;" />
 
 （1）成员提名：
 
@@ -330,39 +330,39 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 “所选组织端口”，所选组织对应的端口。
 
-<img src="/network-img/提名加入委员会.png" alt="提名加入委员会" style="zoom:50%;" />
+<img src="network-img/提名加入委员会.png" alt="提名加入委员会" style="zoom:50%;" />
 
 （2）提名退出：
 
 委员会成员可以提名非初始委员会成员以及自己外的任意其它成员退出委员会，该提案发起后，需要委员会成员投票通过后才会生效。点击组织管理页面委员会列表中【提名退出】按钮，打开提名退出页面。
 
-<img src="/network-img/提名踢出委员会.png" alt="提名踢出委员会" style="zoom:50%;" />
+<img src="network-img/提名踢出委员会.png" alt="提名踢出委员会" style="zoom:50%;" />
 
 （3）退出委员会：
 
 非初始委员会成员，可以通过点击组织管理页面【退出委员会】按钮二次确认后，提交退出委员提案，该提案无需投票，冷静期12小时内可手动撤回，过了冷静期后提案生效，退出委员会成功。
 
-<img src="/network-img/退出委员会.png" alt="退出委员会" style="zoom:50%;" />
+<img src="network-img/退出委员会.png" alt="退出委员会" style="zoom:50%;" />
 
 （4）委员会事务：我的待办。我的待办列表中可以对成员提名提案、提名退出提案进行投票，审核组织发起的认证申请等操作。
 
 ​          组织申请认证待办审批：
 
-<img src="/network-img/申请认证审批.png" alt="申请认证审批" style="zoom: 50%;" />
+<img src="network-img/申请认证审批.png" alt="申请认证审批" style="zoom: 50%;" />
 
 ​            提名加入提案待办审批：
 
-<img src="/network-img/提名加入提案待办审批.png" alt="提名加入提案待办审批" style="zoom: 50%;" />
+<img src="network-img/提名加入提案待办审批.png" alt="提名加入提案待办审批" style="zoom: 50%;" />
 
 ​        查看内容：
 
-<img src="/network-img/查看内容.png" alt="查看内容" style="zoom: 50%;" />
+<img src="network-img/查看内容.png" alt="查看内容" style="zoom: 50%;" />
 
 （5）委员会事务：我的已办。我的已办列表中可以对已处理的成员提名提案、提名退出提案以及认证申请审核记录进行查看。
 
 ​          查看内容
 
-<img src="/network-img/查看内容-1.png" alt="查看内容-1" style="zoom: 50%;" />
+<img src="network-img/查看内容-1.png" alt="查看内容-1" style="zoom: 50%;" />
 
 
 
@@ -370,11 +370,11 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
 ​        冷静期内撤回提案：
 
-<img src="/network-img/撤回提案-1.png" alt="撤回提案-1" style="zoom:50%;" />
+<img src="network-img/撤回提案-1.png" alt="撤回提案-1" style="zoom:50%;" />
 
    非冷静期提案，查看内容：
 
-<img src="/network-img/查看内容-2.png" alt="查看内容-2" style="zoom: 50%;" />
+<img src="network-img/查看内容-2.png" alt="查看内容-2" style="zoom: 50%;" />
 
 **【普通组织】**
 
@@ -382,9 +382,9 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
   点击【组织管理】进入组织管理页面。
 
-<img src="/network-img/组织管理-1.png" alt="组织管理-1" style="zoom: 50%;" />
+<img src="network-img/组织管理-1.png" alt="组织管理-1" style="zoom: 50%;" />
 
 申请认证：选择审批节点，填写好完整的申请信息后，由选择的审批节点审核认证申请，审核通过后，组织成为认证组织。
 
-<img src="/network-img/申请认证.png" alt="申请认证" style="zoom: 50%;" />
+<img src="network-img/申请认证.png" alt="申请认证" style="zoom: 50%;" />
 

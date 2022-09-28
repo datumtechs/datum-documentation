@@ -16,15 +16,15 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 1. 在Chrome中打开平台体验地址，点击【Metamask】按钮，在跳出的弹窗中，点击【切换网络】按钮，将网络切换至PlatON开发网络。
 
-<img src="/platform-img/切换网络.png" alt="1-切换网络" style="zoom:33%;" />
+<img src="platform-img/切换网络.png" alt="1-切换网络" style="zoom:33%;" />
 
 2. 切换至PlatON开发网络后，选择一个连接账号。
 
-<img src="/platform-img/连接账号.png" alt="2-连接账号" style="zoom:33%;" />
+<img src="platform-img/连接账号.png" alt="2-连接账号" style="zoom:33%;" />
 
 3. 确认连接后，点击【签名】按钮，完成签名后就可登录平台。
 
-<img src="/platform-img/账号签名.png" alt="3-账号签名" style="zoom:33%;" />
+<img src="platform-img/账号签名.png" alt="3-账号签名" style="zoom:33%;" />
 
 
 
@@ -34,37 +34,37 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 （1）展示Datum-network中可参与隐私计算任务的节点信息。
 
-<img src="/platform-img/网络节点.png" alt="4-网络节点" style="zoom:33%;" />
+<img src="platform-img/网络节点.png" alt="4-网络节点" style="zoom:33%;" />
 
 （2）点击任意一个节点详情，可查看通过该节点发布的元数据，和执行的计算任务信息。
 
-<img src="/platform-img/节点数据详情.png" alt="5-节点数据详情" style="zoom: 33%;" />
+<img src="platform-img/节点数据详情.png" alt="5-节点数据详情" style="zoom: 33%;" />
 
-![6-节点任务详情](/platform-img/节点任务详情.png)
+![6-节点任务详情](platform-img/节点任务详情.png)
 
 2. #### **数据市场**
 
 展示全网发布的数据资产凭证信息，及其价格，点击【购买】按钮，打开数据对应的凭证列表页面，选择需要的凭证类型进行购买。
 
-<img src="/platform-img/数据市场.png" alt="7-数据市场" style="zoom:33%;" />
+<img src="platform-img/数据市场.png" alt="7-数据市场" style="zoom:33%;" />
 
 凭证列表：
 
-<img src="/platform-img/凭证列表.png" alt="32-凭证列表" style="zoom:33%;" />
+<img src="platform-img/凭证列表.png" alt="32-凭证列表" style="zoom:33%;" />
 
 3. #### **计算服务**
 
 发起各类计算任务的入口，支持多方数据的隐私计算，与非隐私的AI计算。用户可以通过选择不同的算法模板实现计算需求。
 
-<img src="/platform-img/计算服务.png" alt="8-计算服务" style="zoom:33%;" />
+<img src="platform-img/计算服务.png" alt="8-计算服务" style="zoom:33%;" />
 
 4. #### **计算任务**
 
 查看已发起的计算任务情况，包括基本信息、计算参与方、任务事件详情。
 
-![9-计算任务列表](/platform-img/计算任务列表.png)
+![9-计算任务列表](platform-img/计算任务列表.png)
 
-![10-计算任务详情](/platform-img/计算任务详情.png)
+![10-计算任务详情](platform-img/计算任务详情.png)
 
 
 
@@ -76,29 +76,29 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 网络节点管理默认展示官方发布的Datum-network可开放连接的节点，用户可以任意选择此页面展示的节点执行隐私计任务。
 
-![11-账户信息](/platform-img/账户信息.png)
+![11-账户信息](platform-img/账户信息.png)
 
 （2）用户也可手动添加其它已知的节点做为隐私计算任务执行方。
 
-<img src="/platform-img/添加节点信息.png" alt="12-添加节点信息" style="zoom:33%;" />
+<img src="platform-img/添加节点信息.png" alt="12-添加节点信息" style="zoom:33%;" />
 
 2. #### **数据资产凭证购买**
 
 （1）点击【数据市场】，选择需要使用的数据资产。
 
-<img src="/platform-img/数据市场列表.png" alt="13-数据市场列表" style="zoom:33%;" />
+<img src="platform-img/数据市场列表.png" alt="13-数据市场列表" style="zoom:33%;" />
 
 （2）点击【查看数据】，可以查看该数据的基本信息、元数据，及参与的计算任务。
 
-<img src="/platform-img/元数据信息.png" alt="14-元数据信息" style="zoom:33%;" />
+<img src="platform-img/元数据信息.png" alt="14-元数据信息" style="zoom:33%;" />
 
 （3）点击【购买】，弹出购买凭证弹窗，点击无属性凭证列表中的【购买】按钮，跳转至Dex（https://test.dipoleswap.exchange/）页面，可按照计算需求购买对应数量的凭证。
 
-![15-购买元数据](/platform-img/购买元数据.png)
+![15-购买元数据](platform-img/购买元数据.png)
 
 （4）购买成功后，已购买的数据资产凭证会在【我的数据】页面展示。
 
-<img src="/platform-img/已购买数据列表.png" alt="16-已购买数据列表" style="zoom:33%;" />
+<img src="platform-img/已购买数据列表.png" alt="16-已购买数据列表" style="zoom:33%;" />
 
 3. #### **计算节点与使用凭证授权**
 
@@ -108,7 +108,7 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 点击【我的授权】-【节点授权】，可以选择此页面展示的任意节点添加至白名单，授权需要调用Metamask钱包对该交易签名确认。
 
-![17-节点授权](/platform-img/节点授权.png)
+![17-节点授权](platform-img/节点授权.png)
 
 （2）使用凭证授权
 
@@ -116,13 +116,13 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 点击【我的授权】-【凭证授权】，输入手续费凭证授权数量，该凭证以WLAT计量。如没有WLAT，可点击“购买”按钮跳转至Dex进行购买。
 
-![18-凭证授权](/platform-img/凭证授权.png)
+![18-凭证授权](platform-img/凭证授权.png)
 
 ② 数据凭证授权，授权节点可在计算任务执行中扣除的数据资产凭证总额度。
 
 点击【我的授权】-【凭证授权】，选择需要参与计算的数据资产凭证，并设置授权数量。该数量可控制节点在执行中最大扣除的数额。
 
-![19-授权凭证数量](/platform-img/授权凭证数量.png)
+![19-授权凭证数量](platform-img/授权凭证数量.png)
 
 4. #### 新建计算工作流
 
@@ -130,7 +130,7 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 点击【新建工作流】，或者点击【计算服务】选择需要应用的隐私计算算法。
 
-<img src="/platform-img/新建工作流.png" alt="20-新建工作流" style="zoom:33%;" />
+<img src="platform-img/新建工作流.png" alt="20-新建工作流" style="zoom:33%;" />
 
 （2）选择参与计算的数据
 
@@ -138,19 +138,19 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 “选择数据”，需为已购买的数据资产凭证，且参与计算的2个数据不能由同一节点发布。
 
-<img src="/platform-img/选择已购买数据.png" alt="21-选择已购买数据" style="zoom: 50%;" />
+<img src="platform-img/选择已购买数据.png" alt="21-选择已购买数据" style="zoom: 50%;" />
 
 （3）选择计算环境
 
 在引导模式下平台默认配置计算所需的最低资源要求，“最长运行时长”可按需填写。
 
-<img src="/platform-img/设置计算环境.png" alt="22-设置计算环境" style="zoom:50%;" />
+<img src="platform-img/设置计算环境.png" alt="22-设置计算环境" style="zoom:50%;" />
 
 （4）选择计算结果接收方
 
 选择计算完成后结果保存在哪个网络节点，可按需选择一方或保存至两方。
 
-<img src="/platform-img/设置结果接收方.png" alt="23-设置结果接收方" style="zoom:50%;" />
+<img src="platform-img/设置结果接收方.png" alt="23-设置结果接收方" style="zoom:50%;" />
 
 点击【保存，并返回】后，计算任务工作流创建完成。
 
@@ -158,17 +158,17 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 （1）点击【我的工作流】进入工作流管理页面。
 
-![24-启动任务](/platform-img/启动任务.png)
+![24-启动任务](platform-img/启动任务.png)
 
 （2）选择任意一个工作流，点击【运行记录】按钮，可对该工作流内容进行编辑、启动或暂停计算任务。
 
 点击【启动】按钮后，平台将校验参与计算的数据资产凭证是否已足额授权、任务发起方是否为已授权节点，如果存在授权异常将会报错提示，工作流无法启动执行。
 
-![25-运行记录](/platform-img/运行记录.png)
+![25-运行记录](platform-img/运行记录.png)
 
 （3）工作流启动后，可点击【查看详情】/【查看任务结果】按钮确认计算任务执行情况。
 
-![26-查看运算结果](/platform-img/查看运算结果.png)
+![26-查看运算结果](platform-img/查看运算结果.png)
 
 隐私计算任务执行完成后，计算结果将会输出在选定的节点路径下，可通过登录该路径获取结果文件。
 
@@ -178,15 +178,15 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 1.可信组织
 
-<img src="/platform-img/可信组织.png" alt="29-可信组织" style="zoom: 33%;" />
+<img src="platform-img/可信组织.png" alt="29-可信组织" style="zoom: 33%;" />
 
 2.委员会成员
 
-<img src="/platform-img/委员会成员.png" alt="31-委员会成员" style="zoom: 33%;" />
+<img src="platform-img/委员会成员.png" alt="31-委员会成员" style="zoom: 33%;" />
 
 3.委员会提案
 
-<img src="/platform-img/委员会提案.png" alt="31-委员会提案" style="zoom: 33%;" />
+<img src="platform-img/委员会提案.png" alt="31-委员会提案" style="zoom: 33%;" />
 
 ## 隐私计算模式介绍
 
@@ -194,7 +194,7 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 按照不同计算类型，提供标准的算法设置模板，用户在【计算服务】/【新建工作流】中发起计算任务时，默认为引导模式。
 
-<img src="/platform-img/引导模式.png" alt="27-引导模式" style="zoom: 33%;" />
+<img src="platform-img/引导模式.png" alt="27-引导模式" style="zoom: 33%;" />
 
 2. #### 专家模式
 
@@ -202,4 +202,4 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 在【新建工作流页面】页面，点击【切换专家模式】即可实现。
 
-<img src="/platform-img/专家模式.png" alt="28-专家模式" style="zoom:33%;" />
+<img src="platform-img/专家模式.png" alt="28-专家模式" style="zoom:33%;" />
