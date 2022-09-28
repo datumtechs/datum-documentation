@@ -6,7 +6,6 @@ pages:
    - node_modules/
 
  script:
- - yarn # npm run install
  - yarn build:prod # npm run docs:build
  artifacts:
    paths:
