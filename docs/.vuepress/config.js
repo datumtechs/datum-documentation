@@ -472,7 +472,7 @@ export default {
                     children: [
                         // SidebarItem
                         {
-                            text: 'GettingStarted',
+                            text: 'Getting Started',
                             link: '/en/FunctionIntroduction/GettingStarted.md',
                             collapsible: true,
                         },
@@ -528,8 +528,8 @@ export default {
                                     link: '/en/FunctionIntroduction/ReliableDataTransaction.md/#supported-data-security-transaction-modes',
                                 },
                                 {
-                                    text: 'Usage Process',
-                                    link: '/en/FunctionIntroduction/ReliableDataTransaction.md/#usage-process',
+                                    text: 'Framework',
+                                    link: '/en/FunctionIntroduction/ReliableDataTransaction.md/#framework',
                                 }
                             ]
                         },
@@ -566,8 +566,8 @@ export default {
                                     link: '/en/FunctionIntroduction/SecureDataComputation.md/#data-cooperation',
                                 },
                                 {
-                                    text: 'Federated Machine Learning',
-                                    link: '/en/FunctionIntroduction/SecureDataComputation.md/#federated-machine-learning',
+                                    text: 'Joint Machine Learning',
+                                    link: '/en/FunctionIntroduction/SecureDataComputation.md/#joint-machine-learning',
                                 },
                             ]
                         },
@@ -779,16 +779,16 @@ export default {
                                     ]
                                 },
                                 {
-                                    text: 'Federated Machine Learning',
-                                    link: '/en/APIDescription/SecureDataComputation.md/#federated-machine-learning',
+                                    text: 'Joint Machine Learning',
+                                    link: '/en/APIDescription/SecureDataComputation.md/#joint-machine-learning',
                                     children: [
                                         {
-                                            text: 'Federated Model Training',
-                                            link: '/en/APIDescription/SecureDataComputation.md/#federated-model-training',
+                                            text: 'Joint Model Training',
+                                            link: '/en/APIDescription/SecureDataComputation.md/#joint-model-training',
                                         },
                                         {
-                                            text: 'Federated Model Prediction',
-                                            link: '/en/APIDescription/SecureDataComputation.md/#federated-model-prediction',
+                                            text: 'Joint Model Prediction',
+                                            link: '/en/APIDescription/SecureDataComputation.md/#joint-model-prediction',
                                         },
                                     ]
                                 },

@@ -9,7 +9,7 @@ Datum attaches various verifiable credential properties to Data NFTs and leverag
 - Settlement operations after token usage: Evidence after data use and easy audit
 
 
-## Usage Process
+## Framework
 
 - Diagram
 

@@ -18,7 +18,7 @@ The operation authority of data in Datum is unique. Binding the data with ERC721
 
 Datum connects various DEX and NFT trading platforms to facilitate users to release ERC20 or ERC721 after data assetization with one click, so that data can be fully capitalized and valued in the Web3 world.
 
-## Please refer to [APIs for Data Tokenization][api desc] for more specific user instructions
+## Please refer to [APIs for Data Tokenization][api desc] for more instructions
 
 [Data Tokenization]: ../img/data_capitalization.png
 [api desc]: ../APIDescription/DataTokenization.md

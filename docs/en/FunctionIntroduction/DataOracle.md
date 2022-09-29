@@ -28,7 +28,7 @@ It is well-known that smart contracts running on a blockchain cannot directly ob
 ![][data_oracle]
 
 
-## Please refer to [APIs for Data Oracle][api desc] for more specific usage instructions
+## Please refer to [APIs for Data Oracle][api desc] for more instructions
 
 
 
