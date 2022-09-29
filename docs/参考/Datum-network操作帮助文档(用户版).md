@@ -12,13 +12,13 @@ Datum-network管理台面向数据提供方、算力提供方提供了一个可�
 
 为方便体验，提供5套数据集可供发布使用，下载路径为：
 
-- 金融：http://testdownload.datumtechs.com/datum/dataset/Finance.zip
-- 媒体广告：http://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip
-- 医疗保健：http://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip
-- 公共服务：http://testdownload.datumtechs.com/datum/dataset/Publicservice.zip
-- 运输：http://testdownload.datumtechs.com/datum/dataset/Transportation.zip
+- 金融：<http://testdownload.datumtechs.com/datum/dataset/Finance.zip>
+- 媒体广告：<http://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip>
+- 医疗保健：<http://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip>
+- 公共服务：<http://testdownload.datumtechs.com/datum/dataset/Publicservice.zip>
+- 运输：<http://testdownload.datumtechs.com/datum/dataset/Transportation.zip>
 
-测试Token领取地址：https://faucet.platon.network/faucet/
+- 测试Token领取地址：[https://faucet.platon.network/faucet/](https://faucet.platon.network/faucet/)
 
 
 

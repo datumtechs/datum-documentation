@@ -6,7 +6,7 @@
 
 Datum-platform是用户可以按需购买数据资产使用权、选择Datum-network计算节点、发起计算任务的平台。
 
-平台体验地址：https://testmarkets.datumtechs.com
+平台体验地址：<https://testmarkets.datumtechs.com>
 
 
 

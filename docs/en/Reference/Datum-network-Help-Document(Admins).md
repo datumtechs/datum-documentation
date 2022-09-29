@@ -13,11 +13,11 @@ Users can deploy their Datum-network node locally to connect to the network. In 
 Here is how Datum-network nodes are deployed：https://github.com/datumtechs/datum-network-deploy/tree/ansible_v0.5.0
 
 For users’ convenience, Datum-network offers five data sets that they can publish and use. Download link:
-Finance: http://testdownload.datumtechs.com/datum/dataset/Finance.zip
-Media Advertisement: http://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip
-Medical & Health: http://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip
-Public Service: http://testdownload.datumtechs.com/datum/dataset/Publicservice.zip
-Transportation: http://testdownload.datumtechs.com/datum/dataset/Transportation.zip
+Finance: <http://testdownload.datumtechs.com/datum/dataset/Finance.zip>
+Media Advertisement: <http://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip>
+Medical & Health: <http://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip>
+Public Service: <http://testdownload.datumtechs.com/datum/dataset/Publicservice.zip>
+Transportation: <http://testdownload.datumtechs.com/datum/dataset/Transportation.zip>
 
 Users can claim test tokens via the following address: [PlatON](https://faucet.platon.network/faucet/)
 
@@ -53,19 +53,16 @@ Once a node is deployed, the first user who logs in to the console will be able 
 
 <img src="../img/network-img/设置机构名称.png" alt="设置机构名称" style="zoom:50%;" />
 
-（2）初始化身份标识(DID)，身份标识(did)是去中心化的身份用户, 用于项目中的数据资产化,工作流运行,清算等多个环节. 而初始化身份标识需要内置管理员钱包支付一定的手续费, 请确保初始化身份标识前钱包有一定的余额。
-
 (2) DID Initialization: Decentralized identity (DID) is required by multiple processes, covering data tokenization, workflow operation, liquidation, etc. To initialize the DID, you'll need to pay a fee through the built-in admin wallet. Please make sure that you have sufficient balance before initializing your DID.
 
 <img src="../img/network-img/初始化身份标识.png" alt="初始化身份标识" style="zoom:50%;" />
 
-（3）设置机构头像、填写机构描述。
 
 (3) Set the organization icon and fill in the organization intro.
 
 <img src="../img/network-img/设置机构头像与描述.png" alt="设置机构头像与描述" style="zoom:50%;" />
 
-（4）Get registered to connect to the network, and then complete the initialization settings.
+(4)Get registered to connect to the network, and then complete the initialization settings.
 
 Upon successful initialization, the system will automatically generate a built-in wallet address, which will be used to pay service fees for the execution of computing tasks.
 
@@ -210,8 +207,6 @@ After the relevant information is entered, click on [Publish Credential], and co
 
 1. Click on [My Credential] - [No Attribute Credential] to view and manage the credentials you published.
 
-   数据资产凭证铸造完成后，需要对其绑定数据，完成数据绑定后，可以对凭证合约进行定价以及修改对应的使用场景消耗量，该值每24h内只能修改一次。
-
    Once a credential is minted, you should bind it with data, after which you’ll be able to price the credential contract and adjust the consumption amount for the corresponding application scenario. The consumption amount can only be adjusted once every 24 hours.
 
    （1）Data binding
@@ -249,8 +244,6 @@ After the relevant information is entered, click on [Publish Credential], and co
 **[Attribute Credential]**
 
 ​    1.Click on [My Credential] - [Attribute Credential] to view and manage the credentials you published.
-
-​    数据资产凭证铸造完成后，需要对其绑定数据，完成数据绑定后，可以对凭证合约创建凭证。
 
 Once a credential is minted, you should then bind it with data, after which you’ll be able to create credentials for the credential contract.
 

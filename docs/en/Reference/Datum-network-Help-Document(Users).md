@@ -12,17 +12,17 @@ Users can deploy their Datum-network node locally to connect to the network. In 
 
 Users can also directly link to nodes already in the network to publish and manage data assets. Nodes with open connections are:
 
-- OrgA：[http://8.219.63.100
-- OrgB：[http://8.219.62.193
-- OrgC：[http://8.219.4.134
+- OrgA：<http://8.219.63.100>
+- OrgB：<http://8.219.62.193>
+- OrgC：<http://8.219.4.134>
 
 For users’ convenience, Datum-network offers five data sets that they can publish and use. Download link:
 
-Finance: http://testdownload.datumtechs.com/datum/dataset/Finance.zip
-Media Advertisement: http://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip
-Medical & Health: http://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip
-Public Service: http://testdownload.datumtechs.com/datum/dataset/Publicservice.zip
-Transportation: http://testdownload.datumtechs.com/datum/dataset/Transportation.zip
+Finance: <http://testdownload.datumtechs.com/datum/dataset/Finance.zip>
+Media Advertisement: <http://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip>
+Medical & Health: <http://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip>
+Public Service: <http://testdownload.datumtechs.com/datum/dataset/Publicservice.zip>
+Transportation: <http://testdownload.datumtechs.com/datum/dataset/Transportation.zip>
 
 Users can claim test tokens via the following address: [PlatON](https://faucet.platon.network/faucet/)
 
