@@ -1,13 +1,13 @@
 # Secure Data Transmission to Blockchain
 
 
-## Secure Data Transmission to Blockchain Explained
+## Overview
 
 
 Secure Data Transmission to Blockchain describes the process in which Datum helps users bring data from Web 2 to Web 3. It represents the beginning of the data life circle in Web 3. On Datum, users may choose to store their data via decentralized storage methods such as IPFS and Arweave, as well as cloud storage environments like AWS, Azure, and GCP. Datum offers a series of service APIs that enable users to transmit and store their data and record the data hash on the blockchain in a suitable manner. As a service provider, Datum provides users with various solutions for data transmission and storage, including raw data connection, data transmission, and data storage & management. The platform also functions as a trusted storage service provider that offers a wide range of convenient services, covering the tokenization, retrieval, and use of data in Web 3, Data Oracle, etc.
 
 
-## Modes of Transmission and Storage Supported
+## Main Functions
 
 
 - Secure Data Storage: Datum supports cloud storage and centralized storage methods such as AWS, Azure, and GCP, as well as decentralized storage methods like IPFS and Arweave
@@ -40,5 +40,5 @@ After the data enters the Web 3 world through Datum, users can publish the metad
 
 [data_safe_onchain]: ../img/data_safe_onchain.png
 [publish_metadata]: ../img/publish_metadata.png
-[api desc]: ../APIDescription/SecureDataTransmissionToBlockchain.md
+[api desc]: ../APIDescription/TransferDataOnChain.md
 

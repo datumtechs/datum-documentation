@@ -1,4 +1,4 @@
-# APIs for Secure Data Transaction 
+# APIs for Reliable Data Transaction 
 
 ## Authorized Access Based on Token Properties
 

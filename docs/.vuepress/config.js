@@ -474,7 +474,7 @@ export default {
                     children: []
                 }, {
                     // @ts-ignore
-                    text: 'FunctionIntroduction',
+                    text: 'Functions',
                     link: '',
                     children: [
                         // SidebarItem
@@ -484,29 +484,29 @@ export default {
                             collapsible: true,
                         },
                         {
-                            text: 'SecureDataTransmissionToBlockchain',
-                            link: '/en/FunctionIntroduction/SecureDataTransmissionToBlockchain.md',
+                            text: 'Transfer Data On Chain',
+                            link: '/en/FunctionIntroduction/TransferDataOnChain.md',
                             collapsible: true,
                             children: [
                                 {
-                                    text: 'Secure Data Transmission to Blockchain Explained',
-                                    link: '/en/FunctionIntroduction/SecureDataTransmissionToBlockchain.md/#secure-data-transmission-to-blockchain-explained',
+                                    text: 'Overview',
+                                    link: '/en/FunctionIntroduction/TransferDataOnChain.md/#overview',
                                 },
                                 {
-                                    text: 'Modes of Transmission and Storage Supported',
-                                    link: '/en/FunctionIntroduction/SecureDataTransmissionToBlockchain.md/#modes-of-transmission-and-storage-supported',
+                                    text: 'Main Functions',
+                                    link: '/en/FunctionIntroduction/TransferDataOnChain.md/#main-functions',
                                 },
                                 {
                                     text: 'How Data Is Securely Transmitted to the Blockchain',
-                                    link: '/en/FunctionIntroduction/SecureDataTransmissionToBlockchain.md/#how-data-is-securely-transmitted-to-the-blockchain',
+                                    link: '/en/FunctionIntroduction/TransferDataOnChain.md/#how-data-is-securely-transmitted-to-the-blockchain',
                                 },
                                 {
                                     text: 'Publish Metadata',
-                                    link: '/en/FunctionIntroduction/SecureDataTransmissionToBlockchain.md/#publish-metadata',
+                                    link: '/en/FunctionIntroduction/TransferDataOnChain.md/#publish-metadata',
                                 },
                                 {
                                     text: 'How Metadata Is Published',
-                                    link: '/en/FunctionIntroduction/SecureDataTransmissionToBlockchain.md/#how-metadata-is-published',
+                                    link: '/en/FunctionIntroduction/TransferDataOnChain.md/#how-metadata-is-published',
                                 },
                             ]
                         },
@@ -530,21 +530,21 @@ export default {
                             ]
                         },
                         {
-                            text: 'Secure Data Transaction',
-                            link: '/en/FunctionIntroduction/SecureDataTransaction.md',
+                            text: 'Reliable Data Transaction',
+                            link: '/en/FunctionIntroduction/ReliableDataTransaction.md',
                             collapsible: true,
                             children: [
                                 {
                                     text: 'Authorized Access Based on Token Properties',
-                                    link: '/en/FunctionIntroduction/SecureDataTransaction.md/#authorized-access-based-on-token-properties',
+                                    link: '/en/FunctionIntroduction/ReliableDataTransaction.md/#authorized-access-based-on-token-properties',
                                 },
                                 {
                                     text: 'Secure Sharing Based on Token Properties',
-                                    link: '/en/FunctionIntroduction/SecureDataTransaction.md/#secure-sharing-based-on-token-properties',
+                                    link: '/en/FunctionIntroduction/ReliableDataTransaction.md/#secure-sharing-based-on-token-properties',
                                 },
                                 {
                                     text: 'Settlement Operations After Token Usage',
-                                    link: '/en/FunctionIntroduction/SecureDataTransaction.md/#settlement-operations-after-token-usage',
+                                    link: '/en/FunctionIntroduction/ReliableDataTransaction.md/#settlement-operations-after-token-usage',
                                 }
                             ]
                         },
@@ -594,58 +594,58 @@ export default {
                 },
                 {
                     // @ts-ignore
-                    text: 'APIDescription',
+                    text: 'APIs',
                     link: '',
                     children: [
                         // SidebarItem
                         {
-                            text: 'SecureDataTransmissionToBlockchain',
-                            link: '/en/APIDescription/SecureDataTransmissionToBlockchain.md',
+                            text: 'Transfer Data On Chain',
+                            link: '/en/APIDescription/TransferDataOnChain.md',
                             collapsible: true,
                             children: [
                                 {
-                                    text: 'Modes of Transmission and Storage Supported',
-                                    link: '/en/APIDescription/SecureDataTransmissionToBlockchain.md/#modes-of-transmission-and-storage-supported',
+                                    text: 'Main Functions',
+                                    link: '/en/APIDescription/TransferDataOnChain.md/#modes-of-transmission-and-storage-supported',
                                     children: [
                                         {
                                             text: 'Cloud Transmission and Storage',
-                                            link: '/en/APIDescription/SecureDataTransmissionToBlockchain.md/#cloud-transmission-and-storage',
+                                            link: '/en/APIDescription/TransferDataOnChain.md/#cloud-transmission-and-storage',
                                         },
                                         {
                                             text: 'IPFS Transmission and Storage',
-                                            link: '/en/APIDescription/SecureDataTransmissionToBlockchain.md/#ipfs-transmission-and-storage',
+                                            link: '/en/APIDescription/TransferDataOnChain.md/#ipfs-transmission-and-storage',
                                         },
                                         {
                                             text: 'Blockchain Transmission and Storage',
-                                            link: '/en/APIDescription/SecureDataTransmissionToBlockchain.md/#blockchain-transmission-and-storage',
+                                            link: '/en/APIDescription/TransferDataOnChain.md/#blockchain-transmission-and-storage',
                                         },
                                     ]
                                 },
                                 {
                                     text: 'Secure Data Transmission to Blockchain',
-                                    link: '/en/APIDescription/SecureDataTransmissionToBlockchain.md/#secure-data-transmission-to-blockchain',
+                                    link: '/en/APIDescription/TransferDataOnChain.md/#secure-data-transmission-to-blockchain',
                                     children: [
                                         {
                                             text: 'Extract Metadata',
-                                            link: '/en/APIDescription/SecureDataTransmissionToBlockchain.md/#extract-metadata',
+                                            link: '/en/APIDescription/TransferDataOnChain.md/#extract-metadata',
                                         },
                                         {
                                             text: 'Publish Metadata',
-                                            link: '/en/APIDescription/SecureDataTransmissionToBlockchain.md/#publish-metadata',
+                                            link: '/en/APIDescription/TransferDataOnChain.md/#publish-metadata',
                                         },
                                         {
                                             text: 'Publish Data Hash',
-                                            link: '/en/APIDescription/SecureDataTransmissionToBlockchain.md/#publish-data-hash',
+                                            link: '/en/APIDescription/TransferDataOnChain.md/#publish-data-hash',
                                         },
                                     ]
                                 },
                                 {
                                     text: 'Verification of Data Consistency',
-                                    link: '/en/APIDescription/SecureDataTransmissionToBlockchain.md/#verification-of-data-consistency',
+                                    link: '/en/APIDescription/TransferDataOnChain.md/#verification-of-data-consistency',
                                     children: [
                                         {
                                             text: 'Verification of Data Consistency Based on Data Hash',
-                                            link: '/en/APIDescription/SecureDataTransmissionToBlockchain.md/#verification-of-data-consistency-based-on-data-hash',
+                                            link: '/en/APIDescription/TransferDataOnChain.md/#verification-of-data-consistency-based-on-data-hash',
                                         },
                                     ]
                                 },
@@ -715,49 +715,49 @@ export default {
                             ]
                         },
                         {
-                            text: 'Secure Data Transaction',
-                            link: '/en/APIDescription/SecureDataTransaction.md',
+                            text: 'Reliable Data Transaction',
+                            link: '/en/APIDescription/ReliableDataTransaction.md',
                             collapsible: true,
                             children: [
                                 {
                                     text: 'Authorized Access Based on Token Properties',
-                                    link: '/en/APIDescription/SecureDataTransaction.md/#authorized-access-based-on-token-properties',
+                                    link: '/en/APIDescription/ReliableDataTransaction.md/#authorized-access-based-on-token-properties',
                                     children: [
                                         {
                                             text: 'View Metadata',
-                                            link: '/en/APIDescription/SecureDataTransaction.md/#view-metadata',
+                                            link: '/en/APIDescription/ReliableDataTransaction.md/#view-metadata',
                                         },
                                         {
                                             text: 'View Raw Data',
-                                            link: '/en/APIDescription/SecureDataTransaction.md/#view-raw-data',
+                                            link: '/en/APIDescription/ReliableDataTransaction.md/#view-raw-data',
                                         },
                                     ]
                                 },
                                 {
                                     text: 'Secure Sharing Based on Token Properties',
-                                    link: '/en/APIDescription/SecureDataTransaction.md/#secure-sharing-based-on-token-properties',
+                                    link: '/en/APIDescription/ReliableDataTransaction.md/#secure-sharing-based-on-token-properties',
                                     children: [
                                         {
                                             text: 'Transfer Ownership',
-                                            link: '/en/APIDescription/SecureDataTransaction.md/#transfer-ownership',
+                                            link: '/en/APIDescription/ReliableDataTransaction.md/#transfer-ownership',
                                         },
                                         {
                                             text: 'Transfer Usage Rights',
-                                            link: '/en/APIDescription/SecureDataTransaction.md/#transfer-usage-rights',
+                                            link: '/en/APIDescription/ReliableDataTransaction.md/#transfer-usage-rights',
                                         },
                                     ]
                                 },
                                 {
                                     text: 'Settlement Operations After Token Usage',
-                                    link: '/en/APIDescription/SecureDataTransaction.md/#settlement-operations-after-token-usage',
+                                    link: '/en/APIDescription/ReliableDataTransaction.md/#settlement-operations-after-token-usage',
                                     children: [
                                         {
                                             text: 'Usage Confirmation',
-                                            link: '/en/APIDescription/SecureDataTransaction.md/#usage-confirmation',
+                                            link: '/en/APIDescription/ReliableDataTransaction.md/#usage-confirmation',
                                         },
                                         {
                                             text: 'Destroy or Freeze Token After Usage',
-                                            link: '/en/APIDescription/SecureDataTransaction.md/#destroy-or-freeze-token-after-usage',
+                                            link: '/en/APIDescription/ReliableDataTransaction.md/#destroy-or-freeze-token-after-usage',
                                         },
                                     ]
                                 }

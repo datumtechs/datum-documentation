@@ -1,4 +1,4 @@
-# Secure Data Transaction
+# Reliable Data Transaction
 
 Datum attaches various verifiable credential properties to Data NFTs and leverages proxy re-encryption algorithms to offer such functions as authorization for data access, secure data sharing, and ownership transfer. The platform achieves the settlement of data transactions via Data Tokens.
 
@@ -20,7 +20,7 @@ After the user used the Token to complete the relevant data operations, Datum wi
 
 - Diagram
 
-  ![][Secure Data Transaction]
+  ![][Reliable Data Transaction]
 
 - Summary
 
@@ -31,8 +31,8 @@ After the user used the Token to complete the relevant data operations, Datum wi
   - If the raw data is stored through entrusted storage, the user will need to decrypt the data using the decryption key to obtain the plaintext data;
   - Once the data transaction is completed, the user's Data Token will be processed accordingly (burned). 
 
-## [][api desc]Please refer to [APIs for Secure Data Transaction](api desc) for more specific user instructions
+## [][api desc]Please refer to [APIs for Reliable Data Transaction](api desc) for more specific user instructions
 
-[Secure Data Transaction]: ../img/data_security_transaction.png
-[api desc]: ../APIDescription/SecureDataTransaction.md
+[Reliable Data Transaction]: ../img/data_security_transaction.png
+[api desc]: ../APIDescription/ReliableDataTransaction.md
 

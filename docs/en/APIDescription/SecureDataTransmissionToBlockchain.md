@@ -1,7 +1,7 @@
 # APIs for Secure Data Transmission to Blockchain
 
 
-## Modes of Transmission and Storage Supported
+## Main Functions
 
 
 ### Cloud Transmission and Storage
