@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-7a8a1bd1","path":"/en/APIDescription/DataOracle.html","title":"APIs for Data Oracle","lang":"en","frontmatter":{},"excerpt":"","headers":[],"git":{},"filePathRelative":"en/APIDescription/DataOracle.md"}');export{a as data};
