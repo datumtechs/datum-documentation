@@ -5,17 +5,17 @@ description: english
 ---
 # Introduction
 
-Datum takes data as the service object, provides privacy protection capabilities, and realizes high-performance web3 services for the issuance of data assets. Datum provides a variety of service APIs and SDKs. Users can choose related services as needed to meet the needs of data transmission depository, Data NFT issuance, data asset management, data transaction, trusted sharing, multi-party data joint query and calculation, etc. The integrated privacy enhancement technology provides comprehensive privacy protection in data applications. Using Datum, users can easily divert data into the web3 ecosystem.
+Taking data as the service object, Datum provides privacy-preserving capabilities, and realizes high-performance Web 3 services for the issuance of data NFTs. With a variety of service APIs and SDKs available, users can choose related services as needed for data transmission, storage and hosting, data NFT issuance, data tokenization, data transaction, trusted sharing, query & analysis among multi-parties, etc., while enjoying comprehensive privacy protection in data applications enabled by the integrated privacy-enhancing technology. Datum offers a channel through which users can easily transmit data to the Web 3 ecosystem. 
 
 
 ## Service capabilities
 
-Datum corresponds to each link of data circulation and provides five types of service capabilities:
+Datum offers five major service capabilities corresponding to every link of data flow:
 
 
-- Data security on-chain service: provide data in the form of api and sdk, and use decentralized storage such as IPFS, Arweave, and cloud storage such as AWS, Azure, and GCP as storage media to stream to the Web3 world, providing basic services for subsequent data asset applications.
-- Data assetization service: Provide data asset issuance services in the form of api and sdk, support a variety of NFT contract templates, and provide fast publishing, viewing, and attribute setting services for different application needs.
-- Data security transaction service: Provide data asset transaction, authorized access, access authentication, use and download, and data consistency verification services in the form of api and sak.
-- Data oracle service: provide web2's existing data services and data models in the form of api and sdk, providing off-chain data input in web3 form to on-chain contract calling services, and providing various service components to enable users to quickly base on data oracles Obtain off-chain data for use by on-chain Dapps.
-- Data security computing services: provide joint query analysis or computing services for two-party and multi-party data assets in the form of api and sdk, and provide data privacy matching, privacy query, privacy statistical analysis based on privacy enhancement technologies such as PSI, secure multi-party computing, and homomorphic encryption and privacy AI capabilities.
+- Secure data transmission to blockchain: Datum provides decentralized data storage, e.g. IPFS and Arweave, with APIs and SDKs, and transmits data through cloud storage media such as AWS, Azure, and GCP to the Web 3 ecosystem as part of underlying services for subsequent data NFT applications.
+- Data tokenization: Datum provides data NFT issuance services with APIs and SDKs, supports a variety of NFT contract templates, and allows applications to quickly publish, view and set attributes as needed. 
+- Secure data transaction: Datum provides data NFT transactions, authorized access, access authentication, use and download, and data consistency verification services in the form of APIs and SDKs.
+- Data oracle: In the form of APIs and SDKs, Datum allows developers to transmit off-chain data to on-chain contracts for calling in Web 3, based on the existing data services and models in Web 2, and offers users various service components to quickly gain off-chain data to be used by on-chain dApps through data oracle.
+- Secure data computation: Datum provides query & analysis between two parties and among multi-parties with APIs and SDKs. Based on privacy-enhancing technologies including Private Set Intersection (PSI), Secure Multi-party Computation (MPC), and Homomorphic Encryption (HE), it provides data privacy matching, privacy query, privacy stat & analysis, and privacy-preserving AI capabilities. 
 

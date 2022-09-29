@@ -31,15 +31,15 @@ You can directly log in to the console through MetaMask, without additional regi
 
 1. Open the deployed console address in Chrome, and then enter the console homepage; click on [Metamask], and select [Switch Network] in the pop-up window to switch the network to the PlatON DevNet (development network).
 
-<img src="/network-img/切换网络.png" alt="切换网络" style="zoom: 50%;" />
+<img src="../img/network-img/切换网络.png" alt="切换网络" style="zoom: 50%;" />
 
 2. Once the network is switched to the PlatON DevNet, choose your account for the connection.
 
-<img src="/network-img/选择钱包.png" alt="选择钱包" style="zoom:50%;" />
+<img src="../img/network-img/选择钱包.png" alt="选择钱包" style="zoom:50%;" />
 
 3. After the connection is confirmed, click on [Signature] and complete the authorization process to go to the console.
 
-<img src="/network-img/钱包登录签名.png" alt="钱包登录签名" style="zoom:50%;" />
+<img src="../img/network-img/钱包登录签名.png" alt="钱包登录签名" style="zoom:50%;" />
 
 
 
@@ -51,25 +51,25 @@ Once a node is deployed, the first user who logs in to the console will be able 
 
 (1) Create the organization identity (to be displayed on the network), set the avatar of the organization, and fill in the organization profile.
 
-<img src="/network-img/设置机构名称.png" alt="设置机构名称" style="zoom:50%;" />
+<img src="../img/network-img/设置机构名称.png" alt="设置机构名称" style="zoom:50%;" />
 
 （2）初始化身份标识(DID)，身份标识(did)是去中心化的身份用户, 用于项目中的数据资产化,工作流运行,清算等多个环节. 而初始化身份标识需要内置管理员钱包支付一定的手续费, 请确保初始化身份标识前钱包有一定的余额。
 
 (2) DID Initialization: Decentralized identity (DID) is required by multiple processes, covering data tokenization, workflow operation, liquidation, etc. To initialize the DID, you'll need to pay a fee through the built-in admin wallet. Please make sure that you have sufficient balance before initializing your DID.
 
-<img src="/network-img/初始化身份标识.png" alt="初始化身份标识" style="zoom:50%;" />
+<img src="../img/network-img/初始化身份标识.png" alt="初始化身份标识" style="zoom:50%;" />
 
 （3）设置机构头像、填写机构描述。
 
 (3) Set the organization icon and fill in the organization intro.
 
-<img src="/network-img/设置机构头像与描述.png" alt="设置机构头像与描述" style="zoom:50%;" />
+<img src="../img/network-img/设置机构头像与描述.png" alt="设置机构头像与描述" style="zoom:50%;" />
 
 （4）Get registered to connect to the network, and then complete the initialization settings.
 
 Upon successful initialization, the system will automatically generate a built-in wallet address, which will be used to pay service fees for the execution of computing tasks.
 
-<img src="/network-img/注册入网.png" alt="注册入网" style="zoom:50%;" />
+<img src="../img/network-img/注册入网.png" alt="注册入网" style="zoom:50%;" />
 
 **2. User Center (available only to admins)**
 
@@ -77,15 +77,15 @@ Upon successful initialization, administrators can click on the upper right corn
 
 (1) Organization information.
 
-<img src="/network-img/用户中心-主页.png" alt="用户中心-主页" style="zoom:50%;" />
+<img src="../img/network-img/用户中心-主页.png" alt="用户中心-主页" style="zoom:50%;" />
 
 (2) Connection status.
 
-<img src="/network-img/用户中心-网络身份.png" alt="用户中心-网络身份" style="zoom:50%;" />
+<img src="../img/network-img/用户中心-网络身份.png" alt="用户中心-网络身份" style="zoom:50%;" />
 
 (3) Change admin, and check the built-in wallet.
 
-<img src="/network-img/用户中心-修改管理员.png" alt="用户中心-修改管理员" style="zoom: 50%;" />
+<img src="../img/network-img/用户中心-修改管理员.png" alt="用户中心-修改管理员" style="zoom: 50%;" />
 
 
 
@@ -93,7 +93,7 @@ Upon successful initialization, administrators can click on the upper right corn
 
 The console shows the system resources of the connected node, including CPU, memory, bandwidth, and fee consumption, as well as the tasks performed by the node, which covers the amount of data published and the overview of computing tasks.
 
-<img src="/network-img/系统概况.png" alt="系统概况" style="zoom:50%;" />
+<img src="../img/network-img/系统概况.png" alt="系统概况" style="zoom:50%;" />
 
 
 
@@ -109,7 +109,7 @@ When you initialize and register a node, by default, the system will connect it 
 
 Click on [Node Management] - [Boot node Management] to enter the management page.
 
-<img src="/network-img/引导节点管理.png" alt="引导节点管理" style="zoom:50%;" />
+<img src="../img/network-img/引导节点管理.png" alt="引导节点管理" style="zoom:50%;" />
 
 (2) Add or delete boot nodes
 
@@ -117,7 +117,7 @@ Click on [Add a new Boot node] and enter the ID to add a new bootnode.
 
 You can [Delete] a bootnode if you would like to.
 
-<img src="/network-img/添加引导节点.png" alt="添加引导节点" style="zoom:50%;" />
+<img src="../img/network-img/添加引导节点.png" alt="添加引导节点" style="zoom:50%;" />
 
 
 
@@ -127,7 +127,7 @@ If you want to be a data provider and publish metadata and creat credentials via
 
 Click on [Node Management] - [Storage Resource Management] to open the management page.
 
-<img src="/network-img/存储资源管理.png" alt="存储资源管理" style="zoom:50%;" />
+<img src="../img/network-img/存储资源管理.png" alt="存储资源管理" style="zoom:50%;" />
 
 **3. Computing Resource Management**
 
@@ -139,9 +139,9 @@ The default status of computing resources is “Disable”, and you can enable, 
 
 After the computing resources become enabled, the system will schedule your computing resources according to the privacy computing tasks initiated by participants in the network.
 
-<img src="/network-img/计算资源管理.png" alt="计算资源管理" style="zoom:50%;" />
+<img src="../img/network-img/计算资源管理.png" alt="计算资源管理" style="zoom:50%;" />
 
-<img src="/network-img/启动算力.png" alt="启动算力" style="zoom: 50%;" />
+<img src="../img/network-img/启动算力.png" alt="启动算力" style="zoom: 50%;" />
 
 
 
@@ -153,11 +153,11 @@ Through “My Data”, you can manage the original data to be capitalized. For i
 
 (1) Click on [My Data] - [Data Addition] to go to the page for adding data and extracting metadata.
 
-<img src="/network-img/添加数据.png" alt="添加数据" style="zoom: 50%;" />
+<img src="../img/network-img/添加数据.png" alt="添加数据" style="zoom: 50%;" />
 
 （2）Select the local data file to be used (only CSV files are supported at the moment), then click on [Upload]. The system will automatically read the “Field” and “Data Type” contained in the original data, collectively referred to as metadata. Users can modify the usage scenarios: private computing, non private computing (data can only be used in the selected algorithm (private computing/non private computing), and multiple choices are supported), as well as the metadata information read, and select "Visible to the public".
 
-<img src="/network-img/添加数据-2.png" alt="添加数据-2" style="zoom:50%;" />
+<img src="../img/network-img/添加数据-2.png" alt="添加数据-2" style="zoom:50%;" />
 
 （3）After the basic information and field information are filled in and confirmed, you should then click on [Submit] at the bottom of the page to upload the metadata to the present node and enter the [Data Management] module.
 
@@ -165,7 +165,7 @@ Through “My Data”, you can manage the original data to be capitalized. For i
 
 You can publish metadata and manage your data through [My Data] - [Data Management].
 
-<img src="/network-img/数据管理.png" alt="数据管理" style="zoom:50%;" />
+<img src="../img/network-img/数据管理.png" alt="数据管理" style="zoom:50%;" />
 
 - Metadata added through [Data Addition] will appear as “Unpublished” by default. After clicking on [Publish Data], the metadata will be published on Datum-platform’s data market and become available to other participants. Meanwhile, its status will be changed to “Publish Data”.
 - Click on [View] to view the metadata details.
@@ -179,11 +179,11 @@ You can publish metadata and manage your data through [My Data] - [Data Manageme
 
 You can also click on “Publish data credential” in [Data Management] to go to the page
 
-<img src="/network-img/发布凭证.png" alt="发布凭证" style="zoom:50%;" />
+<img src="../img/network-img/发布凭证.png" alt="发布凭证" style="zoom:50%;" />
 
 （2）Select the type of credential to be issued: “No Attribute Credentials” are ERC-20 assets, while “Attributed Credentials” are NFTs.
 
-<img src="/network-img/选择元数据.png" alt="选择元数据" style="zoom:50%;" />
+<img src="../img/network-img/选择元数据.png" alt="选择元数据" style="zoom:50%;" />
 
 （3.1）**Mint No-Attribute Credentials**: After selecting the data for the issuance of your Data Token, go to the [No-attribute Credential] information setting page to set the name, symbol, total circulation, and description of the credential.
 
@@ -193,7 +193,7 @@ You can also click on “Publish data credential” in [Data Management] to go t
 
 After the relevant information is entered, click on [Publish Credential], complete signification confirmation for the transaction via Metamask to mint the credential
 
-<img src="/network-img/Metamask签名确认-1.png" alt="Metamask签名确认-1" style="zoom:50%;" />
+<img src="../img/network-img/Metamask签名确认-1.png" alt="Metamask签名确认-1" style="zoom:50%;" />
 
 （3.2）**Mint Attribute Credentials**: After selecting the data for the issuance of your Data Token, go to the [Attribute Credential] information setting page to set the name and symbol of the credential.
 
@@ -202,7 +202,7 @@ After the relevant information is entered, click on [Publish Credential], comple
 
 After the relevant information is entered, click on [Publish Credential], and complete signification confirmation for the transaction via Metamask to mint the credential.
 
-<img src="/network-img/Metamask签名确认-1.1.png" alt="Metamask签名确认-1" style="zoom:50%;" />
+<img src="../img/network-img/Metamask签名确认-1.1.png" alt="Metamask签名确认-1" style="zoom:50%;" />
 
 ## **My Credential**
 
@@ -216,11 +216,11 @@ After the relevant information is entered, click on [Publish Credential], and co
 
    （1）Data binding
 
-   <img src="/network-img/绑定数据.png" alt="绑定数据" style="zoom:50%;" />
+   <img src="../img/network-img/绑定数据.png" alt="绑定数据" style="zoom:50%;" />
 
    （2）Adjust consumption amout
 
-   <img src="/network-img/修改消耗量.png" alt="修改消耗量" style="zoom:50%;" />
+   <img src="../img/network-img/修改消耗量.png" alt="修改消耗量" style="zoom:50%;" />
 
    （3）Set initial price
 
@@ -228,23 +228,23 @@ After the relevant information is entered, click on [Publish Credential], and co
 
    Data Tokens will form trading pairs with LAT as the reference price.
 
-   <img src="/network-img/设置兑换价格.png" alt="设置兑换价格" style="zoom:50%;" />
+   <img src="../img/network-img/设置兑换价格.png" alt="设置兑换价格" style="zoom:50%;" />
 
    After setting the first price, click on [Launch to marketplace], offer access authorization via Metamask, complete signature confirmation, and then provide liquidity of the token for the DEX.
 
-   <img src="/network-img/Metamask签名确认-2.png" alt="Metamask签名确认-2" style="zoom:50%;" />
+   <img src="../img/network-img/Metamask签名确认-2.png" alt="Metamask签名确认-2" style="zoom:50%;" />
 
-   <img src="/network-img/Metamask签名确认-3.png" alt="Metamask签名确认-3" style="zoom:50%;" />
+   <img src="../img/network-img/Metamask签名确认-3.png" alt="Metamask签名确认-3" style="zoom:50%;" />
 
 2. Priced credentials with liquidity added are available on the DEX https://test.dipoleswap.exchange/
 
 ​	(1) First, confirm the importation of the Token.
 
-<img src="/network-img/导入流动性.png" alt="导入流动性" style="zoom: 50%;" />
+<img src="../img/network-img/导入流动性.png" alt="导入流动性" style="zoom: 50%;" />
 
 ​	（2）You can check the added Token via the Swap page on the DEX and purchase the Token through Swap or adjust the Token’s liquidity.
 
-<img src="/network-img/查看流动性.png" alt="查看流动性" style="zoom: 50%;" />
+<img src="../img/network-img/查看流动性.png" alt="查看流动性" style="zoom: 50%;" />
 
 **[Attribute Credential]**
 
@@ -256,7 +256,7 @@ Once a credential is minted, you should then bind it with data, after which you�
 
 ​    （1）Data binding
 
-<img src="/network-img/绑定数据-1.png" alt="绑定数据-1" style="zoom:50%;" />
+<img src="../img/network-img/绑定数据-1.png" alt="绑定数据-1" style="zoom:50%;" />
 
 （2）Creat Credential
 
@@ -264,23 +264,23 @@ Once a credential is minted, you should then bind it with data, after which you�
 - “Expire Date”: the validity period of the credential.
 - "Usage Scenarios": the computation types that the credentials can support.
 
-<img src="/network-img/创建凭证.png" alt="创建凭证" style="zoom:50%;" />
+<img src="../img/network-img/创建凭证.png" alt="创建凭证" style="zoom:50%;" />
 
 After setting the relevant information, click on [Creat Credential], complete signification confirmation for the transaction via Metamask to accomplish the credential.
 
-<img src="/network-img/Metamask签名确认-4.png" alt="Metamask签名确认-4" style="zoom:50%;" />
+<img src="../img/network-img/Metamask签名确认-4.png" alt="Metamask签名确认-4" style="zoom:50%;" />
 
  （3）Launch
 
 Click [Launch] button in Attribute Credential page, and choose a NFT market to launch the NFT.
 
-![NFT上架](/network-img/上架.png)
+![NFT上架](../img/network-img/上架.png)
 
 （4）Details
 
 Click [Detail] button in Attribute Credential page to see the detailed information.
 
-<img src="/network-img/凭证详情.png" alt="凭证详情" style="zoom:50%;" />
+<img src="../img/network-img/凭证详情.png" alt="凭证详情" style="zoom:50%;" />
 
 
 
@@ -290,15 +290,15 @@ Through “Computing Tasks”, the admin can view the privacy computing tasks pe
 
 Admins can click on [Computing Tasks] to check the list of computing tasks and their status.
 
-<img src="/network-img/计算任务列表.png" alt="计算任务列表" style="zoom:50%;" />
+<img src="../img/network-img/计算任务列表.png" alt="计算任务列表" style="zoom:50%;" />
 
 Admins may choose any computing task and click on [View Detail] to go to the Task Details page.
 
-<img src="/network-img/计算任务详情.png" alt="计算任务详情" style="zoom:50%;" />
+<img src="../img/network-img/计算任务详情.png" alt="计算任务详情" style="zoom:50%;" />
 
 Admins may choose any computing task and click on [View Log] to go to the log page.
 
-<img src="/network-img/任务日志.png" alt="任务日志" style="zoom:50%;" />
+<img src="../img/network-img/任务日志.png" alt="任务日志" style="zoom:50%;" />
 
 
 
@@ -310,7 +310,7 @@ Members of the Management Committee may nominate new members, propose the remova
 
 Click on [Organization Management] to manage your organization.
 
-<img src="/network-img/组织管理-1.png" alt="组织管理-1" style="zoom:50%;" />
+<img src="../img/network-img/组织管理-1.png" alt="组织管理-1" style="zoom:50%;" />
 
 (1) Nominate new members 
 
@@ -322,33 +322,33 @@ Enter the organization’s IP in “Selected Organization IP”.
 
 Fill in the corresponding port in “Selected Organization Port”.
 
-<img src="/network-img/提名加入委员会.png" alt="提名加入委员会" style="zoom:50%;" />
+<img src="../img/network-img/提名加入委员会.png" alt="提名加入委员会" style="zoom:50%;" />
 
 (2) Propose the removal of members
 
 A member of the committee may propose the removal of other members (other than the original members and itself). A removal proposal would only be passed if enough members of the committee voted for it. To initiate a removal proposal, you should click on [Nominations kicked out of the Committee] on the Organization Management page and enter the corresponding page. 
 
-<img src="/network-img/提名踢出委员会.png" alt="提名踢出委员会" style="zoom:50%;" />
+<img src="../img/network-img/提名踢出委员会.png" alt="提名踢出委员会" style="zoom:50%;" />
 
 (3) Withdraw from the committee
 
 Members other than the original members may click on [Withdraw Committee] and [Confirm] to make a withdrawal proposal, which does not require voting. During the 12-hour cooling-off period, the proposal can be revoked; the proposal will become valid once the cooling-off period is finished.
 
-<img src="/network-img/退出委员会.png" alt="退出委员会" style="zoom:50%;" />
+<img src="../img/network-img/退出委员会.png" alt="退出委员会" style="zoom:50%;" />
 
 (4) Committee Affairs: My To-Do List. In My To-Do List, you can vote on nomination proposals and removal proposals and review the certification applications initiated by organizations.
 
 Certification applications to be processed:
 
-<img src="/network-img/申请认证审批.png" alt="申请认证审批" style="zoom: 50%;" />
+<img src="../img/network-img/申请认证审批.png" alt="申请认证审批" style="zoom: 50%;" />
 
 Nomination proposals to be processed:
 
-<img src="/network-img/提名加入提案待办审批.png" alt="提名加入提案待办审批" style="zoom: 50%;" />
+<img src="../img/network-img/提名加入提案待办审批.png" alt="提名加入提案待办审批" style="zoom: 50%;" />
 
 Proposal details:
 
-<img src="/network-img/查看内容.png" alt="查看内容" style="zoom: 50%;" />
+<img src="../img/network-img/查看内容.png" alt="查看内容" style="zoom: 50%;" />
 
 
 
@@ -356,15 +356,15 @@ Proposal details:
 
 Details of affairs done 
 
-<img src="/network-img/查看内容-1.png" alt="查看内容-1" style="zoom: 50%;" />
+<img src="../img/network-img/查看内容-1.png" alt="查看内容-1" style="zoom: 50%;" />
 
 (6) Committee Affairs: My Proposal. The “My Proposal” list shows all the proposals you initiated; proposals within the cooling-off period can be revoked.
 
-<img src="/network-img/撤回提案-1.png" alt="撤回提案-1" style="zoom:50%;" />
+<img src="../img/network-img/撤回提案-1.png" alt="撤回提案-1" style="zoom:50%;" />
 
 Proposal details (not covered within the cooling-off period)
 
-<img src="/network-img/查看内容-2.png" alt="查看内容-2" style="zoom: 50%;" />
+<img src="../img/network-img/查看内容-2.png" alt="查看内容-2" style="zoom: 50%;" />
 
 [Regular Organization]
 
@@ -372,9 +372,9 @@ A regular organization can join the committee through nomination proposals or ap
 
 Click on [Organization Management] to manage your organization.
 
-<img src="/network-img/组织管理-1.png" alt="组织管理-1" style="zoom: 50%;" />
+<img src="../img/network-img/组织管理-1.png" alt="组织管理-1" style="zoom: 50%;" />
 
 Apply for certification: Select a node to review your application, and fill in the required information. Once the selected node approves your application, your organization will become a certified organization.
 
-<img src="/network-img/申请认证.png" alt="申请认证" style="zoom: 50%;" />
+<img src="../img/network-img/申请认证.png" alt="申请认证" style="zoom: 50%;" />
 
