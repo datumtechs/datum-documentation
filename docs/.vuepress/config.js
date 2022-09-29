@@ -582,16 +582,16 @@ export default {
                             collapsible: true,
                             children: [
                                 {
-                                    text: 'Ciphertext-protected Computation Outsourcing',
-                                    link: '/en/FunctionIntroduction/SecureDataComputation.md/#ciphertext-protected-computation-outsourcing',
+                                    text: 'Outsourcing Computation',
+                                    link: '/en/FunctionIntroduction/SecureDataComputation.md/#outsourcing-computation',
                                 },
                                 {
-                                    text: 'Joint Query & Stat',
-                                    link: '/en/FunctionIntroduction/SecureDataComputation.md/#joint-query-stat',
+                                    text: 'Data Cooperation',
+                                    link: '/en/FunctionIntroduction/SecureDataComputation.md/#data-cooperation',
                                 },
                                 {
-                                    text: 'Joint Machine Learning',
-                                    link: '/en/FunctionIntroduction/SecureDataComputation.md/#joint-machine-learning',
+                                    text: 'Federated Machine Learning',
+                                    link: '/en/FunctionIntroduction/SecureDataComputation.md/#federated-machine-learning',
                                 },
                             ]
                         },
@@ -785,8 +785,8 @@ export default {
                                     link: '/en/APIDescription/SecureDataComputation.md/#ciphertext-protected-computation-outsourcing',
                                 },
                                 {
-                                    text: 'Joint Query & Stat',
-                                    link: '/en/APIDescription/SecureDataComputation.md/#joint-query-stat',
+                                    text: 'Data Cooperation',
+                                    link: '/en/APIDescription/SecureDataComputation.md/#data-cooperation',
                                     children: [
                                         {
                                             text: 'Joint Match',
@@ -803,16 +803,16 @@ export default {
                                     ]
                                 },
                                 {
-                                    text: 'Joint Machine Learning',
-                                    link: '/en/APIDescription/SecureDataComputation.md/#joint-machine-learning',
+                                    text: 'Federated Machine Learning',
+                                    link: '/en/APIDescription/SecureDataComputation.md/#federated-machine-learning',
                                     children: [
                                         {
-                                            text: 'Joint Model Training',
-                                            link: '/en/APIDescription/SecureDataComputation.md/#joint-model-training',
+                                            text: 'Federated Model Training',
+                                            link: '/en/APIDescription/SecureDataComputation.md/#federated-model-training',
                                         },
                                         {
-                                            text: 'Joint Model Prediction',
-                                            link: '/en/APIDescription/SecureDataComputation.md/#joint-model-prediction',
+                                            text: 'Federated Model Prediction',
+                                            link: '/en/APIDescription/SecureDataComputation.md/#federated-model-prediction',
                                         },
                                     ]
                                 },

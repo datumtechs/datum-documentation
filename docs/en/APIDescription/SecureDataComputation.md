@@ -1,6 +1,6 @@
 # APIs for Secure Data Computation 
 
-## Ciphertext-protected Computation Outsourcing
+## Outsourcing Computation
 
 **Main features**
 
@@ -10,7 +10,7 @@ Applications: cloud computing, anonymous voting systems, ciphertext retrieval, a
 
 **Steps involved**
 
-5. Generate the public and private key pair (genHEKeyPair)
+1. Generate the public and private key pair (genHEKeyPair)
 2. Encrypt data with the public key (HEEncrypt)
 3. Homomorphic calculation (HECalc)
 4. Decrypt  with the private key (HEDecrypt)
@@ -25,7 +25,7 @@ Applications: cloud computing, anonymous voting systems, ciphertext retrieval, a
 
   ```json
   {
-  	”params": {
+  	"params": {
           "scheme": "ckks",
           ...
       }
@@ -35,7 +35,7 @@ Applications: cloud computing, anonymous voting systems, ciphertext retrieval, a
   Parameter description
 
   | Parameter | Type   | Description                                                  | If required |
-| --------- | ------ | :----------------------------------------------------------- | ----------- |
+  | --------- | ------ | :----------------------------------------------------------- | ----------- |
   | params    | json   | A parameter used by the homomorphic encryption algorithm and applies to the specific library | Y           |
   | scheme    | string | The selected scheme                                          | N           |
   | ...       | string | Other parameters                                             | N           |
@@ -56,7 +56,7 @@ Applications: cloud computing, anonymous voting systems, ciphertext retrieval, a
   Parameter description
 
   | Parameter | Type   | Description                                                  |
-| --------- | ------ | ------------------------------------------------------------ |
+  | --------- | ------ | ------------------------------------------------------------ |
   | status    | int    | Response status: 200 - success, 400 - invalid request, 500 - internal server error |
   | result    | json   | Result information                                           |
   | pub_key   | string | Public key                                                   |
@@ -82,7 +82,7 @@ Applications: cloud computing, anonymous voting systems, ciphertext retrieval, a
   Parameter description
 
   | Parameter | Type   | Description                                                  | If required |
-| --------- | ------ | ------------------------------------------------------------ | ----------- |
+  | --------- | ------ | ------------------------------------------------------------ | ----------- |
   | pub_key   | string | Public key, received from the result party                   | Y           |
   | data      | string | Data to be encrypted                                         | Y           |
   | params    | json   | Other parameters used by the homomorphic encryption algorithm | N           |
@@ -102,7 +102,7 @@ Applications: cloud computing, anonymous voting systems, ciphertext retrieval, a
   Parameter description
 
   | Parameter  | Type   | Description                                                  |
-| ---------- | ------ | ------------------------------------------------------------ |
+  | ---------- | ------ | ------------------------------------------------------------ |
   | status     | int    | Response status: 200 - success, 400 - invalid request, 500 - internal server error |
   | result     | json   | Result information                                           |
   | ciphertext | string | Ciphertext                                                   |
@@ -128,7 +128,7 @@ Applications: cloud computing, anonymous voting systems, ciphertext retrieval, a
   Parameter description
 
   | Parameter | Type   | Description                                                  | If required |
-| --------- | ------ | ------------------------------------------------------------ | ----------- |
+  | --------- | ------ | ------------------------------------------------------------ | ----------- |
   | pub_key   | string | Public key, received from the result party                   | Y           |
   | data_path | string | Path of the encrypted data                                   | Y           |
   | formula   | string | Formulas such as summation, multiplication, etc.             | Y           |
@@ -149,7 +149,7 @@ Applications: cloud computing, anonymous voting systems, ciphertext retrieval, a
   Parameter description
 
   | Parameter  | Type   | Description                                                  |
-| ---------- | ------ | ------------------------------------------------------------ |
+  | ---------- | ------ | ------------------------------------------------------------ |
   | status     | int    | Response status: 200 - success, 400 - invalid request, 500 - internal server error |
   | result     | json   | Result information                                           |
   | ciphertext | string | Ciphertext result                                            |
@@ -174,7 +174,7 @@ Applications: cloud computing, anonymous voting systems, ciphertext retrieval, a
   Parameter description
 
   | Parameter | Type   | Description                                                  | If required |
-| --------- | ------ | ------------------------------------------------------------ | ----------- |
+  | --------- | ------ | ------------------------------------------------------------ | ----------- |
   | priv_key  | string | Private key                                                  | Y           |
   | data      | string | Encrypted result returned by the party that conducts the homomorphic computation | Y           |
   | params    | json   | Other parameters used by the homomorphic encryption algorithm | N           |
@@ -203,7 +203,7 @@ Applications: cloud computing, anonymous voting systems, ciphertext retrieval, a
 
 
 
-## Joint Query & Stat
+## Data Cooperation
 
 ### Joint Match
 
@@ -241,7 +241,7 @@ Joint Match enables data cooperation between two parties: Requester and Provider
   Parameter description
 
   | Parameter        | Type   | Description                                                  | If required |
-| ---------------- | ------ | ------------------------------------------------------------ | ----------- |
+  | ---------------- | ------ | ------------------------------------------------------------ | ----------- |
   | algo_type        | string | Types of algorithms used: DH & HE                            | Y           |
   | requester        | json   | Requester information                                        | Y           |
   | name             | string | Organization name                                            | Y           |
@@ -297,7 +297,7 @@ Joint Match enables data cooperation between two parties: Requester and Provider
   Parameter description
 
   | Parameter      | Type   | Description                                                  |
-| -------------- | ------ | ------------------------------------------------------------ |
+  | -------------- | ------ | ------------------------------------------------------------ |
   | status         | int    | Response status: 200 - success, 400 - invalid request, 500 - internal server error |
   | result         | json   | Result information                                           |
   | data_providers | list   | Organization name of all data providers                      |
@@ -407,7 +407,7 @@ Privacy Label Query allows the Requester to obtain the intersection of data betw
   Parameter description
 
   | Parameter        | Type   | Description                         | If required |
-| ---------------- | ------ | ----------------------------------- | ----------- |
+  | ---------------- | ------ | ----------------------------------- | ----------- |
   | algo_type        | string | Types of algorithms used: DH & HE   | Y           |
   | requester        | json   | Requester information               | Y           |
   | name             | string | Organization name                   | Y           |
@@ -596,13 +596,13 @@ Joint Statistical Analysis achieves joint statistical analysis for the data from
 
 
 
-## Joint Machine Learning
+## Federated Machine Learning
 
-### Joint Model Training
+### Federated Model Training
 
 **Main features**
 
-Joint Model Training achieves federated model training while making sure that no data provider discloses his sensitive data. The feature is enabled by the privacy-preserving AI framework Rosetta. Algorithms supported: logistic regression, linear regression, DNN, XGBoost, etc.
+Federated Model Training achieves federated model training while making sure that no data provider discloses his sensitive data. The feature is enabled by the privacy-preserving AI framework Rosetta. Algorithms supported: logistic regression, linear regression, DNN, XGBoost, etc.
 
 **Instructions**
 
@@ -690,11 +690,11 @@ Joint Model Training achieves federated model training while making sure that no
 
 
 
-### Joint Model Prediction
+### Federated Model Prediction
 
 **Main features**
 
-Joint Model Prediction achieves federated model prediction while making sure that no data provider discloses his sensitive data. The feature is enabled by the privacy-preserving AI framework Rosetta. Algorithms supported: logistic regression, linear regression, DNN, XGBoost, etc.
+Federated Model Prediction achieves federated model prediction while making sure that no data provider discloses his sensitive data. The feature is enabled by the privacy-preserving AI framework Rosetta. Algorithms supported: logistic regression, linear regression, DNN, XGBoost, etc.
 
 **如何使用**
 

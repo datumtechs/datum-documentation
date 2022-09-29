@@ -67,7 +67,7 @@ Datum fully supports this paradigm. Based on the [MPC](#ref_mpc) algorithm proto
 
 
 
-## <a name="head3"></a> Joint Machine Learning
+## <a name="head3"></a> Federated Machine Learning
 
 More complex applications may require automated modeling based on data to cope with unknown events efficiently.
 

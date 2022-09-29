@@ -24,7 +24,7 @@ Datum attaches various verifiable credential properties to Data NFTs and leverag
   - If the raw data is stored through entrusted storage, the user will need to decrypt the data using the decryption key to obtain the plaintext data;
   - Once the data transaction is completed, the user's Data Token will be processed accordingly (burned). 
 
-## [][api desc]Please refer to [APIs for Reliable Data Transaction](api desc) for more specific user instructions
+## [][api desc]Please refer to [APIs for Reliable Data Transaction][api desc] for more instructions
 
 [Reliable Data Transaction]: ../img/data_security_transaction.png
 [api desc]: ../APIDescription/ReliableDataTransaction.md
