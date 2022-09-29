@@ -71,7 +71,7 @@ export default {
         // 在这里进行配置
         // Public 文件路径
         editLink: false,
-        logo: '/img/datum.svg',
+        logo: '/img/datum.png',
         contributors: false,
         lastUpdated: false,
         locales: {
