@@ -1,7 +1,5 @@
 # **Datum-network Help Document (for Users)**
 
-[TOC]
-
 ## Overview
 
 Datum-network is a distributed privacy computing network based on the underlying capabilities of privacy AI.

@@ -18,7 +18,7 @@ Specifically, Datum has built a decentralized off-chain computation network thro
 
 * [Data Cooperation](#head2)
 
-* [Federated Machine Learning](#head3)
+* [Joint Machine Learning](#head3)
 
   
 
@@ -67,7 +67,7 @@ Datum fully supports this paradigm. Based on the [MPC](#ref_mpc) algorithm proto
 
 
 
-## <a name="head3"></a> Federated Machine Learning
+## <a name="head3"></a> Joint Machine Learning
 
 More complex applications may require automated modeling based on data to cope with unknown events efficiently.
 
@@ -89,7 +89,7 @@ Note:
 
 
 
-## Please refer to [APIs for Secure Data Computation][api desc] for more specific usage instructions
+## Please refer to [APIs for Secure Data Computation][api desc] for more instructions
 
 
 

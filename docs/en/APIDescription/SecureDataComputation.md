@@ -596,13 +596,13 @@ Joint Statistical Analysis achieves joint statistical analysis for the data from
 
 
 
-## Federated Machine Learning
+## Joint Machine Learning
 
-### Federated Model Training
+### Joint Model Training
 
 **Main features**
 
-Federated Model Training achieves federated model training while making sure that no data provider discloses his sensitive data. The feature is enabled by the privacy-preserving AI framework Rosetta. Algorithms supported: logistic regression, linear regression, DNN, XGBoost, etc.
+Joint Model Training achieves distributed model training while making sure that no data provider discloses his sensitive data. The feature is enabled by the privacy-preserving AI framework Rosetta. Algorithms supported: logistic regression, linear regression, DNN, XGBoost, etc.
 
 **Instructions**
 
@@ -690,11 +690,11 @@ Federated Model Training achieves federated model training while making sure tha
 
 
 
-### Federated Model Prediction
+### Joint Model Prediction
 
 **Main features**
 
-Federated Model Prediction achieves federated model prediction while making sure that no data provider discloses his sensitive data. The feature is enabled by the privacy-preserving AI framework Rosetta. Algorithms supported: logistic regression, linear regression, DNN, XGBoost, etc.
+Joint Model Prediction achieves distributed model prediction while making sure that no data provider discloses his sensitive data. The feature is enabled by the privacy-preserving AI framework Rosetta. Algorithms supported: logistic regression, linear regression, DNN, XGBoost, etc.
 
 **Instructions**
 

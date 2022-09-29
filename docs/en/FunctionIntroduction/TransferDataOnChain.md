@@ -32,7 +32,7 @@ After the data enters the Web 3 world through Datum, users can publish the metad
 ![][publish_metadata]
 
 
-## Please refer to [Transfer Data on Chain API][api desc] for more instructions
+## Please refer to [APIs for Transfer Data on Chain][api desc] for more instructions
 
 
 [data_safe_onchain]: ../img/data_safe_onchain.png

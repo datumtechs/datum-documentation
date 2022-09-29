@@ -1,6 +1,5 @@
 # [Datum-network Help Document (for Admins)](https://forum.latticex.foundation/t/topic/6334)
 
-[TOC]
 
 ## **Overview**
 
