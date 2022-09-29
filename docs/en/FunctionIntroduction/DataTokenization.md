@@ -60,5 +60,5 @@ To help users to publish Data Tokens with one click, Datum provides an API that 
 
 ## Please refer to [APIs for Data Tokenization][api desc] for more specific user instructions
 
-[Data Tokenization]: /img/data_capitalization.png
+[Data Tokenization]: ../img/data_capitalization.png
 [api desc]: ../APIDescription/DataTokenization.md

@@ -33,6 +33,6 @@ After the user used the Token to complete the relevant data operations, Datum wi
 
 ## [][api desc]Please refer to [APIs for Secure Data Transaction](api desc) for more specific user instructions
 
-[Secure Data Transaction]: /img/data_security_transaction.png
+[Secure Data Transaction]: ../img/data_security_transaction.png
 [api desc]: ../APIDescription/SecureDataTransaction.md
 
