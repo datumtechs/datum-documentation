@@ -14,7 +14,7 @@ This is why **Datum** has provided a series of application-oriented, out-of-the-
 
 Specifically, Datum has built a decentralized off-chain computation network through decentralized scheduling and on-chain financial incentives, and fully supports the following types of data computation:
 
-* [Ciphertext-protected Computation Outsourcing](#head1)
+* [Outsourcing Computation](#head1)
 
 * [Joint Query & Stat](#head2)
 
@@ -24,7 +24,7 @@ Specifically, Datum has built a decentralized off-chain computation network thro
 
 Users can execute the relevant functions by calling APIs in a clear, concise manner, without having to know too much about the execution details of different cryptographic algorithms. This makes the platform more accessible, solves the risks and concerns of traditional data sharing, and enables more smooth data collaboration and flows.
 
-## <a name="head1"></a> Ciphertext-protected Computation Outsourcing
+## <a name="head1"></a> Outsourcing Computation
 
 [Homomorphic encryption](#ref_he) technology is adopted to encrypt the data to be sent to a third-party computing node for outsourced computation. The computation is conducted based on the ciphertext data, which discloses any information about the raw data.
 

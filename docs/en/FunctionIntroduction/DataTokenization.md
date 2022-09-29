@@ -6,7 +6,7 @@ Here is how data is tokenized on Datum:
 
 ![][Data Tokenization]
 
-## Token
+## Tokenization
 
 Datum's data tokenization supports the ERC20 standard; on Datum, the data tokenization process includes the following steps: obtaining contract templates, deploying contracts, correlating raw data (address)/metadata (published) with contract address, minting Tokens, and burning Tokens.
 

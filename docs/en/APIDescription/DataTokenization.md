@@ -2,7 +2,7 @@
 
 Data tokens are issued in the form of NFTs. The raw data is packaged and transformed into a special type of asset, and the rights authentication, transaction & use, and revenue acquisition of assets are achieved in the form of NFTs.
 
-## Token
+## Tokenization
 
 Datum's data tokenization supports the ERC20 standard; on Datum, the data tokenization process includes the following steps: obtaining contract templates, deploying contracts, correlating raw data (address)/metadata (published) with contract address, minting Tokens, and burning Tokens.
 
