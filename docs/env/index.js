@@ -1,7 +1,7 @@
 
 const config = {
     test: {
-        home: 'http://test.datumtechs.com',//'https://test.datumtechs.com',
+        home: 'https://www.datumtechs.com', //'https://test.datumtechs.com',
         appId: '',
         indexName: ''
     },

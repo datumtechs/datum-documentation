@@ -6,6 +6,9 @@ import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
 import config from '../env'
 
+const isProd = process.env.VITE_ENV === 'prod'
+
+
 export default {
     locales: {
         '/': {
@@ -13,8 +16,8 @@ export default {
             title: '让数据流动起来',
             head: [
                 [
-                    // 'link', { rel: 'icon', href: '/img/favicon.svg' }
-                    'link', { rel: 'icon', href: '/datum-documentation/img/favicon.svg' } //  github page
+                    'link', { rel: 'icon', href: isProd ? '/img/favicon.svg' : '/datum-documentation/img/favicon.svg' }
+                    // 'link', { rel: 'icon', href: '/datum-documentation/img/favicon.svg' } //  github page
                 ]
             ],
             description: 'datum-documentation [chinese]'
@@ -67,7 +70,7 @@ export default {
         }),
     ],
     lang: 'zh-CN',
-    base: '/datum-documentation/', ///datum-documentation
+    base: isProd ? '/' : '/datum-documentation/', ///datum-documentation
     theme: defaultTheme({
         // 在这里进行配置
         // Public 文件路径
