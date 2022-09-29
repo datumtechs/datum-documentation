@@ -13,7 +13,8 @@ export default {
             title: '让数据流动起来',
             head: [
                 [
-                    'link', { rel: 'icon', href: '/img/favicon.svg' }
+                    // 'link', { rel: 'icon', href: '/img/favicon.svg' }
+                    'link', { rel: 'icon', href: '/datum-documentation/img/favicon.svg' } //  github page
                 ]
             ],
             description: 'datum-documentation [chinese]'
@@ -471,7 +472,7 @@ export default {
                 {
                     // @ts-ignore
                     text: 'Introduction',
-                    link: '/en',
+                    link: '/en/',
                     children: []
                 }, {
                     // @ts-ignore
