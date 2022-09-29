@@ -822,8 +822,8 @@ export default {
                             link: '/en/Reference/Datum-network-Help-Document(Users).md',
                         },
                         {
-                            text: 'Datum-platform Help Document_0.5.0',
-                            link: '/en/Reference/Datum-platform-Help-Document_0.5.0.md',
+                            text: 'Datum-platform Help Document',
+                            link: '/en/Reference/Datum-platform-Help-Document.md',
                         },
                     ],
                 }
