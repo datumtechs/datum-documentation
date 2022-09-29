@@ -114,10 +114,6 @@ export default {
                             collapsible: true,
                             children: [
                                 {
-                                    text: '什么是数据安全上链',
-                                    link: '/功能介绍/数据安全上链.md/#什么是数据安全上链',
-                                },
-                                {
                                     text: '支持的传输和存管模式',
                                     link: '/功能介绍/数据安全上链.md/#支持的传输和存管模式',
                                 },
@@ -141,8 +137,8 @@ export default {
                             collapsible: true,
                             children: [
                                 {
-                                    text: 'Token',
-                                    link: '/功能介绍/数据资产化.md/#token',
+                                    text: 'Tokenization',
+                                    link: '/功能介绍/数据资产化.md/#tokenization',
                                 },
                                 {
                                     text: 'NFT',
@@ -160,16 +156,12 @@ export default {
                             collapsible: true,
                             children: [
                                 {
-                                    text: '基于Token属性的鉴权访问',
-                                    link: '/功能介绍/数据安全交易.md/#基于token属性的鉴权访问',
+                                    text: '支持的数据安全交易模式',
+                                    link: '/功能介绍/数据安全交易.md/#支持的数据安全交易模式',
                                 },
                                 {
-                                    text: '基于Token属性的安全分享',
-                                    link: '/功能介绍/数据安全交易.md/#基于token属性的安全分享',
-                                },
-                                {
-                                    text: 'Token使用后的结算处理',
-                                    link: '/功能介绍/数据安全交易.md/#token使用后的结算处理',
+                                    text: '使用流程',
+                                    link: '/功能介绍/数据安全交易.md/#使用流程',
                                 }
                             ]
                         },
@@ -178,10 +170,6 @@ export default {
                             link: '/功能介绍/数据预言机.md',
                             collapsible: true,
                             children: [
-                                {
-                                    text: '什么是数据预言机',
-                                    link: '/功能介绍/数据预言机.md/#什么是数据预言机',
-                                },
                                 {
                                     text: '数据预言机的使用场景',
                                     link: '/功能介绍/数据预言机.md/#数据预言机的使用场景',
@@ -282,8 +270,8 @@ export default {
                             collapsible: true,
                             children: [
                                 {
-                                    text: 'Token',
-                                    link: '/API说明/数据资产化.md/#token',
+                                    text: 'Tokenization',
+                                    link: '/API说明/数据资产化.md/#tokenization',
                                     // children: [
                                     //     {
                                     //         text: '获取合约模板',
