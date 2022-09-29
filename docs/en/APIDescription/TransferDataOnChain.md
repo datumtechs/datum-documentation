@@ -1,4 +1,4 @@
-# APIs for Secure Data Transmission to Blockchain
+# APIs for Transfer Data On Chain
 
 
 ## Main Functions
@@ -259,7 +259,7 @@ curl 'http://datumtechs.com/api/v2/data/uploadData' \
 
 
 
-## Secure Data Transmission to Blockchain
+## Transfer Data On Chain
 
 
 After the raw data is transmitted to the target channel, users can upload the data hash onto the blockchain and publish the metadata if they wish to make their raw data hosted in a cloud environment or IPFS through Datum searchable by other Web 3 users, without disclosing all information about the raw data.

@@ -494,24 +494,20 @@ export default {
                             collapsible: true,
                             children: [
                                 {
-                                    text: 'Overview',
-                                    link: '/en/FunctionIntroduction/TransferDataOnChain.md/#overview',
-                                },
-                                {
                                     text: 'Main Functions',
                                     link: '/en/FunctionIntroduction/TransferDataOnChain.md/#main-functions',
                                 },
                                 {
-                                    text: 'How Data Is Securely Transmitted to the Blockchain',
-                                    link: '/en/FunctionIntroduction/TransferDataOnChain.md/#how-data-is-securely-transmitted-to-the-blockchain',
+                                    text: 'Framework',
+                                    link: '/en/FunctionIntroduction/TransferDataOnChain.md/#framework',
                                 },
                                 {
                                     text: 'Publish Metadata',
                                     link: '/en/FunctionIntroduction/TransferDataOnChain.md/#publish-metadata',
                                 },
                                 {
-                                    text: 'How Metadata Is Published',
-                                    link: '/en/FunctionIntroduction/TransferDataOnChain.md/#how-metadata-is-published',
+                                    text: 'How it works',
+                                    link: '/en/FunctionIntroduction/TransferDataOnChain.md/#how-it-works',
                                 },
                             ]
                         },
@@ -521,8 +517,8 @@ export default {
                             collapsible: true,
                             children: [
                                 {
-                                    text: 'Token',
-                                    link: '/en/FunctionIntroduction/DataTokenization.md/#token',
+                                    text: 'Tokenization',
+                                    link: '/en/FunctionIntroduction/DataTokenization.md/#tokenization',
                                 },
                                 {
                                     text: 'NFT',
@@ -540,16 +536,12 @@ export default {
                             collapsible: true,
                             children: [
                                 {
-                                    text: 'Authorized Access Based on Token Properties',
-                                    link: '/en/FunctionIntroduction/ReliableDataTransaction.md/#authorized-access-based-on-token-properties',
+                                    text: 'Supported Data Security Transaction Modes',
+                                    link: '/en/FunctionIntroduction/ReliableDataTransaction.md/#supported-data-security-transaction-modes',
                                 },
                                 {
-                                    text: 'Secure Sharing Based on Token Properties',
-                                    link: '/en/FunctionIntroduction/ReliableDataTransaction.md/#secure-sharing-based-on-token-properties',
-                                },
-                                {
-                                    text: 'Settlement Operations After Token Usage',
-                                    link: '/en/FunctionIntroduction/ReliableDataTransaction.md/#settlement-operations-after-token-usage',
+                                    text: 'Usage Process',
+                                    link: '/en/FunctionIntroduction/ReliableDataTransaction.md/#usage-process',
                                 }
                             ]
                         },
@@ -558,10 +550,6 @@ export default {
                             link: '/en/FunctionIntroduction/DataOracle.md',
                             collapsible: true,
                             children: [
-                                {
-                                    text: 'Data Oracle Explained',
-                                    link: '/en/FunctionIntroduction/DataOracle.md/#data-oracle-explained',
-                                },
                                 {
                                     text: 'Application Scenarios',
                                     link: '/en/FunctionIntroduction/DataOracle.md/#application-scenarios',
@@ -610,7 +598,7 @@ export default {
                             children: [
                                 {
                                     text: 'Main Functions',
-                                    link: '/en/APIDescription/TransferDataOnChain.md/#modes-of-transmission-and-storage-supported',
+                                    link: '/en/APIDescription/TransferDataOnChain.md/#main-functions',
                                     children: [
                                         {
                                             text: 'Cloud Transmission and Storage',
@@ -662,8 +650,8 @@ export default {
                             collapsible: true,
                             children: [
                                 {
-                                    text: 'Token',
-                                    link: '/en/APIDescription/DataTokenization.md/#token',
+                                    text: 'Tokenization',
+                                    link: '/en/APIDescription/DataTokenization.md/#tokenization',
                                     // children: [
                                     //     {
                                     //         text: '获取合约模板',
@@ -781,8 +769,8 @@ export default {
                             collapsible: true,
                             children: [
                                 {
-                                    text: 'Ciphertext-protected Computation Outsourcing',
-                                    link: '/en/APIDescription/SecureDataComputation.md/#ciphertext-protected-computation-outsourcing',
+                                    text: 'Outsourcing Computation',
+                                    link: '/en/APIDescription/SecureDataComputation.md/#outsourcing-computation',
                                 },
                                 {
                                     text: 'Data Cooperation',

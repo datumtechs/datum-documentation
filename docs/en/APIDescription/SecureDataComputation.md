@@ -696,8 +696,6 @@ Federated Model Training achieves federated model training while making sure tha
 
 Federated Model Prediction achieves federated model prediction while making sure that no data provider discloses his sensitive data. The feature is enabled by the privacy-preserving AI framework Rosetta. Algorithms supported: logistic regression, linear regression, DNN, XGBoost, etc.
 
-**如何使用**
-
 **Instructions**
 
 + Interface: runModelPredictTask
