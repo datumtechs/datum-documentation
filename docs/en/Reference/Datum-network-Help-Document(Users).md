@@ -16,11 +16,11 @@ Users can also directly link to nodes already in the network to publish and mana
 
 For users’ convenience, Datum-network offers five data sets that they can publish and use. Download link:
 
-Finance: <http://testdownload.datumtechs.com/datum/dataset/Finance.zip>
-Media Advertisement: <http://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip>
-Medical & Health: <http://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip>
-Public Service: <http://testdownload.datumtechs.com/datum/dataset/Publicservice.zip>
-Transportation: <http://testdownload.datumtechs.com/datum/dataset/Transportation.zip>
+Finance: <https://testdownload.datumtechs.com/datum/dataset/Finance.zip>
+Media Advertisement: <https://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip>
+Medical & Health: <https://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip>
+Public Service: <https://testdownload.datumtechs.com/datum/dataset/Publicservice.zip>
+Transportation: <https://testdownload.datumtechs.com/datum/dataset/Transportation.zip>
 
 Users can claim test tokens via the following address: [PlatON](https://faucet.platon.network/faucet/)
 
