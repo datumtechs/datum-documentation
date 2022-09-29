@@ -603,8 +603,8 @@ export default {
                                     ]
                                 },
                                 {
-                                    text: 'Secure Data Transmission to Blockchain',
-                                    link: '/en/APIDescription/TransferDataOnChain.md/#secure-data-transmission-to-blockchain',
+                                    text: 'Transfer Data On Chain',
+                                    link: '/en/APIDescription/TransferDataOnChain.md/#transfer-data-on-chain',
                                     children: [
                                         {
                                             text: 'Extract Metadata',
