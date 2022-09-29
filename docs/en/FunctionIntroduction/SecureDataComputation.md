@@ -16,7 +16,7 @@ Specifically, Datum has built a decentralized off-chain computation network thro
 
 * [Outsourcing Computation](#head1)
 
-* [Joint Query & Stat](#head2)
+* [Data Cooperation](#head2)
 
 * [Federated Machine Learning](#head3)
 
@@ -36,7 +36,7 @@ Users can execute the relevant functions by calling APIs in a clear, concise man
 
 The above figure shows that Datum uses homomorphic encryption computation to fully decouple the data party and the computing party, which fundamentally solves the problem of confidentiality when entrusting data and data operations to third parties.
 
-## <a name="head2"></a> Joint Query & Stat
+## <a name="head2"></a> Data Cooperation
 
 Let's consider the following **case**:
 

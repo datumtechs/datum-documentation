@@ -3,18 +3,11 @@
 Datum attaches various verifiable credential properties to Data NFTs and leverages proxy re-encryption algorithms to offer such functions as authorization for data access, secure data sharing, and ownership transfer. The platform achieves the settlement of data transactions via Data Tokens.
 
 
+## Supported Data Security Transaction Modes
+- Authorized access based on token properties: Verify data access rights and legality
+- Secure sharing based on token properties: Control how data is used
+- Settlement operations after token usage: Evidence after data use and easy audit
 
-## Authorized Access Based on Token Properties
-
-When the user initiates a data access request, Datum relies on the user's Token for authentication to determine whether he can view the metadata or raw data; the Token properties contain the permission of access to the data, which allows Datum to determine if the user's request is legitimate.
-
-## Secure Sharing Based on Token Properties
-
-The Token properties also include operation permissions, such as use right and ownership; the user can obtain the ownership of the data by purchasing the Token and then download the raw data using the Token; upon receiving download requests, Datum will determine if the user's request is legitimate through the operation permissions contained in the token properties.
-
-## Settlement Operations After Token Usage
-
-After the user used the Token to complete the relevant data operations, Datum will confirm the usage of the Token and then modify the operation properties of the Token and upload it to the blockchain. For instance, the number of operations of the used Token will be modified, or the Token will be set to frozen/destroyed, which are both properties that determine whether the user can operate the Token.
 
 ## Usage Process
 
