@@ -6,57 +6,17 @@ Here is how data is tokenized on Datum:
 
 ![][Data Tokenization]
 
-## Token
+## Tokenization
 
-Datum's data tokenization supports the ERC20 standard; on Datum, the data tokenization process includes the following steps: obtaining contract templates, deploying contracts, correlating raw data (address)/metadata (published) with contract address, minting Tokens, and burning Tokens.
-
-### Obtain Contract Template
-
-The contract template can be obtained by calling this API. The contract template is compatible with Data NFT protocols following the ERC721 and ERC1155 standards, which include fixed interfaces and events, such as minting Tokens, burning Tokens, etc.
-
-### Deploy Contract
-
-Data providers use their own wallets to deploy the obtained contract template on the specified chain, such as PlatON (default) and Ethereum, and the contract address will be returned upon successful deployment.
-
-### Correlate Raw Data & Metadata with Contract Address
-
-After the contract is successfully deployed, the user must correlate the contract address with the corresponding raw data and metadata. The raw data refers to the address returned after secure on-chain data transfer, and the metadata is the address published; different raw data is managed by different contracts.
-
-### Mint Token
-
-After the contract address is correlated with  the corresponding raw data and metadata, the data provider can start minting tokens, and the minted tokens can be traded on DEXs.
-
-### Burn Token
-
-Users can burn Data Tokens that have been minted and not used in transactions; Tokens should be burned after they are used; for instance, a token must be burned after the raw data was downloaded; burned Tokens can no longer be used.
+Binding data to ERC20 Token in Datum can quantify data consumption, reflect the asset value of data by trading ERC20 Token, and transfer data asset authority by consuming ERC20.
 
 ## NFT
 
-Datum's data tokenization also supports Data NFT protocols compatible with the ERC721 and ERC1155 standards; on Datum, the data tokenization process includes the following steps: obtaining contract templates, burning contracts, correlating raw data (address)/metadata (published) with contract address, minting Tokens, and burning Tokens.
-
-### Obtain Contract Template
-
-The contract template can be obtained by calling this API. The contract template is compatible with Data NFT protocols following the ERC721 and ERC1155 standards, which include fixed interfaces and events, such as minting Tokens, burning Tokens, etc.
-
-### Deploy Contract
-
-Data providers use their own wallets to deploy the obtained contract template on the specified chain, such as PlatON (default) and Ethereum, and the contract address will be returned upon successful deployment.
-
-### Correlate Raw Data & Metadata with Contract Address
-
-After the contract is successfully deployed, the user must correlate the contract address with the corresponding raw data and metadata. The raw data refers to the address returned after secure on-chain data transfer, and the metadata is published; different raw data is managed by different contracts.
-
-### Mint Token
-
-After the contract address is correlated with the corresponding raw data and metadata, the data provider can start minting tokens, and the minted tokens can be traded on DEXs.
-
-### Burn Token
-
-Users can burn Data Tokens that have been minted and not used in transactions; Tokens should be burned after they are used; for instance, a token must be burned after the raw data was downloaded; burned Tokens can no longer be used.
+The operation authority of data in Datum is unique. Binding the data with ERC721 Token makes the operation authority of the data have a unique asset value, and the transfer of data asset authority is carried out by consuming ERC721.
 
 ## List Token on Exchanges
 
-To help users to publish Data Tokens with one click, Datum provides an API that automatically lists Tokens/NFTs on DEXs or NFT marketplaces.
+Datum connects various DEX and NFT trading platforms to facilitate users to release ERC20 or ERC721 after data assetization with one click, so that data can be fully capitalized and valued in the Web3 world.
 
 ## Please refer to [APIs for Data Tokenization][api desc] for more specific user instructions
 

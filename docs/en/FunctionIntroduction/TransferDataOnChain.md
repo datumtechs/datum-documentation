@@ -1,9 +1,6 @@
 # Secure Data Transmission to Blockchain
 
 
-## Overview
-
-
 Secure Data Transmission to Blockchain describes the process in which Datum helps users bring data from Web 2 to Web 3. It represents the beginning of the data life circle in Web 3. On Datum, users may choose to store their data via decentralized storage methods such as IPFS and Arweave, as well as cloud storage environments like AWS, Azure, and GCP. Datum offers a series of service APIs that enable users to transmit and store their data and record the data hash on the blockchain in a suitable manner. As a service provider, Datum provides users with various solutions for data transmission and storage, including raw data connection, data transmission, and data storage & management. The platform also functions as a trusted storage service provider that offers a wide range of convenient services, covering the tokenization, retrieval, and use of data in Web 3, Data Oracle, etc.
 
 
@@ -17,7 +14,7 @@ Secure Data Transmission to Blockchain describes the process in which Datum help
 - Verification of Data Consistency: Datum provides consistency verification for the on-chain hash and the raw data stored
 
 
-## How Data Is Securely Transmitted to the Blockchain
+## Framework
 
 
 ![][data_safe_onchain]
@@ -30,12 +27,12 @@ Secure Data Transmission to Blockchain describes the process in which Datum help
 After the data enters the Web 3 world through Datum, users can publish the metadata of the data stored through Datum if they wish to make their raw data hosted through decentralized storage methods such as IPFS and Arweave and cloud environments like AWS, Azure and GCP searchable by other Web 3 users, without disclosing any information about the raw data. 
 
 
-## How Metadata Is Published
+## How it works
 
 ![][publish_metadata]
 
 
-## Please refer to [APIs for Secure Data Transmission to Blockchain][api desc] for more specific usage instructions
+## Please refer to [Transfer Data on Chain API][api desc] for more instructions
 
 
 [data_safe_onchain]: ../img/data_safe_onchain.png
