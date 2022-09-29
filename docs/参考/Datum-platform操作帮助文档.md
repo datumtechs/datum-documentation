@@ -92,7 +92,7 @@ Datum-platform是用户可以按需购买数据资产使用权、选择Datum-net
 
 <img src="../img/platform-img/元数据信息.png" alt="14-元数据信息" style="zoom:33%;" />
 
-（3）点击【购买】，弹出购买凭证弹窗，点击无属性凭证列表中的【购买】按钮，跳转至Dex（https://test.dipoleswap.exchange/）页面，可按照计算需求购买对应数量的凭证。
+（3）点击【购买】，弹出购买凭证弹窗，点击无属性凭证列表中的【购买】按钮，跳转至Dex（ [https://test.dipoleswap.exchange](https://test.dipoleswap.exchange) ）页面，可按照计算需求购买对应数量的凭证。
 
 ![15-购买元数据](../img/platform-img/购买元数据.png)
 

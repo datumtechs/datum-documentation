@@ -92,7 +92,7 @@ By default, the page shows the available nodes released by the Datum. Users may 
 
 <img src="../img/platform-img/元数据信息.png" alt="14-元数据信息" style="zoom:33%;" />
 
-(3) Select [Purchase] to go to the DEX https://test.dipoleswap.exchange/ . Each computing task consumes one data credential, and users can purchase an amount of credentials that matches their demand.
+(3) Select [Purchase] to go to the DEX <https://test.dipoleswap.exchange/> . Each computing task consumes one data credential, and users can purchase an amount of credentials that matches their demand.
 
 ![15-购买元数据](../img/platform-img/购买元数据.png)
 

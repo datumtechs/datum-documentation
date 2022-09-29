@@ -141,7 +141,7 @@ After the relevant information is entered, click on [Publish Credential], and co
 
    <img src="../img/network-user-img/Metamask签名确认-3.png" alt="Metamask签名确认-3" style="zoom:50%;" />
 
-2. Priced credentials with liquidity added are available on the DEX https://test.dipoleswap.exchange/
+2. Priced credentials with liquidity added are available on the DEX <https://test.dipoleswap.exchange/>
 
 (1) First, confirm the importation of the Token.
 

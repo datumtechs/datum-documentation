@@ -12,11 +12,11 @@ Datum-network管理台面向数据提供方、算力提供方提供了一个可�
 
 为方便体验，提供5套数据集可供发布使用，下载路径为：
 
-- 金融：[http://testdownload.datumtechs.com/datum/dataset/Finance.zip](http://testdownload.datumtechs.com/datum/dataset/Finance.zip)
-- 媒体广告：[http://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip](http://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip)
-- 医疗保健：[http://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip](http://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip)
-- 公共服务：[http://testdownload.datumtechs.com/datum/dataset/Publicservice.zip](http://testdownload.datumtechs.com/datum/dataset/Publicservice.zip)
-- 运输：[http://testdownload.datumtechs.com/datum/dataset/Transportation.zip](http://testdownload.datumtechs.com/datum/dataset/Transportation.zip)
+- 金融：[https://testdownload.datumtechs.com/datum/dataset/Finance.zip](https://testdownload.datumtechs.com/datum/dataset/Finance.zip)
+- 媒体广告：[https://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip](https://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip)
+- 医疗保健：[https://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip](https://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip)
+- 公共服务：[https://testdownload.datumtechs.com/datum/dataset/Publicservice.zip](https://testdownload.datumtechs.com/datum/dataset/Publicservice.zip)
+- 运输：[https://testdownload.datumtechs.com/datum/dataset/Transportation.zip](https://testdownload.datumtechs.com/datum/dataset/Transportation.zip)
 - 测试Token领取地址：[https://faucet.platon.network/faucet/](https://faucet.platon.network/faucet/)
 
 
@@ -244,7 +244,7 @@ Datum-network新加入的节点需要通过连接一个引导节点才能被网�
 
    ![Metamask签名确认-3](../img/network-img/Metamask签名确认-3.png)
 
-2. 已定价并添加流动性的资产凭证，可在Dex（https://test.dipoleswap.exchange/）中查看。
+2. 已定价并添加流动性的资产凭证，可在Dex（<https://test.dipoleswap.exchange/>）中查看。
 
 ​	（1）先确认导入该资产。
 
