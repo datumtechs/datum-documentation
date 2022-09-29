@@ -71,7 +71,7 @@ export default {
         // 在这里进行配置
         // Public 文件路径
         editLink: false,
-        logo: '/img/datum.png',
+        logo: '/img/datum.svg',
         contributors: false,
         lastUpdated: false,
         locales: {
@@ -101,6 +101,7 @@ export default {
                         {
                             text: '开始准备',
                             link: '/功能介绍/开始准备.md',
+                            // @ts-ignore
                             collapsible: true,
                         },
                         {
