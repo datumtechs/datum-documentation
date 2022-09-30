@@ -12,13 +12,12 @@ Users can deploy their Datum-network node locally to connect to the network. In 
 Here is how Datum-network nodes are deployed：https://github.com/datumtechs/datum-network-deploy/tree/ansible_v0.5.0
 
 For users’ convenience, Datum-network offers five data sets that they can publish and use. Download link:
-Finance: <https://testdownload.datumtechs.com/datum/dataset/Finance.zip>
-Media Advertisement: <https://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip>
-Medical & Health: <https://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip>
-Public Service: <https://testdownload.datumtechs.com/datum/dataset/Publicservice.zip>
-Transportation: <https://testdownload.datumtechs.com/datum/dataset/Transportation.zip>
-
-Users can claim test tokens via the following address: [PlatON](https://faucet.platon.network/faucet/)
+- Finance: <https://testdownload.datumtechs.com/datum/dataset/Finance.zip>
+- Media Advertisement: <https://testdownload.datumtechs.com/datum/dataset/MediaAdvertising.zip>
+- Medical & Health: <https://testdownload.datumtechs.com/datum/dataset/Medicalhealth.zip>
+- Public Service: <https://testdownload.datumtechs.com/datum/dataset/Publicservice.zip>
+- Transportation: <https://testdownload.datumtechs.com/datum/dataset/Transportation.zip>
+- Users can claim test tokens via the following address: [https://faucet.platon.network/faucet/](https://faucet.platon.network/faucet/)
 
 
 
