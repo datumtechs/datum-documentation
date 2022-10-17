@@ -12,7 +12,5 @@ Rosetta, a privacy-preserving AI framework based on TensorFlow,  carries and com
 
 ### More Information
 
-About Rosetta：[https://www.matrixelements.com/product/rosetta](https://www.matrixelements.com/product/rosetta)
-
 Rosetta GitHub：[https://github.com/LatticeX-Foundation/Rosetta](https://github.com/LatticeX-Foundation/Rosetta)
 
