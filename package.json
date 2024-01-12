@@ -11,7 +11,7 @@
     "vuepress": "^2.0.0-beta.50"
   },
   "scripts": {
-    "dev": "cross-env VITE_ENV=sit vuepress dev docs",
+    "dev": "cross-env VITE_ENV=sit vuepress dev docs -p 3000",
     "build": "cross-env VITE_ENV=prod vuepress build docs",
     "build:sit": "cross-env VITE_ENV=sit vuepress build docs",
     "build:prod": "cross-env VITE_ENV=prod vuepress build docs"
