@@ -131,25 +131,25 @@ export default {
                                 },
                             ]
                         },
-                        {
-                            text: '数据资产化',
-                            link: '/功能介绍/数据资产化.md',
-                            collapsible: true,
-                            children: [
-                                {
-                                    text: 'Tokenization',
-                                    link: '/功能介绍/数据资产化.md/#tokenization',
-                                },
-                                {
-                                    text: 'NFT',
-                                    link: '/功能介绍/数据资产化.md/#nft',
-                                },
-                                {
-                                    text: '交易所上架',
-                                    link: '/功能介绍/数据资产化.md/#交易所上架',
-                                },
-                            ]
-                        },
+                        // {
+                        //     text: '数据资产化',
+                        //     link: '/功能介绍/数据资产化.md',
+                        //     collapsible: true,
+                        //     children: [
+                        //         {
+                        //             text: 'Tokenization',
+                        //             link: '/功能介绍/数据资产化.md/#tokenization',
+                        //         },
+                        //         {
+                        //             text: 'NFT',
+                        //             link: '/功能介绍/数据资产化.md/#nft',
+                        //         },
+                        //         {
+                        //             text: '交易所上架',
+                        //             link: '/功能介绍/数据资产化.md/#交易所上架',
+                        //         },
+                        //     ]
+                        // },
                         {
                             text: '数据安全交易',
                             link: '/功能介绍/数据安全交易.md',
@@ -264,69 +264,69 @@ export default {
                                 },
                             ]
                         },
-                        {
-                            text: '数据资产化',
-                            link: '/API说明/数据资产化.md',
-                            collapsible: true,
-                            children: [
-                                {
-                                    text: 'Tokenization',
-                                    link: '/API说明/数据资产化.md/#tokenization',
-                                    // children: [
-                                    //     {
-                                    //         text: '获取合约模板',
-                                    //         link: '/API说明/数据资产化.md/#获取合约模板',
-                                    //     },
-                                    //     {
-                                    //         text: '部署合约',
-                                    //         link: '/API说明/数据资产化.md/#部署合约',
-                                    //     },
-                                    //     {
-                                    //         text: '关联原始数据和元数据',
-                                    //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
-                                    //     },
-                                    //     {
-                                    //         text: '铸造Token',
-                                    //         link: '/API说明/数据资产化.md/#铸造token',
-                                    //     },
-                                    //     {
-                                    //         text: '销毁Token',
-                                    //         link: '/API说明/数据资产化.md/#销毁token',
-                                    //     },
-                                    // ]
-                                },
-                                {
-                                    text: 'NFT',
-                                    link: '/API说明/数据资产化.md/#nft',
-                                    // children: [
-                                    //     {
-                                    //         text: '获取合约模板',
-                                    //         link: '/API说明/数据资产化.md/#获取合约模板',
-                                    //     },
-                                    //     {
-                                    //         text: '部署合约',
-                                    //         link: '/API说明/数据资产化.md/#部署合约',
-                                    //     },
-                                    //     {
-                                    //         text: '关联原始数据和元数据',
-                                    //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
-                                    //     },
-                                    //     {
-                                    //         text: '铸造Token',
-                                    //         link: '/API说明/数据资产化.md/#铸造token',
-                                    //     },
-                                    //     {
-                                    //         text: '销毁Token',
-                                    //         link: '/API说明/数据资产化.md/#销毁token',
-                                    //     },
-                                    // ]
-                                },
-                                {
-                                    text: '交易所上架',
-                                    link: '/API说明/数据资产化.md/#交易所上架'
-                                }
-                            ]
-                        },
+                        // {
+                        //     text: '数据资产化',
+                        //     link: '/API说明/数据资产化.md',
+                        //     collapsible: true,
+                        //     children: [
+                        //         {
+                        //             text: 'Tokenization',
+                        //             link: '/API说明/数据资产化.md/#tokenization',
+                        //             // children: [
+                        //             //     {
+                        //             //         text: '获取合约模板',
+                        //             //         link: '/API说明/数据资产化.md/#获取合约模板',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '部署合约',
+                        //             //         link: '/API说明/数据资产化.md/#部署合约',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '关联原始数据和元数据',
+                        //             //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '铸造Token',
+                        //             //         link: '/API说明/数据资产化.md/#铸造token',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '销毁Token',
+                        //             //         link: '/API说明/数据资产化.md/#销毁token',
+                        //             //     },
+                        //             // ]
+                        //         },
+                        //         {
+                        //             text: 'NFT',
+                        //             link: '/API说明/数据资产化.md/#nft',
+                        //             // children: [
+                        //             //     {
+                        //             //         text: '获取合约模板',
+                        //             //         link: '/API说明/数据资产化.md/#获取合约模板',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '部署合约',
+                        //             //         link: '/API说明/数据资产化.md/#部署合约',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '关联原始数据和元数据',
+                        //             //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '铸造Token',
+                        //             //         link: '/API说明/数据资产化.md/#铸造token',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '销毁Token',
+                        //             //         link: '/API说明/数据资产化.md/#销毁token',
+                        //             //     },
+                        //             // ]
+                        //         },
+                        //         {
+                        //             text: '交易所上架',
+                        //             link: '/API说明/数据资产化.md/#交易所上架'
+                        //         }
+                        //     ]
+                        // },
                         {
                             text: '数据安全交易',
                             link: '/API说明/数据安全交易.md',
@@ -499,25 +499,25 @@ export default {
                                 },
                             ]
                         },
-                        {
-                            text: 'Data Tokenization',
-                            link: '/en/FunctionIntroduction/DataTokenization.md',
-                            collapsible: true,
-                            children: [
-                                {
-                                    text: 'Tokenization',
-                                    link: '/en/FunctionIntroduction/DataTokenization.md/#tokenization',
-                                },
-                                {
-                                    text: 'NFT',
-                                    link: '/en/FunctionIntroduction/DataTokenization.md/#nft',
-                                },
-                                {
-                                    text: 'List Token on Exchanges',
-                                    link: '/en/FunctionIntroduction/DataTokenization.md/#list-token-on-exchanges',
-                                },
-                            ]
-                        },
+                        // {
+                        //     text: 'Data Tokenization',
+                        //     link: '/en/FunctionIntroduction/DataTokenization.md',
+                        //     collapsible: true,
+                        //     children: [
+                        //         {
+                        //             text: 'Tokenization',
+                        //             link: '/en/FunctionIntroduction/DataTokenization.md/#tokenization',
+                        //         },
+                        //         {
+                        //             text: 'NFT',
+                        //             link: '/en/FunctionIntroduction/DataTokenization.md/#nft',
+                        //         },
+                        //         {
+                        //             text: 'List Token on Exchanges',
+                        //             link: '/en/FunctionIntroduction/DataTokenization.md/#list-token-on-exchanges',
+                        //         },
+                        //     ]
+                        // },
                         {
                             text: 'Reliable Data Transaction',
                             link: '/en/FunctionIntroduction/ReliableDataTransaction.md',
@@ -632,69 +632,69 @@ export default {
                                 },
                             ]
                         },
-                        {
-                            text: 'Data Tokenization',
-                            link: '/en/APIDescription/DataTokenization.md',
-                            collapsible: true,
-                            children: [
-                                {
-                                    text: 'Tokenization',
-                                    link: '/en/APIDescription/DataTokenization.md/#tokenization',
-                                    // children: [
-                                    //     {
-                                    //         text: '获取合约模板',
-                                    //         link: '/API说明/数据资产化.md/#获取合约模板',
-                                    //     },
-                                    //     {
-                                    //         text: '部署合约',
-                                    //         link: '/API说明/数据资产化.md/#部署合约',
-                                    //     },
-                                    //     {
-                                    //         text: '关联原始数据和元数据',
-                                    //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
-                                    //     },
-                                    //     {
-                                    //         text: '铸造Token',
-                                    //         link: '/API说明/数据资产化.md/#铸造token',
-                                    //     },
-                                    //     {
-                                    //         text: '销毁Token',
-                                    //         link: '/API说明/数据资产化.md/#销毁token',
-                                    //     },
-                                    // ]
-                                },
-                                {
-                                    text: 'NFT',
-                                    link: '/en/APIDescription/DataTokenization.md/#nft',
-                                    // children: [
-                                    //     {
-                                    //         text: '获取合约模板',
-                                    //         link: '/API说明/数据资产化.md/#获取合约模板',
-                                    //     },
-                                    //     {
-                                    //         text: '部署合约',
-                                    //         link: '/API说明/数据资产化.md/#部署合约',
-                                    //     },
-                                    //     {
-                                    //         text: '关联原始数据和元数据',
-                                    //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
-                                    //     },
-                                    //     {
-                                    //         text: '铸造Token',
-                                    //         link: '/API说明/数据资产化.md/#铸造token',
-                                    //     },
-                                    //     {
-                                    //         text: '销毁Token',
-                                    //         link: '/API说明/数据资产化.md/#销毁token',
-                                    //     },
-                                    // ]
-                                },
-                                {
-                                    text: 'List Token on Exchanges',
-                                    link: '/en/APIDescription/DataTokenization.md/#list-token-on-exchanges'
-                                }
-                            ]
-                        },
+                        // {
+                        //     text: 'Data Tokenization',
+                        //     link: '/en/APIDescription/DataTokenization.md',
+                        //     collapsible: true,
+                        //     children: [
+                        //         {
+                        //             text: 'Tokenization',
+                        //             link: '/en/APIDescription/DataTokenization.md/#tokenization',
+                        //             // children: [
+                        //             //     {
+                        //             //         text: '获取合约模板',
+                        //             //         link: '/API说明/数据资产化.md/#获取合约模板',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '部署合约',
+                        //             //         link: '/API说明/数据资产化.md/#部署合约',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '关联原始数据和元数据',
+                        //             //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '铸造Token',
+                        //             //         link: '/API说明/数据资产化.md/#铸造token',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '销毁Token',
+                        //             //         link: '/API说明/数据资产化.md/#销毁token',
+                        //             //     },
+                        //             // ]
+                        //         },
+                        //         {
+                        //             text: 'NFT',
+                        //             link: '/en/APIDescription/DataTokenization.md/#nft',
+                        //             // children: [
+                        //             //     {
+                        //             //         text: '获取合约模板',
+                        //             //         link: '/API说明/数据资产化.md/#获取合约模板',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '部署合约',
+                        //             //         link: '/API说明/数据资产化.md/#部署合约',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '关联原始数据和元数据',
+                        //             //         link: '/API说明/数据资产化.md/#关联原始数据和元数据',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '铸造Token',
+                        //             //         link: '/API说明/数据资产化.md/#铸造token',
+                        //             //     },
+                        //             //     {
+                        //             //         text: '销毁Token',
+                        //             //         link: '/API说明/数据资产化.md/#销毁token',
+                        //             //     },
+                        //             // ]
+                        //         },
+                        //         {
+                        //             text: 'List Token on Exchanges',
+                        //             link: '/en/APIDescription/DataTokenization.md/#list-token-on-exchanges'
+                        //         }
+                        //     ]
+                        // },
                         {
                             text: 'Reliable Data Transaction',
                             link: '/en/APIDescription/ReliableDataTransaction.md',
