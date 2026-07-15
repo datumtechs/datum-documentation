@@ -435,7 +435,7 @@ export default {
                     children: [
                         {
                             text: '隐私AI框架Rosetta',
-                            link: '/参考/隐私AI框架rosetta.md',
+                            link: '/参考/隐私AI框架Rosetta.md',
                         }
 
                     ],
@@ -455,7 +455,7 @@ export default {
                         },
                         {
                             text: 'Datum-platform操作帮助文档',
-                            link: '/参考/datum-platform操作帮助文档.md',
+                            link: '/参考/Datum-platform操作帮助文档.md',
                         },
                     ],
                 } ],
